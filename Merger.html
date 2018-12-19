@@ -18,6 +18,7 @@ Please DO NOT Remove Any Of The Copyright Information
      <meta charset="utf-8">
      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
      <meta http-equiv="x-dns-prefetch-control" content="on">
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
      <meta name="Keywords" content="Merger,open source,hxco,hifocus,merge qrcode,qrcode" />
      <meta name="Description" content="Merger is the most simple way to merge your qrcode together."/>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/picturepan2/spectre@0.5.3/dist/spectre.min.css" integrity="sha256-eBag0DNksOEjebVrDSBxOYWaIsRA5RBzz/PWQtkgmvM=" crossorigin="anonymous">
@@ -52,8 +53,11 @@ Please DO NOT Remove Any Of The Copyright Information
  
              <!-- Button Part Start -->
              <p class="middlebtn">
-                 <button class="btn btn-primary" onclick="openbox()">加入群组</button>
-                 <a href="#showqrcode" class="btn btn-primary desktop">显示二维码</a>
+                 <button class="btn btn-primary" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixinzhifu"></use></svg></button>
+                 <button class="btn btn-primary" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-iconfontrectangle390"></use></svg></button>
+                 <button class="btn btn-primary" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></button>
+                 <button class="btn btn-primary" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-paypal"></use></svg></button>
+                 <!-- <a href="#showqrcode" class="btn btn-primary desktop">显示二维码</a> -->
                  <div class="modal" id="showqrcode">
                      <div class="modal-container" role="document">
                          <div class="modal-header">
@@ -88,7 +92,7 @@ Please DO NOT Remove Any Of The Copyright Information
              <!-- Button Part End -->
              
              <!-- Footer Scripts Start -->
-             <script src="https://at.alicdn.com/t/font_974919_ff5t89ec35c.js"></script>
+             <script src="https://at.alicdn.com/t/font_974919_xgtacm93vxp.js"></script>
 
              </body>
              
