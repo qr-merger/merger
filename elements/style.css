@@ -1,0 +1,108 @@
+/* 
+HTML Templete Grouper - The Best Way To Share Your Chatting Group To The Public. 
+GitHub: [https:/github.com/hifocus/Grouper] , Released Under MIT Lisence 
+Original Version: [https://i.chainwon.com/946.html] 
+Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
+Please DO NOT Remove Any Of The Copyright Information
+*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Noto Sans SC Sliced", sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main {
+  position: absolute;
+  top: calc(50% - 207px);
+  width: 100%;
+}
+.main i {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body div p,
+body div h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.middlebtn {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.85;
+}
+
+.details {
+  font-size: 20px;
+}
+
+.qrcode {
+  width: 50%;
+  height: 50%;
+}
+
+.modal-body .content {
+  text-align: center;
+}
+
+@media all and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+/* 
+HTML Templete Grouper - The Best Way To Share Your Chatting Group To The Public. 
+GitHub: [https:/github.com/hifocus/Grouper] , Released Under MIT Lisence 
+Original Version: [https://i.chainwon.com/946.html] 
+Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
+Please DO NOT Remove Any Of The Copyright Information
+*/
+body,html{margin:0;height:100%;background:linear-gradient(-45deg,#ee7752,#ce3e75,#23a6d5,#23d5ab);background-size:400% 400%;font-family:Noto Sans SC Sliced,sans-serif;-webkit-animation:Gradient 10s ease infinite;animation:Gradient 10s ease infinite;-o-user-select:none;-ms-user-select:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}@-webkit-keyframes Gradient{0%{background-position:0 50%}50%{background-position:100% 50%}}@keyframes Gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}.main{position:absolute;top:calc(50% - 207px);width:100%}.main i{display:block;margin:0 auto;width:200px;height:200px;border-radius:100%;text-align:center}body div h2,body div p{margin:0;margin-top:20px;color:#fff;text-align:center}.middlebtn{margin-right:auto;margin-left:auto;text-align:center;opacity:.85}.details{font-size:20px}.qrcode{width:50%;height:50%}.modal-body .content{text-align:center}@media all and (max-width:800px){.desktop{display:none}}
