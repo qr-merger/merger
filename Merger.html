@@ -44,7 +44,7 @@ Please DO NOT Remove Any Of The Copyright Information
              var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&u=1031092401&n=惶心";
              
              // Replace with your profile photo link.
-             var profile = "https://ws4.sinaimg.cn/small/006bVZsBly1fycjixl366j30u00u0tg8.jpg"
+             var profile = "https://ws4.sinaimg.cn/mw690/006bVZsBly1fycjixl366j30u00u0tg8.jpg"
 
              // Fill in the title and subtitle of the page.
              var title = "选择你的支付方式";
@@ -73,13 +73,13 @@ Please DO NOT Remove Any Of The Copyright Information
                          <div class="modal-body">
                              <div class="content">
                                  <script>
-                                     var baoluonb = "https://p.qlogo.cn/gh/" + groupnumber + "/" + groupnumber + "/";
+                                    //  var baoluonb = "https://p.qlogo.cn/gh/" + groupnumber + "/" + groupnumber + "/";
                                      var img = document.createElement("img");
-                                     img.src = "https://api.imjad.cn/qrcode?text=" + joinlink + "&logo=" + baoluonb + "&size=300&level=L"
+                                    //  img.src = "https://api.imjad.cn/qrcode?text=" + joinlink + "&logo=" + baoluonb + "&size=300&level=L"
                                      img.width = 300;
                                      img.height = 300;
                                      document.querySelector(".modal-body .content").appendChild(img);
-                                     document.getElementById("i").style.background = "url('" + baoluonb + "') no-repeat center/cover";
+                                     document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";
                                      function openbox() {
                                          window.open(joinlink, "_blank", "toolbar=no,scrollbars=no,visible=none,width=500,height=300");
                                      }
