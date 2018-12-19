@@ -1,0 +1,92 @@
+<!-- 
+This is the New Alias of Grouper: Merger - Merge your qrcode quicker.
+https://github.com/hifocus/merger
+
+HTML Templete Grouper - The Best Way To Share Your Chatting Group To The Public. 
+GitHub: [https:/github.com/hifocus/Grouper] , Released Under MIT Lisence 
+Original Version: [https://i.chainwon.com/946.html] 
+Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
+Please DO NOT Remove Any Of The Copyright Information
+
+ -->
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>Merger Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="Keywords" content="Merger,open source,hxco,hifocus,merge qrcode,qrcode" />
+    <meta name="Description" content="Merger is the most simple way to merge your qrcode together."/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/picturepan2/spectre@0.5.3/dist/spectre.min.css" integrity="sha256-eBag0DNksOEjebVrDSBxOYWaIsRA5RBzz/PWQtkgmvM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="elements/style.css">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://avatar.dawnlab.me/github/hifocus?s=32"> -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://avatar.dawnlab.me">
+    <link rel="dns-prefetch" href="https://api.imjad.cn">
+    <link rel="dns-prefetch" href="https://p.qlogo.cn">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    </head>
+    
+    <body>
+
+        <script>
+            // Fill In Your QQ Group Number And Join Link
+            var groupnumber = "579332933";
+            var joinlink = "http://qm.qq.com/cgi-bin/qm/qr?k=F2u_B2RzMJYVkIFAy8aD_9TdMgMDnRF6";
+            // Fill In Your QQ Group Name And Description
+            var title = "惶心剑阁";
+            var subtitle = "黄埃散漫风萧索 云栈萦纡登剑阁";
+        </script>
+    
+        <div class="main">
+            <i id="i"></i>
+    
+            <h2 id="name"></h2>
+            <p id="description" style="font-weight: lighter"></p>
+
+            <!-- Button Part Start -->
+            <p class="middlebtn">
+                <button class="btn btn-primary" onclick="openbox()">加入群组</button>
+                <a href="#showqrcode" class="btn btn-primary desktop">显示二维码</a>
+                <div class="modal" id="showqrcode">
+                    <div class="modal-container" role="document">
+                        <div class="modal-header">
+                            <a href="#" class="btn btn-clear float-right" aria-label="Close"></a>
+                            <div id="titleinfo" class="modal-title h5" style="text-align: center">扫一扫二维码 加入群组</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="content">
+                                <script>
+                                    var baoluonb = "https://p.qlogo.cn/gh/" + groupnumber + "/" + groupnumber + "/";
+                                    var img = document.createElement("img");
+                                    img.src = "https://api.imjad.cn/qrcode?text=" + joinlink + "&logo=" + baoluonb + "&size=300&level=L"
+                                    img.width = 300;
+                                    img.height = 300;
+                                    document.querySelector(".modal-body .content").appendChild(img);
+                                    document.getElementById("i").style.background = "url('" + baoluonb + "') no-repeat center/cover";
+                                    function openbox() {
+                                        window.open(joinlink, "_blank", "toolbar=no,scrollbars=no,visible=none,width=500,height=300");
+                                    }
+                                    document.getElementById("name").innerHTML = title;
+                                    document.getElementById("description").innerHTML = subtitle;
+                                    document.getElementById("titleinfo").innerHTML = "扫一扫二维码 加入" + title;
+                                </script>
+            
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </p>
+            <!-- Button Part End -->
+            
+            </body>
+            
+            </html>
