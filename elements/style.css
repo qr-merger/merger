@@ -10,7 +10,8 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: "Noto Sans SC Sliced", sans-serif;
+  /* Custom Fonts Disabled Due to Load Speed Requirements */
+  /* font-family: "Noto Sans SC Sliced", sans-serif; */
   background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: Gradient 10s ease infinite;
@@ -75,6 +76,7 @@ body {
 
 body div p,
 body div h2 {
+  font-weight: 400;
   color: #fff;
   text-align: center;
   margin: 0;
@@ -105,4 +107,12 @@ body div h2 {
   .desktop {
     display: none;
   }
+}
+
+/* iconfont general css here */
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
