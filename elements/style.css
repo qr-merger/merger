@@ -74,13 +74,21 @@ body {
   text-align: center;
 }
 
-body div p,
-body div h2 {
+p,
+h2 {
   font-weight: 400;
   color: #fff;
   text-align: center;
   margin: 0;
   margin-top: 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 16px;
 }
 
 .middlebtn {
@@ -111,8 +119,10 @@ body div h2 {
 
 /* iconfont general css here */
 .icon {
-  width: 1em; height: 1em;
+  width: 1em;
+  height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+  font-size: 16;
 }
