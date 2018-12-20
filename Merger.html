@@ -184,22 +184,14 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
 
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.3.1,gh/lrsjng/jquery-qrcode@0.14.0/dist/jquery-qrcode.min.js"></script>
     <script>
-<<<<<<< HEAD
         function showqrcode(){
             if(location.href.substr(location.href.lastIndexOf('#')+1) == "showqrcode" && selected == "yes") document.getElementById('showqrcode').style.display = "flex";
             $("#currentqrcode").qrcode({
                 render: "image",
-                size: 150 * scale,
+                size: 300 * scale,
                 text: client
             });
         }
-=======
-        $("#currentqrcode").qrcode({
-            render: "image",
-            size: 300 * scale,
-            text: client
-        });
->>>>>>> e7f58ef94f0c3aaab79434e7ec132f2f43d92600
     </script>
 
     <!-- Footer Scripts -->
