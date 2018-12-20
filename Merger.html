@@ -44,12 +44,13 @@ Please DO NOT Remove Any Of The Copyright Information
              var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&u=1031092401&n=惶心";
              var paypal = "https://paypal.me/hxco";
 
-             // Replace with your profile photo link.
+             // Replace with your id and profile photo link.
+             var myname = "惶心";
              var profile = "https://ws4.sinaimg.cn/large/006bVZsBly1fycjixl366j30u00u0tg8.jpg";
 
              // Fill in the title and subtitle of the page.
              var title = "选择你的支付方式";
-             var subtitle = "然后跟随进一步的指示";
+             var subtitle = "跟随进一步的指示以向" + myname + "付款";
          </script>
 
          <div class="main">
@@ -60,9 +61,9 @@ Please DO NOT Remove Any Of The Copyright Information
  
              <!-- Button Part Start -->
              <p class="middlebtn">
-                 <a href="#showqrcode" class="btn btn-primary desktop"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixinzhifu"></use></svg></a>
-                 <a href="#showqrcode" class="btn btn-primary desktop"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-iconfontrectangle390"></use></svg></a>
-                 <a href="#showqrcode" class="btn btn-primary desktop"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></a>
+                 <a href="#showqrcode" class="btn btn-primary"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixinzhifu"></use></svg></a>
+                 <a href="#showqrcode" class="btn btn-primary"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-iconfontrectangle390"></use></svg></a>
+                 <a href="#showqrcode" class="btn btn-primary"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></a>
                  <button class="btn btn-primary" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-paypal"></use></svg></button>
                  <div class="modal" id="showqrcode">
                      <div class="modal-container" role="document">
@@ -72,21 +73,28 @@ Please DO NOT Remove Any Of The Copyright Information
                          </div>
                          <div class="modal-body">
                              <div class="content">
-                                 <script>
-                                    //  Verify if mobile
-                                        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-                                        if (isMobile) { 
-                                        }
-                                        else {
-                                            // return false;
-                                        }
+                                    <div id="currentqrcode" class="qrcode"></div>
+                                <script>
+                                    //  Verify if alipay, qq, wechat
+                                    if (navigator.userAgent.match(/Alipay/i)) {
+                                        window.location.href = alipay;
+                                    } else if (navigator.userAgent.match(/MicroMessenger\//i)) {
+                                        // 微信
+                                        document.querySelector(".modal-body .content").appendChild(img);
 
+                                    } else if (navigator.userAgent.match(/QQ\//i)) {
+                                        // QQ
+                                        document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
+                                        document.getElementById("code-qq").style.display = "block";
+                                    } else 
+
+                                </script>
+                                <script>
                                     //  var baoluonb = "https://p.qlogo.cn/gh/" + groupnumber + "/" + groupnumber + "/";
                                      var img = document.createElement("img");
                                     //  img.src = "https://api.imjad.cn/qrcode?text=" + joinlink + "&logo=" + baoluonb + "&size=300&level=L"
                                      img.width = 300;
                                      img.height = 300;
-                                     document.querySelector(".modal-body .content").appendChild(img);
                                      document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";
                                      function openbox() {
                                          window.open(paypal, "_blank", "toolbar=no,scrollbars=no,visible=none,width=360,height=640");
