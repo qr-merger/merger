@@ -131,3 +131,13 @@ p {
   display: inline-block;
   margin: 0 auto;
 } */
+
+.wechat .alipay .tenpay {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}

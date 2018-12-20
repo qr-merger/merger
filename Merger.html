@@ -11,187 +11,177 @@ Original Version: [https://i.chainwon.com/946.html]
 Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
  -->
 
- <!DOCTYPE html>
- <html lang="zh">
- 
- <head>
-     <title>Merger Demo</title>
-     <meta charset="utf-8">
-     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-     <meta http-equiv="x-dns-prefetch-control" content="on">
-     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-     <meta name="Keywords" content="Merger,open source,hxco,hifocus,merge qrcode,qrcode" />
-     <meta name="Description" content="Merger is the most simple way to merge your qrcode together."/>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/picturepan2/spectre@0.5.3/dist/spectre.min.css" integrity="sha256-eBag0DNksOEjebVrDSBxOYWaIsRA5RBzz/PWQtkgmvM=" crossorigin="anonymous">
-     <link rel="stylesheet" href="elements/style.css">
-     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-     </head>
-     
-     <body>
- 
-         <script>
-            // Config Part - Please follow the instruction.
-            // Replace with your own qrcode (or paypal) links.
-            // If you don't have a Paypal account, or don't want to use it here, comment out (or just delete) the `var paypal = "xxx" part` ↓.
+<!DOCTYPE html>
+<html lang="zh">
 
-             var wechat = "wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN";
-             var alipay = "https://qr.alipay.com/fkx01299q4zug8xxsp2vc0a?t=1545238142543";
-             var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&u=1031092401&n=惶心";
-             var paypal = "https://paypal.me/hxco";
+<head>
+    <title>Merger Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="Keywords" content="Merger,open source,hxco,hifocus,merge qrcode,qrcode" />
+    <meta name="Description" content="Merger is the most simple way to merge your qrcode together." />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/picturepan2/spectre@0.5.3/dist/spectre.min.css" integrity="sha256-eBag0DNksOEjebVrDSBxOYWaIsRA5RBzz/PWQtkgmvM="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="elements/style.css">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+</head>
 
-             // Replace with your id and profile photo link ↓.
-             var myname = "惶心";
-             var profile = "https://ws4.sinaimg.cn/large/006bVZsBly1fycjixl366j30u00u0tg8.jpg";
+<body>
 
-             // Replace the title and subtitle if preferred (not required) ↓.
-             var title = "选择你的支付方式";
-             var subtitle = "跟随进一步的指示以向" + myname + "付款";
+    <script>
+        // Config Part - Please follow the instruction.
+        // Replace with your own qrcode (or paypal) links.
+        // If you don't have a Paypal account, or don't want to use it here, comment out (or just delete) the `var paypal = "xxx" part` ↓.
 
-             // See if you would like to enable debug mode (as console.log). If debug mode is disabled, the console will be cleared.
-             // To disable it, comment out (or just delete) the `var debugmode = "xxx" part` ↓.
-             var debugmode = "true";
+        var wechat = "wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN";
+        var alipay = "https://qr.alipay.com/fkx01299q4zug8xxsp2vc0a?t=1545238142543";
+        var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&u=1031092401&n=惶心";
+        var paypal = "https://paypal.me/hxco";
 
-         </script>
+        // Replace with your id and profile photo link ↓.
+        var myname = "惶心";
+        var profile ="https://ws4.sinaimg.cn/large/006bVZsBly1fycjixl366j30u00u0tg8.jpg";
 
-         <div class="main">
-             <i id="i"></i>
-     
-             <h2 id="name"></h2>
-             <p id="description" style="font-weight: lighter"></p>
- 
-             <!-- Button Part Start -->
-             <p id="depends" class="middlebtn">
-                 <a href="#showqrcode" class="btn btn-primary" onclick="openwechat()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixinzhifu"></use></svg></a>
-                 <a href="#showqrcode" class="btn btn-primary" onclick="openalipay()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-iconfontrectangle390"></use></svg></a>
-                 <a href="#showqrcode" class="btn btn-primary" onclick="opentenpay()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></a>
-                 <button class="btn btn-primary" id="paypalbtn" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-paypal"></use></svg></button>
-            <!-- Button Part End -->
+        // Replace the title and subtitle if preferred (not required) ↓.
+        var title = "选择你的支付方式";
+        var subtitle = "跟随进一步的指示以向" + myname + "付款";
 
-            <!-- Function Part Start -->
-                 <div class="modal" id="showqrcode">
-                     <div class="modal-container" role="document">
-                         <div class="modal-header">
-                             <a href="#" class="btn btn-clear float-right desktop" aria-label="Close"></a>
-                             <div id="titleinfo" class="modal-title h5" style="text-align: center"></div>
-                         </div>
-                        <div class="modal-body">
-                            <div class="content">
-                                <div id="currentqrcode"></div>
-                                <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.3.1,gh/lrsjng/jquery-qrcode@0.14.0/dist/jquery-qrcode.min.js"></script>
-                                <script>
-                                    var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas.
+        // See if you would like to enable debug mode (as console.log). If debug mode is disabled, the console will be cleared.
+        // To disable it, comment out (or just delete) the `var debugmode = "xxx" part` ↓.
+        var debugmode = "true";
+    </script>
 
-                                // Special settings for Wechat and QQ
-                                if (/(MicroMessenger|QQ)/i.test(navigator.userAgent)) {
-                                    document.getElementById("titleinfo").innerHTML = "长按识别二维码 向" + myname + "支付";
-                                    }
-                                else {
-                                    document.getElementById("titleinfo").innerHTML = "惶心最帅";
+        <div class="main">
+            <i id="i"></i>
+        
+            <h2 id="name"></h2>
+            <p id="description" style="font-weight: lighter"></p>
+        
+            <!-- Button Part Starts -->
+            <p id="depends" class="middlebtn">
+                    <a href="#showqrcode" class="btn btn-primary" onclick="openwechat()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixinzhifu"></use></svg></a>
+                    <a href="#showqrcode" class="btn btn-primary" onclick="openalipay()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-iconfontrectangle390"></use></svg></a>
+                    <a href="#showqrcode" class="btn btn-primary" onclick="opentenpay()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></a>
+                    <button class="btn btn-primary" id="paypalbtn" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-paypal"></use></svg></button>
+            <!-- Button Part Ends -->
+            
+            <!-- Modal Part Starts -->
+            <div class="modal" id="showqrcode">
+                <div class="modal-container" role="document">
+                    <div class="modal-header">
+                        <a href="#" class="btn btn-clear float-right desktop" aria-label="Close"></a>
+                        <div id="titleinfo" class="modal-title h5" style="text-align: center"></div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content">
+                            <div id="currentqrcode" class="img"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+            </p>
+            <!-- Modal Part Ends -->
+            
+            <script>
+                    // UserAgent Verify Part Starts
+                    var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas.
+
+                    // Special settings for Wechat and QQ
+                    if (/(MicroMessenger|QQ)/i.test(navigator.userAgent)) {
+                        document.getElementById("titleinfo").innerHTML = "长按识别二维码 向" + myname + "支付";
+                    }
+                    else {
+                        document.getElementById("titleinfo").innerHTML = "惶心最帅";
+                    }
+
+                    // General UserAgent verify rules
+                    if (navigator.userAgent.match(/Alipay/i)) {
+                        console.log("ALIPAY CLIENT");
+                        // Redirect directly
+                        window.location.href = alipay;
+                    }
+                    else if (navigator.userAgent.match(/MicroMessenger\//i)) {
+                        console.log("WECHAT CLIENT");
+                        var client = wechat;
+                    }
+                    else if (navigator.userAgent.match(/QQ\//i)) {
+                        console.log("MOBILE QQ CLIENT");
+                        var client = tenpay;
+                    }
+
+                    // Verify if mobile browser only
+                    else if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+                        console.log("MOBILE BROWSER CLIENT");
+                    }
+                    else {
+                        console.log("DESKTOP BROWSER CLIENT");
+                    }
+                    // UserAgent Verify Part Ends
+
+                    // Set profile photo
+                    document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";
+                
+                        //  Verify if `paypal` is defined
+                        if (typeof paypal !== "string") {
+                            document.getElementById("depends").removeChild(document.getElementById("paypalbtn"));
+                            console.log("PAYPAL BUTTON REMOVED");
+                        }
+                            else {
+                                function openbox() {
+                                    var selected = "yes";
+                                    window.open(paypal, "_blank", "toolbar=no,scrollbars=no,visible=none,width=360,height=640");
                                 }
+                                console.log("PAYPAL BUTTON OPERATING")
+                            }
 
-                                    // General UserAgent verify rules
-                                    if (navigator.userAgent.match(/Alipay/i)) {
-                                        console.log("ALIPAY CLIENT");
-                                        window.location.href = alipay; 
-                                    } 
-                                    else if (navigator.userAgent.match(/MicroMessenger\//i)) {
-                                        console.log("WECHAT CLIENT");
-                                        $('#currentqrcode').qrcode({
-                                            "render": "image",
-                                            size: 150 * scale,
-                                            text: wechat
-                                        });
-                                    } 
-                                    else if (navigator.userAgent.match(/QQ\//i)) {
-                                        console.log("MOBILE QQ CLIENT");
-                                        $('#currentqrcode').qrcode({
-                                            "render": "image",
-                                            size: 150 * scale,
-                                            text: tenpay
-                                        });
-                                    }
-                                    // Verify if mobile
-                                    else if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
-                                        console.log("MOBILE BROWSER CLIENT");
-                                    }                               
-                                    else {
-                                        console.log("DESKTOP BROWSER CLIENT");
-                                        $('#currentqrcode').qrcode({
-                                            "render": "image",
-                                            size: 150 * scale,
-                                            text: window.location.href
-                                        });
-                                    }
-                                </script>
-                                <script>
-                                     document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";
-                                    
-                                    //  Verify if `paypal` is defined
-                                     if (typeof paypal !== "string") {
-                                         document.getElementById("depends").removeChild(document.getElementById("paypalbtn"));
-                                         console.log("PAYPAL BUTTON REMOVED");
-                                        }
-                                     else {
-                                         function openbox() {
-                                             var selected = "yes";
-                                             window.open(paypal, "_blank", "toolbar=no,scrollbars=no,visible=none,width=360,height=640");
-                                            }
-                                         console.log("PAYPAL BUTTON OPERATING")
-                                        }                                        
-                                    
-                                     function openwechat() {
-                                        var selected = "yes";
-                                        document.getElementById("titleinfo").innerHTML = "微信扫一扫 向" + myname + "支付";
-                                        $('#currentqrcode').qrcode({
-                                            "render": "image",
-                                            size: 150 * scale,
-                                            text: wechat
-                                        });
-                                     }
-                                     function openalipay() {
-                                        var selected = "yes";
-                                        document.getElementById("titleinfo").innerHTML = "支付宝扫一扫 向" + myname + "支付";
-                                        $('#currentqrcode').qrcode({
-                                            "render": "image",
-                                            size: 150 * scale,
-                                            text: alipay
-                                        });
-                                     }
-                                     function opentenpay() {
-                                        var selected = "yes";
-                                        document.getElementById("titleinfo").innerHTML = "手机QQ扫一扫 向" + myname + "支付";
-                                        $('#currentqrcode').qrcode({
-                                            "render": "image",
-                                            size: 150 * scale,
-                                            text: tenpay
-                                                });
-                                            }
+                            // Onclick Function Part Starts         
+                            function openwechat() {
+                                var selected = "yes";
+                                document.getElementById("titleinfo").innerHTML = "微信扫一扫 向" + myname + "支付";
+                                let client = wechat;
+                            }
+                            function openalipay() {
+                                var selected = "yes";
+                                document.getElementById("titleinfo").innerHTML = "支付宝扫一扫 向" + myname + "支付";
+                                let client = alipay;
+                            }
+                            function opentenpay() {
+                                var selected = "yes";
+                                document.getElementById("titleinfo").innerHTML = "手机QQ扫一扫 向" + myname + "支付";
+                                let client = tenpay;
+                            }   
+                            // Onclick Function Part Ends
 
-                                            document.getElementById("name").innerHTML = title;
-                                                document.getElementById("description").innerHTML = subtitle;
+                            // Fill in tile and subtitle
+                            document.getElementById("name").innerHTML = title;
+                            document.getElementById("description").innerHTML = subtitle;
 
-                                            if (typeof debugmode !== "undefined" && debugmode !== null) {
-                                                console.log("DEBUG MODE ENABLED ↑");
-                                            }
-                                            else {
-                                                console.clear();
-                                                console.log("DEBUG MODE DISABLED ↑");
-                                            }
-                                                                                       
-                                 </script>
-             
-                             </div>
-                         </div>
-                         <div class="modal-footer">
-                         </div>
-                     </div>
-                 </div>
-             </p>
-             <!-- Function Part End -->
-           
-             <!-- Footer Scripts -->
-             <script src="https://at.alicdn.com/t/font_974919_xgtacm93vxp.js"></script>
+                            // See if `debugmode` is defined
+                            if (typeof debugmode !== "undefined" && debugmode !== null) {
+                                console.log("DEBUG MODE ENABLED ↑");
+                            }
+                            else {
+                                console.clear();
+                                console.log("DEBUG MODE DISABLED ↑");
+                            }                               
+            </script>
 
-             </body>
-             
-             </html>
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.3.1,gh/lrsjng/jquery-qrcode@0.14.0/dist/jquery-qrcode.min.js"></script>
+    <script>
+        $("#currentqrcode").qrcode({
+            render: "image",
+            size: 150 * scale,
+            text: client
+        });
+    </script>
+
+    <!-- Footer Scripts -->
+    <script src="https://at.alicdn.com/t/font_974919_xgtacm93vxp.js"></script>
+    
+    </body>
+    
+    </html>
