@@ -15,7 +15,7 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
 <html lang="zh">
 
 <head>
-    <title>Merger Demo</title>
+    <title>Merger Demo - merge your qrcode quicker</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -184,6 +184,7 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
 
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.3.1,gh/lrsjng/jquery-qrcode@0.14.0/dist/jquery-qrcode.min.js"></script>
     <script>
+<<<<<<< HEAD
         function showqrcode(){
             if(location.href.substr(location.href.lastIndexOf('#')+1) == "showqrcode" && selected == "yes") document.getElementById('showqrcode').style.display = "flex";
             $("#currentqrcode").qrcode({
@@ -192,6 +193,13 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                 text: client
             });
         }
+=======
+        $("#currentqrcode").qrcode({
+            render: "image",
+            size: 300 * scale,
+            text: client
+        });
+>>>>>>> e7f58ef94f0c3aaab79434e7ec132f2f43d92600
     </script>
 
     <!-- Footer Scripts -->
