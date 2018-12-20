@@ -117,6 +117,15 @@ p {
   }
 }
 
+@media all and (min-width: 800px){
+  .smaller {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* iconfont general css here */
 .icon {
   width: 1em;
@@ -137,7 +146,7 @@ p {
 }
 
 img {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
   width: auto\9; /* ie8 */
 }
