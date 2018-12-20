@@ -24,7 +24,6 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
      <meta name="Description" content="Merger is the most simple way to merge your qrcode together."/>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/picturepan2/spectre@0.5.3/dist/spectre.min.css" integrity="sha256-eBag0DNksOEjebVrDSBxOYWaIsRA5RBzz/PWQtkgmvM=" crossorigin="anonymous">
      <link rel="stylesheet" href="elements/style.css">
-     <!-- <link rel="shortcut icon" type="image/x-icon" href="https://avatar.dawnlab.me/github/hifocus?s=32"> -->
      <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
      </head>
      
@@ -81,6 +80,7 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                                 <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.3.1,gh/lrsjng/jquery-qrcode@0.14.0/dist/jquery-qrcode.min.js"></script>
                                 <script>
                                     var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas.
+
                                 // Special settings for Wechat and QQ
                                 if (/(MicroMessenger|QQ)/i.test(navigator.userAgent)) {
                                     document.getElementById("titleinfo").innerHTML = "长按识别二维码 向" + myname + "支付";
@@ -124,11 +124,6 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                                     }
                                 </script>
                                 <script>
-                                    //  var baoluonb = "https://p.qlogo.cn/gh/" + groupnumber + "/" + groupnumber + "/";
-                                    //  var img = document.createElement("img");
-                                    //  img.src = "https://api.imjad.cn/qrcode?text=" + joinlink + "&logo=" + baoluonb + "&size=300&level=L"
-                                    //  img.width = 300;
-                                    //  img.height = 300;
                                      document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";
                                     
                                     //  Verify if `paypal` is defined
