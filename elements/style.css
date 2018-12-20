@@ -126,3 +126,8 @@ p {
   overflow: hidden;
   font-size: 16;
 }
+
+/* .qrcode {
+  display: inline-block;
+  margin: 0 auto;
+} */

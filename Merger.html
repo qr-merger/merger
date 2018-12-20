@@ -1,4 +1,7 @@
 <!-- 
+Credit reservation is required.
+Please DO NOT REMOVE any of the copyright information. Thank you.
+
 This is the New Alias of Grouper: Merger - Merge your qrcode quicker.
 https://github.com/hifocus/merger
 
@@ -6,8 +9,6 @@ HTML Templete Grouper - The Best Way To Share Your Chatting Group To The Public.
 GitHub: [https:/github.com/hifocus/Grouper] , Released Under MIT Lisence 
 Original Version: [https://i.chainwon.com/946.html] 
 Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
-Please DO NOT Remove Any Of The Copyright Information
-
  -->
 
  <!DOCTYPE html>
@@ -76,21 +77,37 @@ Please DO NOT Remove Any Of The Copyright Information
                          </div>
                          <div class="modal-body">
                              <div class="content">
-                                    <div id="currentqrcode" class="qrcode"></div>
+                                    <div id="currentqrcode" class="text-center"></div>
+                                <script src="https://cdn.jsdelivr.net/combine/gh/jquery/jquery@3.3.1/dist/jquery.min.js,gh/jeromeetienne/jquery-qrcode@1.0/jquery.qrcode.min.js"></script>
                                 <script>
-                                    //  Verify if alipay, qq, wechat
                                     if (navigator.userAgent.match(/Alipay/i)) {
-                                        window.location.href = alipay;
-                                    } else if (navigator.userAgent.match(/MicroMessenger\//i)) {
-                                        // 微信
-                                        document.querySelector(".modal-body .content").appendChild(img);
-
-                                    } else if (navigator.userAgent.match(/QQ\//i)) {
-                                        // QQ
-                                        document.getElementById("qq-url").src = setting.qrcodeApi + urlEncode(setting.qqUrl);
-                                        document.getElementById("code-qq").style.display = "block";
-                                    } else 
-
+                                        console.log("ALIPAY");
+                                        jQuery('#currentqrcode').qrcode({
+                                            render: "canvas",
+                                            text: alipay
+                                        });	
+                                    } 
+                                    else if (navigator.userAgent.match(/MicroMessenger\//i)) {
+                                        console.log("WECHAT CLIENT");
+                                        jQuery('#currentqrcode').qrcode({
+                                            render: "canvas",
+                                            text: wechat
+                                        });	
+                                    } 
+                                    else if (navigator.userAgent.match(/QQ\//i)) {
+                                        console.log("MOBILE QQ CLIENT");
+                                        jQuery('#currentqrcode').qrcode({
+                                            render: "canvas",
+                                            text: tenpay
+                                        });	
+                                    }
+                                    // Verify if mobile
+                                    else if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+                                        console.log("MOBILE BROWSER CLIENT");
+                                    }
+                                    else {
+                                        console.log("DESKTOP BROWSER CLIENT");
+                                    }
                                 </script>
                                 <script>
                                     //  var baoluonb = "https://p.qlogo.cn/gh/" + groupnumber + "/" + groupnumber + "/";
@@ -104,7 +121,7 @@ Please DO NOT Remove Any Of The Copyright Information
                                      }
                                      document.getElementById("name").innerHTML = title;
                                      document.getElementById("description").innerHTML = subtitle;
-                                     document.getElementById("titleinfo").innerHTML = "扫一扫二维码 加入" + title;
+                                     document.getElementById("titleinfo").innerHTML = "长按二维码 向" + myname + "支付";
                                  </script>
              
                              </div>
@@ -118,7 +135,6 @@ Please DO NOT Remove Any Of The Copyright Information
            
              <!-- Footer Scripts -->
              <script src="https://at.alicdn.com/t/font_974919_xgtacm93vxp.js"></script>
-             <script src="https://cdn.jsdelivr.net/combine/gh/jquery/jquery@3.3.1/dist/jquery.min.js,gh/jeromeetienne/jquery-qrcode@1.0/jquery.qrcode.min.js"></script>
 
              </body>
              
