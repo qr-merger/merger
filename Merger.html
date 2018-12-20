@@ -71,7 +71,7 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
             <div class="modal" id="showqrcode">
                 <div class="modal-container" role="document">
                     <div class="modal-header">
-                        <a href="#" class="btn btn-clear float-right desktop" aria-label="Close"></a>
+                        <a href="#" class="btn btn-clear float-right desktop" id="qrcodeclose" aria-label="Close"></a>
                         <div id="titleinfo" class="modal-title h5" style="text-align: center"></div>
                     </div>
                     <div class="modal-body">
@@ -87,6 +87,10 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
             <!-- Modal Part Ends -->
             
             <script>
+
+                    var client;
+                    var selected;
+
                     // UserAgent Verify Part Starts
                     var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas.
 
@@ -106,11 +110,11 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                     }
                     else if (navigator.userAgent.match(/MicroMessenger\//i)) {
                         console.log("WECHAT CLIENT");
-                        var client = wechat;
+                        client = wechat;
                     }
                     else if (navigator.userAgent.match(/QQ\//i)) {
                         console.log("MOBILE QQ CLIENT");
-                        var client = tenpay;
+                        client = tenpay;
                     }
 
                     // Verify if mobile browser only
@@ -119,6 +123,11 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                     }
                     else {
                         console.log("DESKTOP BROWSER CLIENT");
+                        if(location.href.substr(location.href.lastIndexOf('#')+1) == "showqrcode" && !selected) document.getElementById('showqrcode').style.display = "none";
+                        document.getElementById('qrcodeclose').onclick = function (){ 
+                            document.getElementById('currentqrcode').innerHTML = "";  
+                            if(document.getElementById('showqrcode').style.display == "flex") document.getElementById('showqrcode').style.display = "";
+                        }
                     }
                     // UserAgent Verify Part Ends
 
@@ -132,7 +141,7 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                         }
                             else {
                                 function openbox() {
-                                    var selected = "yes";
+                                    selected = "yes";
                                     window.open(paypal, "_blank", "toolbar=no,scrollbars=no,visible=none,width=360,height=640");
                                 }
                                 console.log("PAYPAL BUTTON OPERATING")
@@ -140,19 +149,22 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
 
                             // Onclick Function Part Starts         
                             function openwechat() {
-                                var selected = "yes";
+                                selected = "yes";
                                 document.getElementById("titleinfo").innerHTML = "微信扫一扫 向" + myname + "支付";
-                                let client = wechat;
+                                client = wechat;
+                                showqrcode();
                             }
                             function openalipay() {
-                                var selected = "yes";
+                                selected = "yes";
                                 document.getElementById("titleinfo").innerHTML = "支付宝扫一扫 向" + myname + "支付";
-                                let client = alipay;
+                                client = alipay;
+                                showqrcode();
                             }
                             function opentenpay() {
-                                var selected = "yes";
+                                selected = "yes";
                                 document.getElementById("titleinfo").innerHTML = "手机QQ扫一扫 向" + myname + "支付";
-                                let client = tenpay;
+                                client = tenpay;
+                                showqrcode();
                             }   
                             // Onclick Function Part Ends
 
@@ -167,16 +179,19 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                             else {
                                 console.clear();
                                 console.log("DEBUG MODE DISABLED ↑");
-                            }                               
+                            }       
             </script>
 
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.3.1,gh/lrsjng/jquery-qrcode@0.14.0/dist/jquery-qrcode.min.js"></script>
     <script>
-        $("#currentqrcode").qrcode({
-            render: "image",
-            size: 150 * scale,
-            text: client
-        });
+        function showqrcode(){
+            if(location.href.substr(location.href.lastIndexOf('#')+1) == "showqrcode" && selected == "yes") document.getElementById('showqrcode').style.display = "flex";
+            $("#currentqrcode").qrcode({
+                render: "image",
+                size: 150 * scale,
+                text: client
+            });
+        }
     </script>
 
     <!-- Footer Scripts -->
