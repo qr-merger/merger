@@ -51,7 +51,7 @@ Please DO NOT Remove Any Of The Copyright Information
              var title = "选择你的支付方式";
              var subtitle = "然后跟随进一步的指示";
          </script>
-     
+
          <div class="main">
              <i id="i"></i>
      
@@ -73,6 +73,14 @@ Please DO NOT Remove Any Of The Copyright Information
                          <div class="modal-body">
                              <div class="content">
                                  <script>
+                                    //  Verify if mobile
+                                        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                                        if (isMobile) { 
+                                        }
+                                        else {
+                                            // return false;
+                                        }
+
                                     //  var baoluonb = "https://p.qlogo.cn/gh/" + groupnumber + "/" + groupnumber + "/";
                                      var img = document.createElement("img");
                                     //  img.src = "https://api.imjad.cn/qrcode?text=" + joinlink + "&logo=" + baoluonb + "&size=300&level=L"
@@ -81,7 +89,7 @@ Please DO NOT Remove Any Of The Copyright Information
                                      document.querySelector(".modal-body .content").appendChild(img);
                                      document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";
                                      function openbox() {
-                                         window.open(paypal, "_blank", "toolbar=no,scrollbars=no,visible=none,width=480,height=960");
+                                         window.open(paypal, "_blank", "toolbar=no,scrollbars=no,visible=none,width=360,height=640");
                                      }
                                      document.getElementById("name").innerHTML = title;
                                      document.getElementById("description").innerHTML = subtitle;
