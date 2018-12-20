@@ -118,16 +118,18 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                      }
  
                      // Verify if mobile browser only
-                     else if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
-                         console.log("MOBILE BROWSER CLIENT");
-                     }
                      else {
-                         console.log("DESKTOP BROWSER CLIENT");
-                         if(location.href.substr(location.href.lastIndexOf('#')+1) == "showqrcode" && !selected) document.getElementById('showqrcode').style.display = "none";
+                        if(location.href.substr(location.href.lastIndexOf('#')+1) == "showqrcode" && !selected) document.getElementById('showqrcode').style.display = "none";
                          document.getElementById('qrcodeclose').onclick = function (){ 
                              document.getElementById('currentqrcode').innerHTML = "";  
                              if(document.getElementById('showqrcode').style.display == "flex") document.getElementById('showqrcode').style.display = "";
                          }
+                     }
+                     if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+                         console.log("MOBILE BROWSER CLIENT");
+                     }
+                     else {
+                         console.log("DESKTOP BROWSER CLIENT");
                      }
                      // UserAgent Verify Part Ends
  
