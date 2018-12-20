@@ -26,6 +26,13 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
      <link rel="stylesheet" href="elements/style.css">
      <!-- <link rel="shortcut icon" type="image/x-icon" href="https://avatar.dawnlab.me/github/hifocus?s=32"> -->
      <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+     <link rel="dns-prefetch" href="https://avatar.dawnlab.me">
+     <link rel="dns-prefetch" href="https://api.imjad.cn">
+     <link rel="dns-prefetch" href="https://p.qlogo.cn">
+     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+     <link rel="dns-prefetch" href="https://www.google-analytics.com">
+     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
      </head>
      
      <body>
@@ -33,25 +40,24 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
          <script>
             // Config Part - Please follow the instruction.
             // Replace with your own qrcode (or paypal) links.
-            // If you don't have a Paypal account, or don't want to use it here, comment out (or just delete) the `var paypal = "xxx" part` ↓.
+            // If you don't have a Paypal account, or don't want to use it here, comment out (or just delete) the `var paypal = "xxx" part`.
 
              var wechat = "wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN";
              var alipay = "https://qr.alipay.com/fkx01299q4zug8xxsp2vc0a?t=1545238142543";
              var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&u=1031092401&n=惶心";
-             var paypal = "https://paypal.me/hxco";
+            //  var paypal = "https://paypal.me/hxco";
 
-             // Replace with your id and profile photo link ↓.
+             // Replace with your id and profile photo link.
              var myname = "惶心";
              var profile = "https://ws4.sinaimg.cn/large/006bVZsBly1fycjixl366j30u00u0tg8.jpg";
 
-             // Replace the title and subtitle if preferred (not required) ↓.
+             // Replace the title and subtitle if preferred (not required).
              var title = "选择你的支付方式";
              var subtitle = "跟随进一步的指示以向" + myname + "付款";
 
              // See if you would like to enable debug mode (as console.log). If debug mode is disabled, the console will be cleared.
-             // To disable it, comment out (or just delete) the `var debugmode = "xxx" part` ↓.
-             var debugmode = "true";
-
+             // To disable it, comment out (or just delete) the `var debugmode = "xxx" part`.
+            //  var debugmode = true;
          </script>
 
          <div class="main">
@@ -65,7 +71,7 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                  <a href="#showqrcode" class="btn btn-primary" onclick="openwechat()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixinzhifu"></use></svg></a>
                  <a href="#showqrcode" class="btn btn-primary" onclick="openalipay()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-iconfontrectangle390"></use></svg></a>
                  <a href="#showqrcode" class="btn btn-primary" onclick="opentenpay()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></a>
-                 <button class="btn btn-primary" id="paypalbtn" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-paypal"></use></svg></button>
+                 <button class="btn btn-primary" id="paypal" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-paypal"></use></svg></button>
             <!-- Button Part End -->
 
             <!-- Function Part Start -->
@@ -125,24 +131,21 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                                 </script>
                                 <script>
                                     //  var baoluonb = "https://p.qlogo.cn/gh/" + groupnumber + "/" + groupnumber + "/";
-                                    //  var img = document.createElement("img");
+                                     var img = document.createElement("img");
                                     //  img.src = "https://api.imjad.cn/qrcode?text=" + joinlink + "&logo=" + baoluonb + "&size=300&level=L"
-                                    //  img.width = 300;
-                                    //  img.height = 300;
+                                     img.width = 300;
+                                     img.height = 300;
                                      document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";
-                                    
-                                    //  Verify if `paypal` is defined
-                                     if (typeof paypal !== "string") {
-                                         document.getElementById("depends").removeChild(document.getElementById("paypalbtn"));
-                                         console.log("PAYPAL BUTTON REMOVED");
-                                        }
-                                     else {
-                                         function openbox() {
-                                             var selected = "yes";
-                                             window.open(paypal, "_blank", "toolbar=no,scrollbars=no,visible=none,width=360,height=640");
-                                            }
-                                         console.log("PAYPAL BUTTON OPERATING")
-                                        }                                        
+                                        if (paypal) {
+                                            function openbox() {
+                                         var selected = "yes";
+                                         window.open(paypal, "_blank", "toolbar=no,scrollbars=no,visible=none,width=360,height=640");
+                                     }
+                                    }
+                                    else {
+                                     document.getElementById("depends").removeChild(document.getElementById("paypal"));
+                                        console.log("PAYPAL BUTTON REMOVED");
+                                    }
                                     
                                      function openwechat() {
                                         var selected = "yes";
@@ -169,20 +172,18 @@ Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dr
                                             "render": "image",
                                             size: 150 * scale,
                                             text: tenpay
-                                                });
-                                            }
+                                        });
+                                     }
+                                     document.getElementById("name").innerHTML = title;
+                                     document.getElementById("description").innerHTML = subtitle;
 
-                                            document.getElementById("name").innerHTML = title;
-                                                document.getElementById("description").innerHTML = subtitle;
-
-                                            if (typeof debugmode !== "undefined" && debugmode !== null) {
-                                                console.log("DEBUG MODE ENABLED ↑");
-                                            }
-                                            else {
-                                                console.clear();
-                                                console.log("DEBUG MODE DISABLED ↑");
-                                            }
-                                                                                       
+if (debugMode) {
+    if (debugMode == true) {
+        console.clear()
+    } else {
+        console.log("debugmode enabled");
+    }
+}
                                  </script>
              
                              </div>
