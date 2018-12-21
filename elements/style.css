@@ -120,6 +120,9 @@ p {
   .desktop {
     display: none;
   }
+  .h5 {
+    font-size: 18px;
+      }
 }
 
 @media all and (min-width: 800px){

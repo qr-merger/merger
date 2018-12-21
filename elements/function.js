@@ -32,14 +32,6 @@ if (navigator.userAgent.match(/Alipay/i)) {
   document.getElementById("toclick").click();
   document.getElementById("titleinfo").innerHTML =
     "长按识别二维码 向" + myname + "支付";
-  //  Melt the car door (((
-  document.getElementById("h").removeChild(document.getElementById("i")); // remove profile photo
-  document
-    .getElementById("pending")
-    .removeChild(document.getElementById("depends")); // remove buttons
-  document
-    .getElementById("btncontainer")
-    .removeChild(document.getElementById("qrcodeclose")); //remove exit buttons
 } else if (navigator.userAgent.match(/QQ\//i)) {
   console.log("MOBILE QQ CLIENT");
   window.location.href =
@@ -47,13 +39,6 @@ if (navigator.userAgent.match(/Alipay/i)) {
   document.getElementById("titleinfo").innerHTML =
     "长按识别二维码 向" + myname + "支付";
   //  Melt the car door (((
-  document.getElementById("h").removeChild(document.getElementById("i")); // remove profile photo
-  document
-    .getElementById("pending")
-    .removeChild(document.getElementById("depends")); // remove buttons
-  document
-    .getElementById("btncontainer")
-    .removeChild(document.getElementById("qrcodeclose")); // remove exit buttons
   document
     .getElementById("qrcontainer")
     .removeChild(document.getElementById("currentqrcode")); // remove default qrcode (mobile qq only)
@@ -80,6 +65,20 @@ if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
   console.log("DESKTOP BROWSER CLIENT");
 }
 // UserAgent Verify Part Ends
+
+// Removal of useless elements when in wechat and mobile qq
+if (/(MicroMessenger|QQ|Alipay)/i.test(navigator.userAgent)) {
+  var title = "";
+  var subtitle = "";
+  document.getElementById("h").removeChild(document.getElementById("i")); // remove profile photo
+  document
+    .getElementById("pending")
+    .removeChild(document.getElementById("depends")); // remove buttons
+  document
+    .getElementById("btncontainer")
+    .removeChild(document.getElementById("qrcodeclose")); //remove exit buttons
+  console.log("REMOVAL DONE");
+}
 
 //  Verify if `paypal` is defined
 if (typeof paypal !== "string") {
