@@ -4,6 +4,7 @@
 <a href="https://github.com/hifocus/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/stargazers"><img alt="Contributors" src="https://img.shields.io/github/stars/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/hifocus/merger.svg?style=flat-square"/></a>
+[![](https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge)](https://www.jsdelivr.com/package/gh/hifocus/merger)
 
 <a href="https://demo.qrcdn.com/"><img width="720" src="https://i.imgur.com/r0dUr2u.png" alt="Demo"></a>
 
