@@ -46,7 +46,7 @@
 ## 如何配置
 配置工作十分简单。我们做到了！
 
-###  <head> 部分
+### <head> 部分
 你首先需要配置 `merger.html` 的 `head` 标签。
 
 ```
@@ -108,7 +108,7 @@ For Alipay only, user will be redirect to the payment link directly. No need for
 
 请 `star` 这个项目，如果你喜欢它，或者使用它，再或者觉得它对你有任何形式的帮助。
 
-请考虑捐赠我，通过 https://demo.qrcdn.com。我确实需要很长时间来开发这个项目。
+请考虑捐赠我，通过 https://demo.qrcdn.com；我确实需要很长时间来开发这个项目。
 
 ## 感谢
 
