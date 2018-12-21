@@ -44,7 +44,7 @@ Download it directly from HXCO Get: [https://get.soft.org/vscode](https://get.so
 ## How to configure
 The configuration is easy. We made it!
 
-### Head Section
+### <head> Section
 You will need to configure the `head` tag of the `merger.html` first.
 
 ```
@@ -76,7 +76,7 @@ var something = "something actual";
 
 Please be careful about the part after the `=`. Don't forget to quote your own information (like your wechat pay link) with the double quotes `""` and add a semicolon `;` at the end.
 
-You will have to fill in your payment links, from WeChat Pay, Alipay, Tenpay(from Mobile QQ) and Paypal. Fpr Wechat Pay, Alipay and Tenpay, you can get your actual link by decoding your payment qrcode. For Paypal, simply create your own [paypal.me](https://paypal.me) link and put it in.
+You will have to fill in your payment links, from WeChat Pay, Alipay, Tenpay(from Mobile QQ) and Paypal. For Wechat Pay, Alipay and Tenpay, you can get your actual link by decoding your payment qrcode. For Paypal, simply create your own [paypal.me](https://paypal.me) link and put it in.
 
 Then you fill in your preferred name and profile photo link (at least 200x200 px). Other variable guide please follow the code comment.
 
@@ -131,6 +131,6 @@ If you decide to use `Merger` in any way,
 
 If you agains our copyright reservation requirements, your name might appears in our shame wall. Which is currently blank.
 
-Please be aware that `Merger` is opensourced and released under the **GNU General Public License v3.0**, you are **not allowed** to disclose source and you are restricted to use the same license when doing modifications. More about premissions, limitation and conditions about our license, please see [https://github.com/hifocus/merger/blob/master/LICENSE](https://github.com/hifocus/merger/blob/master/LICENSE) to learn more in detail.
+Please be aware that `Merger` is opensourced and released under the **GNU General Public License v3.0**, you are **not allowed** to disclose source and you are restricted to use the same license when doing modifications. More about permissions, limitation and conditions about our license, please see [https://github.com/hifocus/merger/blob/master/LICENSE](https://github.com/hifocus/merger/blob/master/LICENSE) to learn more in detail.
 
 Author: [@hifocus](https://github.com/hifocus)
