@@ -1,10 +1,10 @@
-<p style="text-align:center">
+<p>
 <img src="https://i.imgur.com/J8Njimw.jpg" alt="Merger Render Poster">
 </p>
 
 <a href="https://demo.qrcdn.com/merger.html"><h1 style="text-align:center">Merger.html</h1></a>
 
-<p style="text-align:center">
+<p>
 <a href="https://github.com/hifocus/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/hifocus/merger.svg?style=flat-square"/></a>
