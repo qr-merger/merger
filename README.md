@@ -44,7 +44,7 @@ Download it directly from HXCO Get: [https://get.soft.org/vscode](https://get.so
 ## How to configure
 The configuration is easy. We made it!
 
-### <head> Section
+### Head Section
 You will need to configure the `head` tag of the `merger.html` first.
 
 ```
