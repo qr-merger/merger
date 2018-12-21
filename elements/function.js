@@ -67,7 +67,10 @@ if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
 // UserAgent Verify Part Ends
 
 // Removal of useless elements when in wechat and mobile qq
-if (/(MicroMessenger|QQ|Alipay)/i.test(navigator.userAgent)) {
+if (
+  /(MicroMessenger|QQ|Alipay)/i.test(navigator.userAgent) &&
+  !/(QQBrowser)/i.test(navigator.userAgent)
+) {
   var title = "";
   var subtitle = "";
   document.getElementById("h").removeChild(document.getElementById("i")); // remove profile photo
