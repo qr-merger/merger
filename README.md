@@ -112,8 +112,9 @@ This project uses several open source projects. Thanks to them.
 - [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode). Generate qrcode for `Merger`.
 - [jsDelivr](https://jsdelivr.com). Merge `Merger`'s static files to reduce the request amount and its CDN service `cdn.jsdelivr.net` to accerlate the loading speed.
 - [hifocus/Grouper](https://jsdelivr.com). Provide with good html framework to draw with.
+- [Pure CSS3 Gradient Background Animation](https://codepen.io/P1N2O/pen/pyBNzX) A nice little background animation on [codepen.io](https://codepen.io). Code by [Manuel Pinto](https://codepen.io/P1N2O/).
 
-This project also uses [iconfont](http://iconfont.cn)'s service to display different icons in buttons, its CDN service `at.alicdn.com` to accerlate the loading speed.
+This project also uses [iconfont](http://iconfont.cn)'s service to display different icons in buttons, and its CDN service `at.alicdn.com` to accerlate the loading speed.
 
 And thanks to [@Lf112](https://github.com/lf112). He wrote the `JavaScript` code for several major features. Browse his blog: [https://blog.lf112.net](https://blog.lf112.net) to support him!
 
