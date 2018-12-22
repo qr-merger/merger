@@ -87,7 +87,7 @@ You will have to fill in your payment links, from WeChat Pay, Alipay, Tenpay(fro
 Then you fill in your preferred name and profile photo link (at least 200x200 px). Other variable guide please follow the code comment.
 
 ## How to Deploy
-`Merger` is a html template so anywhere can run static website would be fine. If you don't have your own `Shared Hosting Service` or `Virtual Private Server`, use service like [GitHub Pages](https://pages.github.com). Simply upload everything involved to your service and serve it from your domain. If you don't have a domain, get one for free from (Freenom)[https://freenom.com] or buy one.
+`Merger` is a html template so anywhere can run static website would be fine. If you don't have your own `Shared Hosting Service` or `Virtual Private Server`, use service like [GitHub Pages](https://pages.github.com). Simply upload everything involved to your service and serve it from your domain. If you don't have a domain, get one for free from [Freenom](https://freenom.com) or buy one.
 
 ## Principle
 
