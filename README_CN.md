@@ -22,7 +22,7 @@
  在中国，我们使用最少三个不同的应用去支付，他们都使用不同的二维码。这是一个问题，因为当你很忙的时候你可能把事情搞砸。为什么不把他们合并成一个呢？加上奇妙的样式以后，所有人都会喜欢它的！还有...变得更加国际化一点？
 
  ## 屏幕截图
-<a href="https://demo.qrcdn.com/"><img src="https://i.imgur.com/ZeyzrtC.jpg" alt="Merger Style"></a>
+<img src="https://i.imgur.com/cpJFFG6.jpg" alt="Merger Style">
 
  ## 定义.
  `Merger` 是一个允许你合并多个支付二维码的 HTML 模板。

@@ -20,7 +20,7 @@
  In China, we use at least three different apps to pay, with all different qrcodes. It's a problem that you might get it wrong while you are super busy. Why don't we merge them into one with fantastic styles that everyone would love'in it. And...additionally, being a bit more international? 
 
  ## Screenshot
-<a href="https://demo.qrcdn.com/"><img src="https://i.imgur.com/ZeyzrtC.jpg" alt="Merger Style"></a>
+<img src="https://i.imgur.com/cpJFFG6.jpg" alt="Merger Style">
  
  ## Definition
  `Merger` is a HTML template that allows you to merge muiltple payment qrcode together.
