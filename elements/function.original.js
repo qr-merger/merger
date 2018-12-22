@@ -37,7 +37,7 @@
                         //  Melt the car door (((
                          document.getElementById("qrcontainer").removeChild(document.getElementById("currentqrcode")); // remove default qrcode (mobile qq only)
                          // Import from api
-                         document.getElementById("tenpayonly").src = qrcodeapi + tenpay;
+                         document.getElementById("tenpayonly").src = qrcodeapi + urlencode(tenpay);
                      }
  
                      // Verify if mobile browser only
@@ -98,7 +98,10 @@
                                  document.getElementById("titleinfo").innerHTML = "手机QQ扫一扫 向" + myname + "支付";
                                  client = tenpay;
                                  showqrcode();
-                             }   
+                             }
+                             function urlencode(String) { // Code from MKBlog - http://lab.mkblog.cn/oneqrcode/
+                                return encodeURIComponent(String).replace(/'/g,"%27").replace(/"/g,"%22");	
+                            }
                              // Onclick Function Part Ends
  
                              // Fill in tile and subtitle
