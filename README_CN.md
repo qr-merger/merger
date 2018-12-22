@@ -38,10 +38,17 @@
 
 ## 下载
 
-- 请用这条链接： [https://github.com/hifocus/merger/archive/master.zip](https://github.com/hifocus/merger/archive/master.zip) 以下载这个代码仓库。 [Release](https://github.com/hifocus/merger/releases) 也能用但是不被建议。
+- Please use the `release` function of this project at: [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases). Please only use the latest, non pre-release version of `Merger` in production environment.
+
+- 请使用这个项目的 `release` 功能，它位于 [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases)。在开发环境中，请仅仅使用 `Merger` 的最新、非预先发布（pre-release）版本。
 
 - 如果你不知道怎么去编辑 `.html` 文件以得到你自己的合并二维码，我们建议你去使用 [Visual Studio Code](https://code.visualstudio.com/)，一个开源的代码编辑器。
 从 HXCO Get: [https://get.soft.org/vscode](https://get.soft.org) 直接下载它。
+
+## Bug Notice
+在这个项目的开发过程中，错误可能会出现并且影响你的站点。这里有两条建议：
+1. 确保你的 `Merger` 版本为稳定。要做到这点，下载最新的更新（非预先更新 pre-release）。`Merger` 的稳定版本通常包含最新的安全更新和错误修复。一直使用它们以确保没有任何问题。
+2. 经常地查看，或者订阅我们的 [Bugs Notice Board](https://github.com/hifocus/merger/issues/2) （错误通知栏）。所有的已知错误会出现在哪里以及他们的状态也会被更新。
 
 ## 如何配置
 配置工作十分简单。我们做到了！

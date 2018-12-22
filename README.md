@@ -21,8 +21,8 @@
 
  ## Screenshot
 <a href="https://demo.qrcdn.com/"><img width="720" src="https://i.imgur.com/r0dUr2u.png" alt="Demo"></a>
-
- ## Definition.
+ 
+ ## Definition
  `Merger` is a HTML template that allows you to merge muiltple payment qrcode together.
 
  [hifocus/merger](https://github.com/hifocus/merger) is an open source project that was released in [GNU General Public License v3.0
@@ -36,10 +36,15 @@
 
 ## Downloads
 
-- Please use this link: [https://github.com/hifocus/merger/archive/master.zip](https://github.com/hifocus/merger/archive/master.zip) to download the whole repo. [Release](https://github.com/hifocus/merger/releases) could also be used but it wasn't suggested.
+- Please use the `release` function of this project at: [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases). Please only use the latest, non pre-release version of `Merger` in production environment.
 
 - If you have no idea about how to edit the `.html` file to get your own merged qrcode, we suggest you to use [Visual Studio Code](https://code.visualstudio.com/), an open source code editor.
 Download it directly from HXCO Get: [https://get.soft.org/vscode](https://get.soft.org).
+
+## Bug Notice
+During the development of this project, bugs might appear and affect your site. Here are two suggestions:
+1. Make sure your `Merger` version is at stable. To do this, download the latest release which is not `pre-release`. Stable version of `Merger` often contains latest security update and bug fixes. Stick with them to make sure nothing goes wrong.
+2. Check out frequently, or subscribe to our [Bugs Notice Board](https://github.com/hifocus/merger/issues/2). All knwon bugs will appear over there and their status will also be updated.
 
 ## How to configure
 The configuration is easy. We made it!
@@ -100,7 +105,7 @@ For Alipay only, user will be redirect to the payment link directly. No need for
 ## Contribute
 Any kind of contribute will be more than welcome.
 
-Please `star` this project if you like it, or using it, or find it helpful to you in any way.
+Please `star` this project if you like it, or using it, or find it helpful to you in any form.
 
 Please consider to donate to me by https://demo.qrcdn.com. It really does take me a long time to develop this project.
 
@@ -121,7 +126,7 @@ And thanks to [@Lf112](https://github.com/lf112). He wrote the `JavaScript` code
 ## Requirements
 Please do keep our copyright information.
 
-If you decide to use `Merger` in any way,
+If you decide to use `Merger` in any form,
 **You may remove:**
 - The author meta tag
 - The console copyright information (by disabling the `debugmode`)
