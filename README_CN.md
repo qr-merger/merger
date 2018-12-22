@@ -32,21 +32,19 @@
 ](https://www.gnu.org/licenses/gpl-3.0.en.html) 发布的开源项目。
 
  ## 特性
-- 速度快。所有静态文件都被使用 jsDelivr，一个全球加速的内容分发网络，分发。
+- 速度快。所有静态文件都被使用 jsDelivr，一个全球加速的内容分发网络。
 - 高度可自定义化。你可以修改在页面上显示的一切，不需要特别的编程技巧。
 - 直观的配置。你可能想要创造你自己的版本，而我们为你提供了便利。你所需要做的只是填入你所想要的内容，然后我们的代码会支持你和做完剩下的工作。
 - “变形” 样式。你的用户可能用几种不同的方式打开你的网站。`Merger` 为你考虑了一切，它会用不同的方式展现自己以确保达到用户的需要。
 
 ## 下载
 
-- Please use the `release` function of this project at: [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases). Please only use the latest, non pre-release version of `Merger` in production environment.
-
 - 请使用这个项目的 `release` 功能，它位于 [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases)。在开发环境中，请仅仅使用 `Merger` 的最新、非预先发布（pre-release）版本。
 
 - 如果你不知道怎么去编辑 `.html` 文件以得到你自己的合并二维码，我们建议你去使用 [Visual Studio Code](https://code.visualstudio.com/)，一个开源的代码编辑器。
 从 HXCO Get: [https://get.soft.org/vscode](https://get.soft.org) 直接下载它。
 
-## Bug Notice
+## 错误提醒
 在这个项目的开发过程中，错误可能会出现并且影响你的站点。这里有两条建议：
 1. 确保你的 `Merger` 版本为稳定。要做到这点，下载最新的更新（非预先更新 pre-release）。`Merger` 的稳定版本通常包含最新的安全更新和错误修复。一直使用它们以确保没有任何问题。
 2. 经常地查看，或者订阅我们的 [Bugs Notice Board](https://github.com/hifocus/merger/issues/2) （错误通知栏）。所有的已知错误会出现在哪里以及他们的状态也会被更新。
@@ -60,7 +58,6 @@
 ```
      <title>Merger Demo - merge your qrcode quicker</title>
 ```
-The `title` tag will decide what to display in browser's tab. Edit it to something like "Pay to David" to make more sense to users.
 `title` 标签会决定在浏览器的标签页上显示什么，编辑它，像什么 <del>“给惶心打钱”</del> “向惶心支付” 可以让用户更明白。
 
 ```
@@ -89,8 +86,7 @@ var 一个东西 = "实际的东西";
 
 你会需要填入你的支付链接，从微信支付，支付宝，QQ钱包（在 QQ 手机版里面）和贝宝（Paypal）。对于微信支付，支付宝和QQ钱包，你可以解码你的支付二维码以得到真实链接。对于 Paypal，简单地创建你自己的 [paypal.me](https://paypal.me) 链接即可。
 
-Then you fill in your preferred name and profile photo link (at least 200x200 px). Other variable guide please follow the code comment.
-然后你填入你的首选名字和一条头像链接（最少 200x200 限速）。其他变量的指南请你按照代码注释去编辑。
+然后你填入你的首选名字和一条头像链接（最少 200x200 像素）。其他变量的指南请你按照代码注释去编辑。
 
 ## 如何部署
 `Merger` 是一个 HTML 模板所以任何可以跑静态网站的地方就行。如果你没有自己的 `虚拟主机` 或者 `虚拟服务器`，用 [GitHub Pages](https://pages.github.com) 这样的服务。简单地上传相关的一切到你的服务然后通过你的域名提供服务即可。如果你没有域名，从 (Freenom)[https://freenom.com] 获取一个免费的，或者买一个。 
@@ -120,7 +116,7 @@ For Alipay only, user will be redirect to the payment link directly. No need for
 
 ## 感谢
 
-This project uses several open source projects. Thanks to them. 这个项目用了几个开源项目。谢谢他们。
+这个项目用了几个开源项目。谢谢他们。
 - [Spectre.css](https://picturepan2.github.io/spectre/). 强力驱动 `Merger` 的样式。
 - [JQuery](https://jquery.com). 强力驱动 `Merger`的 `js` 代码以及二维码的生成。
 - [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode). 为 `Merger` 生成二维码。
