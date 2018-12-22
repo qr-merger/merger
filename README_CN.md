@@ -141,8 +141,6 @@ For Alipay only, user will be redirect to the payment link directly. No need for
 
 如果你违反我们的版权保留要求，你的名字可能会出现在我们当前为空白的 耻辱墙 上。
 
-Please be aware that `Merger` is opensourced and released under the **GNU General Public License v3.0**, you are **not allowed** to disclose source and you are restricted to use the same license when doing modifications. More about premissions, limitation and conditions about our license, please see [https://github.com/hifocus/merger/blob/master/LICENSE](https://github.com/hifocus/merger/blob/master/LICENSE) to learn more in detail.
-
-请留意，`Merger` 是通过 **GNU General Public License v3.0** 开源并且发布的，你**不被允许**闭源，你在做更改的时候也被限制只能使用同样的许可证。有关我们的许可证的权限，限制和条件的更多信息，请参阅[https://github.com/hifocus/merger/blob/master/LICENSE](https://github.com/hifocus/merger/blob/master/LICENSE ）更详细地了解。
+请留意，`Merger` 是通过 **GNU General Public License v3.0** 开源并且发布的，你**不被允许**闭源，你在做更改的时候也被限制只能使用同样的许可证。有关我们的许可证的权限，限制和条件的更多信息，请参阅 [https://github.com/hifocus/merger/blob/master/LICENSE](https://github.com/hifocus/merger/blob/master/LICENSE ）更详细地了解。
 
 作者: [@hifocus](https://github.com/hifocus)
