@@ -20,6 +20,9 @@ if (navigator.userAgent.match(/Alipay/i)) {
   console.log("ALIPAY CLIENT");
   // Redirect directly
   window.location.href = alipay;
+  var title = "";
+  var subtitle = "";
+  removal();
 } else if (navigator.userAgent.match(/MicroMessenger\//i)) {
   if (
     location.href.substr(location.href.lastIndexOf("#") + 1) == "showqrcode" &&
@@ -32,8 +35,14 @@ if (navigator.userAgent.match(/Alipay/i)) {
   document.getElementById("toclick").click();
   document.getElementById("titleinfo").innerHTML =
     "长按识别二维码 向" + myname + "支付";
+  var title = "";
+  var subtitle = "";
+  removal();
 } else if (navigator.userAgent.match(/QQ\//i)) {
   console.log("MOBILE QQ CLIENT");
+  var title = "";
+  var subtitle = "";
+  removal();
   window.location.href =
     window.location.href.match(/^[^\#\?]+/)[0] + "#showqrcode";
   document.getElementById("titleinfo").innerHTML =
@@ -43,7 +52,7 @@ if (navigator.userAgent.match(/Alipay/i)) {
     .getElementById("qrcontainer")
     .removeChild(document.getElementById("currentqrcode")); // remove default qrcode (mobile qq only)
   // Import from api
-  document.getElementById("tenpayonly").src = qrcodeapi + tenpay;
+  document.getElementById("tenpayonly").src = qrcodeapi + urlencode(tenpay);
 }
 
 // Verify if mobile browser only
@@ -65,23 +74,6 @@ if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
   console.log("DESKTOP BROWSER CLIENT");
 }
 // UserAgent Verify Part Ends
-
-// Removal of useless elements when in wechat and mobile qq
-if (
-  /(MicroMessenger|QQ|Alipay)/i.test(navigator.userAgent) &&
-  !/(QQBrowser)/i.test(navigator.userAgent)
-) {
-  var title = "";
-  var subtitle = "";
-  document.getElementById("h").removeChild(document.getElementById("i")); // remove profile photo
-  document
-    .getElementById("pending")
-    .removeChild(document.getElementById("depends")); // remove buttons
-  document
-    .getElementById("btncontainer")
-    .removeChild(document.getElementById("qrcodeclose")); //remove exit buttons
-  console.log("REMOVAL DONE");
-}
 
 //  Verify if `paypal` is defined
 if (typeof paypal !== "string") {
@@ -122,6 +114,22 @@ function opentenpay() {
     "手机QQ扫一扫 向" + myname + "支付";
   client = tenpay;
   showqrcode();
+}
+function removal() {
+  document.getElementById("h").removeChild(document.getElementById("i")); // remove profile photo
+  document
+    .getElementById("pending")
+    .removeChild(document.getElementById("depends")); // remove buttons
+  document
+    .getElementById("btncontainer")
+    .removeChild(document.getElementById("qrcodeclose")); //remove exit buttons
+  console.log("REMOVAL DONE");
+}
+function urlencode(String) {
+  // Code from MKBlog - http://lab.mkblog.cn/oneqrcode/
+  return encodeURIComponent(String)
+    .replace(/'/g, "%27")
+    .replace(/"/g, "%22");
 }
 // Onclick Function Part Ends
 
