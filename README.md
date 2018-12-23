@@ -9,7 +9,7 @@
 <a href="https://github.com/hifocus/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/hifocus/merger.svg?style=flat-square"/></a>
-<a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://img.shields.io/github/downloads/hifocus/merger/total.svg?style=flat-square"/></a>
+<a href="https://github.com/hifocus/merger/releases"><img alt="jsDelivr" src="https://img.shields.io/github/downloads/hifocus/merger/total.svg?style=flat-square"/></a>
 <a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
 </p>
 
