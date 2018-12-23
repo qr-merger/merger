@@ -25,9 +25,10 @@ There are more than three different mobile payment methods with all different re
 <img src="https://i.imgur.com/cpJFFG6.jpg" alt="Merger Style">
  
  ## Definitions
+ 
  `Merger` is a HTML template that allows you to merge muiltple payment qrcode together.
 
- [hifocus/merger](https://github.com/hifocus/merger) is an open source project that was released in [GNU General Public License v3.0
+ [hifocus/merger](https://github.com/hifocus/merger) is an open source project, released under [GNU General Public License v3.0
 ](https://www.gnu.org/licenses/gpl-3.0.en.html) as a part of [HXCO](https://hxco.org)'s cooperate project.
 
  ## Features
@@ -41,7 +42,7 @@ There are more than three different mobile payment methods with all different re
 
 - Please use the `release` function of this project at: [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases). Please only use the `latest` non `pre-release version` of `Merger` in production environment.
 
-- If you have diffculties modifing the `.html` file to get your own merged qrcode, we suggest you to use [Visual Studio Code](https://code.visualstudio.com/), an open source code editor.
+- If you have diffculties modifying the `.html` file to get your own merged qrcode, we suggest you to use [Visual Studio Code](https://code.visualstudio.com/), an open source code editor.
 Download it directly from HXCO Get: [https://get.soft.org/vscode](https://get.soft.org).
 
 ## Notices
@@ -86,6 +87,7 @@ Here comes with the icon part. Replace the image link with yours to get your own
 You are more then welcome to edit other parts of the `head` tag if you know what to do, expect the `<meta name="author" content="Huangxin, LF112" />` bit. You can only remove them if you really don't want them to appear while copyright reservation is require if you decide to use this project.
 
 ### Main Config Section
+
 Right under the `<body>` tag that you can see underneath the `<head>` section, there is the `Config part`. Configure everything you need here. and no where else.
 
 There are detailed code comments in the `Config part`. Basically, everything is this format:
@@ -117,7 +119,8 @@ For Mobile QQ only, the internal browser does not support the identify of qrcode
 
 For Alipay only, user will be redirect to the payment link directly. No need for second-time scaning.
 
-## Contribute
+## Contributions
+
 Any kind of contribute will be more than welcome.
 
 Please `star` this project if you like it, or using it, or find it helpful to you in any form.
@@ -139,6 +142,7 @@ This project also uses [iconfont](http://iconfont.cn)'s service to display diffe
 And thanks to [@Lf112](https://github.com/lf112). He wrote the `JavaScript` code for several major features. Browse his blog: [https://blog.lf112.net](https://blog.lf112.net) to support him!
 
 ## Requirements
+
 Please do keep our copyright information.
 
 If you decide to use `Merger` in any form,
