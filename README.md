@@ -52,7 +52,7 @@ During the development of this project, bugs might appear and affect your site. 
 ### ICP Notice for China
 In some Chinese app, especially for WeChat, the internal browser will display a security remind page for those domains that have no ICP record in China. Obviously, this is not friendly to users and they might doubt the safety of your site. Here are two solutions:
 1. Use **ICP recorded domain**, like our demo site: [https://demo.qrcdn.com](https://demo.qrcdn.com)
-2. Use **GitHub Pages subdomain**. GitHub's domain was marked as green by somehow without having ICP records. So Use GitHub Pages to build your own `Merger` but do not use a custom domain. Use the default `username.github.io` subdomain. Please try out this one: [https://hifocus.github.io/Merger_Demo/merger.html](https://hifocus.github.io/Merger_Demo/merger.html) to see how it works in WeChat.
+2. Use **GitHub Pages subdomain**. GitHub's domain was marked as green in QQ and WeChat by somehow without having ICP records. So Use GitHub Pages to build your own `Merger` but do not use a custom domain. Use the default `username.github.io` subdomain. Please try out this one: [https://hifocus.github.io/Merger_Demo/merger.html](https://hifocus.github.io/Merger_Demo/merger.html) to see how it works in WeChat.
 
 ## How to configure
 The configuration is easy. We made it!

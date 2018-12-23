@@ -54,7 +54,7 @@
 ### 对中国的备案提示
 在一些中国的应用里，特别是微信，内置浏览器回味那些没有 ICP 备案记录的网站像是一个安全提醒页面。非常明显，这对用户不友好以及他们可能会怀疑你站点的安全性。这里有两个解决方案：
 1. 使用 **备案域名**，像我们的演示站点一样：[https://demo.qrcdn.com](https://demo.qrcdn.com)
-2. 使用 **GitHub Pages 子域名**。由于某种原因 GitHub 的域名在没有 ICP 备案记录的情况下被标记为绿色。所以使用 GitHub Pages 去搭建你自己的 `Merger` 但是不要使用自定义域名，使用默认的 `username.github.io` 子域名。请尝试这一个 [https://hifocus.github.io/Merger_Demo/merger.html](https://hifocus.github.io/Merger_Demo/merger.html) 看看它在微信中是如何运作的。。
+2. 使用 **GitHub Pages 子域名**。由于某种原因 GitHub 的域名在没有 ICP 备案记录的情况下在 QQ 和微信中被标记为绿色。所以使用 GitHub Pages 去搭建你自己的 `Merger` 但是不要使用自定义域名，使用默认的 `username.github.io` 子域名。请尝试这一个 [https://hifocus.github.io/Merger_Demo/merger.html](https://hifocus.github.io/Merger_Demo/merger.html) 看看它在微信中是如何运作的。。
 
 ## 如何配置
 配置工作十分简单。我们做到了！
