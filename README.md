@@ -26,7 +26,7 @@
  ## Definitions
  `Merger` is a HTML template that allows you to merge muiltple payment qrcode together.
 
- [hifocus/merger](https://github.com/hifocus/merger) is an open source project that was released in [GNU General Public License v3.0
+ [hifocus/merger](https://github.com/hifocus/merger) is an open source project, released under the [GNU General Public License v3.0
 ](https://www.gnu.org/licenses/gpl-3.0.en.html) as a part of [HXCO](https://hxco.org)'s cooperate project.
 
  ## Features
@@ -40,7 +40,7 @@
 - Please use the `release` function of this project at: [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases). Please only use the latest, non pre-release version of `Merger` in production environment.
 
 - If you have no idea about how to edit the `.html` file to get your own merged qrcode, we suggest you to use [Visual Studio Code](https://code.visualstudio.com/), an open source code editor.
-Download it directly from HXCO Get: [https://get.soft.org/vscode](https://get.soft.org).
+Download it directly from HXCO Get: [https://get.soft.org/vscode](https://get.soft.org/vscode).
 
 ## Notices
 
@@ -129,7 +129,7 @@ This project uses several open source projects. Thanks to them.
 
 This project also uses [iconfont](http://iconfont.cn)'s service to display different icons in buttons, and its CDN service `at.alicdn.com` to accerlate the loading speed.
 
-And thanks to [@Lf112](https://github.com/lf112). He wrote the `JavaScript` code for several major features. Browse his blog: [https://blog.lf112.net](https://blog.lf112.net) to support him!
+And thanks to [@LF112](https://github.com/lf112). He wrote the `JavaScript` code for several major features. Browse his blog: [https://blog.lf112.net](https://blog.lf112.net) to support him!
 
 ## Requirements
 Please do keep our copyright information.
@@ -144,7 +144,7 @@ If you decide to use `Merger` in any form,
 - Any copyright information in `.js`, `.css` files.
 - `merger.html`'s copyright information in code comments (unless you keep the console copyright information by enabling the `debugmode`, which is defaulted.)
 
-If you agains our copyright reservation requirements, your name might appears in our shame wall. Which is currently blank.
+If you against our copyright reservation requirements, your name might appears in our shame wall. Which is currently blank.
 
 Please be aware that `Merger` is opensourced and released under the **GNU General Public License v3.0**, you are **not allowed** to disclose source and you are restricted to use the same license when doing modifications. More about permissions, limitation and conditions about our license, please see [https://github.com/hifocus/merger/blob/master/LICENSE](https://github.com/hifocus/merger/blob/master/LICENSE) to learn more in detail.
 

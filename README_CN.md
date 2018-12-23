@@ -42,7 +42,7 @@
 - 请使用这个项目的 `release` 功能，它位于 [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases)。在开发环境中，请仅仅使用 `Merger` 的最新、非预先发布（pre-release）版本。
 
 - 如果你不知道怎么去编辑 `.html` 文件以得到你自己的合并二维码，我们建议你去使用 [Visual Studio Code](https://code.visualstudio.com/)，一个开源的代码编辑器。
-从 HXCO Get: [https://get.soft.org/vscode](https://get.soft.org) 直接下载它。
+从 HXCO Get: [https://get.soft.org/vscode](https://get.soft.org/vscode) 直接下载它。
 
 ## 提示
 
