@@ -13,14 +13,15 @@
 <a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
 </p>
 
-> Merge your qrcode quicker. 
-
-> Demo Site: [https://demo.qrcdn.com](https://demo.qrcdn.com) | [中文文档](https://github.com/hifocus/merger/blob/master/README_CN.md) | [博客文章](https://tech.hxco.de/solutions/merger.html)
+> Merge your qrcode quicker.   
+> [Demo](https://demo.qrcdn.com) | [中文文档](https://github.com/hifocus/merger/blob/master/README_CN.md) | [博客文章](https://tech.hxco.de/solutions/merger.html)
 
 ## Why
- In China, we use at least three different apps to pay, with all different qrcodes. It's a problem that you might get it wrong while you are super busy. Why don't we merge them into one with fantastic styles that everyone would love'in it. And...additionally, being a bit more international? 
+
+There are more than three different mobile payment methods with all different receipt qrcodes. So the problem is, you might get it wrong while you are super busy. Why don't we merge them into one with fantastic styles that everyone would love'in it. And...additionally, being a bit more international? 
 
  ## Screenshots
+ 
 <img src="https://i.imgur.com/cpJFFG6.jpg" alt="Merger Style">
  
  ## Definitions
@@ -30,34 +31,40 @@
 ](https://www.gnu.org/licenses/gpl-3.0.en.html) as a part of [HXCO](https://hxco.org)'s cooperate project.
 
  ## Features
-- Fast speed. Every static file can be distribute by [jsDelivr](https://jsdelivr.com), a global accelerated CDN.
-- Highly customizable. You can modify everything displayed on the page with no special programming technique required.
-- Straightforward configuration. You may want to create your own version, and we have provided you with convenience. All you have to do is fill in the content you want, and our code will support you and do all the other work.
+ 
+- Loading fast. Most of static file can be distributed by [jsDelivr](https://jsdelivr.com), a global accelerated open source public CDN.
+- Highly customizable. You can modify everything display on the page with no special programming skills required.
+- Easy configuration. You may want to create your own version, and we have provided you with convenience. All you have to do is fill in the content you want, and our code will support you and do all the other work.
 - "Transformer" style. Your user may open your site to pay to you in a couple of different ways. `Merger` considered everything for you and it will present itself in different ways to make sure the user's need is fitted.
 
 ## Downloads
 
-- Please use the `release` function of this project at: [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases). Please only use the latest, non pre-release version of `Merger` in production environment.
+- Please use the `release` function of this project at: [https://github.com/hifocus/merger/releases](https://github.com/hifocus/merger/releases). Please only use the `latest` non `pre-release version` of `Merger` in production environment.
 
-- If you have no idea about how to edit the `.html` file to get your own merged qrcode, we suggest you to use [Visual Studio Code](https://code.visualstudio.com/), an open source code editor.
+- If you have diffculties modifing the `.html` file to get your own merged qrcode, we suggest you to use [Visual Studio Code](https://code.visualstudio.com/), an open source code editor.
 Download it directly from HXCO Get: [https://get.soft.org/vscode](https://get.soft.org).
 
 ## Notices
 
 ### Bugs Notice
+
 During the development of this project, bugs might appear and affect your site. Here are two suggestions:
 1. Make sure your `Merger` version is at **stable**. To do this, download the latest release which is not `pre-release`. Stable version of `Merger` often contains latest security update and bug fixes. Stick with them to make sure nothing goes wrong.
 2. Check out frequently, or subscribe to our [Bugs Notice Board](https://github.com/hifocus/merger/issues/2). All knwon bugs will appear over there and their status will also be updated.
 
 ### ICP Notice for China
+
 In some Chinese app, especially for WeChat, the internal browser will display a security remind page for those domains that have no ICP record in China. Obviously, this is not friendly to users and they might doubt the safety of your site. Here are two solutions:
+
 1. Use **ICP recorded domain**, like our demo site: [https://demo.qrcdn.com](https://demo.qrcdn.com)
 2. Use **GitHub Pages subdomain**. GitHub's domain was marked as green in QQ and WeChat by somehow without having ICP records. So Use GitHub Pages to build your own `Merger` but do not use a custom domain. Use the default `username.github.io` subdomain. Please try out this one: [https://hifocus.github.io/Merger_Demo/merger.html](https://hifocus.github.io/Merger_Demo/merger.html) to see how it works in WeChat.
 
-## How to configure
-The configuration is easy. We made it!
+## Configuration
+
+We made the configuration much more easier.
 
 ### Head Section
+
 You will need to configure the `head` tag of the `merger.html` first.
 
 ```
@@ -137,10 +144,12 @@ Please do keep our copyright information.
 If you decide to use `Merger` in any form,
 
 **You may remove:**
+
 - The author meta tag
 - The console copyright information (by disabling the `debugmode`)
 
 **You may not remove:**
+
 - Any copyright information in `.js`, `.css` files.
 - `merger.html`'s copyright information in code comments (unless you keep the console copyright information by enabling the `debugmode`, which is defaulted.)
 
