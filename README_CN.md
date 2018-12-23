@@ -15,7 +15,7 @@
 
 > 更快地合并你的二维码
 
-> Demo Site: [https://demo.qrcdn.com](https://demo.qrcdn.com)
+> 演示站点：[https://demo.qrcdn.com](https://demo.qrcdn.com)
 
 > 这个文档直接翻译于英文版本，部分内容可能不准确。
 
@@ -44,10 +44,17 @@
 - 如果你不知道怎么去编辑 `.html` 文件以得到你自己的合并二维码，我们建议你去使用 [Visual Studio Code](https://code.visualstudio.com/)，一个开源的代码编辑器。
 从 HXCO Get: [https://get.soft.org/vscode](https://get.soft.org) 直接下载它。
 
-## 错误提醒
+## 提示
+
+### 错误提示
 在这个项目的开发过程中，错误可能会出现并且影响你的站点。这里有两条建议：
 1. 确保你的 `Merger` 版本为稳定。要做到这点，下载最新的更新（非预先更新 pre-release）。`Merger` 的稳定版本通常包含最新的安全更新和错误修复。一直使用它们以确保没有任何问题。
 2. 经常地查看，或者订阅我们的 [Bugs Notice Board](https://github.com/hifocus/merger/issues/2) （错误通知栏）。所有的已知错误会出现在哪里以及他们的状态也会被更新。
+
+### 对中国的备案提示
+在一些中国的应用里，特别是微信，内置浏览器回味那些没有 ICP 备案记录的网站像是一个安全提醒页面。非常明显，这对用户不友好以及他们可能会怀疑你站点的安全性。这里有两个解决方案：
+1. 使用 备案域名，像我们的演示站点一样：[https://demo.qrcdn.com](https://demo.qrcdn.com)
+2. 使用 GitHub Pages 子域名。由于某种原因 GitHub 的域名在没有 ICP 备案记录的情况下被标记为绿色。所以使用 GitHub Pages 去搭建你自己的 `Merger` 但是不要使用自定义域名，使用默认的 `username.github.io` 子域名。请尝试这一个 [https://hifocus.github.io/Merger_Demo/merger.html](https://hifocus.github.io/Merger_Demo/merger.html) 看看它在微信中是如何运作的。。
 
 ## 如何配置
 配置工作十分简单。我们做到了！

@@ -42,10 +42,17 @@
 - If you have no idea about how to edit the `.html` file to get your own merged qrcode, we suggest you to use [Visual Studio Code](https://code.visualstudio.com/), an open source code editor.
 Download it directly from HXCO Get: [https://get.soft.org/vscode](https://get.soft.org).
 
-## Bug Notice
+## Notices
+
+### Bugs Notice
 During the development of this project, bugs might appear and affect your site. Here are two suggestions:
-1. Make sure your `Merger` version is at stable. To do this, download the latest release which is not `pre-release`. Stable version of `Merger` often contains latest security update and bug fixes. Stick with them to make sure nothing goes wrong.
+1. Make sure your `Merger` version is at **stable**. To do this, download the latest release which is not `pre-release`. Stable version of `Merger` often contains latest security update and bug fixes. Stick with them to make sure nothing goes wrong.
 2. Check out frequently, or subscribe to our [Bugs Notice Board](https://github.com/hifocus/merger/issues/2). All knwon bugs will appear over there and their status will also be updated.
+
+### ICP Notice for China
+In some Chinese app, especially for WeChat, the internal browser will display a security remind page for those domains that have no ICP record in China. Obviously, this is not friendly to users and they might doubt the safety of your site. Here are two solutions:
+1. Use **ICP recorded domain**, like our demo site: [https://demo.qrcdn.com](https://demo.qrcdn.com)
+2. Use **GitHub Pages subdomain**. GitHub's domain was marked as green by somehow without having ICP records. So Use GitHub Pages to build your own `Merger` but do not use a custom domain. Use the default `username.github.io` subdomain. Please try out this one: [https://hifocus.github.io/Merger_Demo/merger.html](https://hifocus.github.io/Merger_Demo/merger.html) to see how it works in WeChat.
 
 ## How to configure
 The configuration is easy. We made it!
