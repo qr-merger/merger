@@ -138,6 +138,7 @@ For Alipay only, user will be redirect to the payment link directly. No need for
 请务必保留版权信息。
 
 如果你决定以任何形式使用 `Merger`，
+
 **你可以去除**
 - 声明作者的 meta 标签
 - 控制台里面的版权信息（通过禁用 `debugmode`）

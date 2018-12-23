@@ -20,10 +20,10 @@
 ## Why
  In China, we use at least three different apps to pay, with all different qrcodes. It's a problem that you might get it wrong while you are super busy. Why don't we merge them into one with fantastic styles that everyone would love'in it. And...additionally, being a bit more international? 
 
- ## Screenshot
+ ## Screenshots
 <img src="https://i.imgur.com/cpJFFG6.jpg" alt="Merger Style">
  
- ## Definition
+ ## Definitions
  `Merger` is a HTML template that allows you to merge muiltple payment qrcode together.
 
  [hifocus/merger](https://github.com/hifocus/merger) is an open source project that was released in [GNU General Public License v3.0
@@ -135,6 +135,7 @@ And thanks to [@Lf112](https://github.com/lf112). He wrote the `JavaScript` code
 Please do keep our copyright information.
 
 If you decide to use `Merger` in any form,
+
 **You may remove:**
 - The author meta tag
 - The console copyright information (by disabling the `debugmode`)
