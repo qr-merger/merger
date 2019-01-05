@@ -17,6 +17,8 @@
 
 > Demo Site: [https://demo.qrcdn.com](https://demo.qrcdn.com) | [中文文档](https://github.com/hifocus/merger/blob/master/README_CN.md) | [博客文章](https://tech.hxco.de/solutions/merger.html)
 
+> **Reminder:** The document (or `README.md`) was written in en_GB `Spoken`. Please do `Alt` + `F4` immediately if you feel uncomfortable while reading this.
+
 ## Why
  In China, we use at least three different apps to pay, with all different qrcodes. It's a problem that you might get it wrong while you are super busy. Why don't we merge them into one with fantastic styles that everyone would love'in it. And...additionally, being a bit more international? 
 
