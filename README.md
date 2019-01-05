@@ -81,7 +81,7 @@ Here comes with the icon part. Replace the image link with yours to get your own
 You are more then welcome to edit other parts of the `head` tag if you know what to do, expect the `<meta name="author" content="Huangxin, LF112" />` bit. You can only remove them if you really don't want them to appear while copyright reservation is require if you decide to use this project.
 
 ### Main Config Section
-Right under the `<body>` tag that you can see underneath the `<head>` section, there is the `Config part`. Configure everything you need here. and no where else.
+Right under the `<body>` tag that you can see underneath the `<head>` section, there is the `Config part`. Configure everything you need here. And no where else.
 
 There are detailed code comments in the `Config part`. Basically, everything is this format:
 
