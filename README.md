@@ -17,6 +17,8 @@
 
 > Demo Site: [https://demo.qrcdn.com](https://demo.qrcdn.com) | [中文文档](https://github.com/hifocus/merger/blob/master/README_CN.md) | [博客文章](https://tech.hxco.de/solutions/merger.html)
 
+> **Reminder:** The document (or `README.md`) was written in en_GB `Spoken`. Please do `Alt` + `F4` immediately if you feel uncomfortable while reading this.
+
 ## Why
  In China, we use at least three different apps to pay, with all different qrcodes. It's a problem that you might get it wrong while you are super busy. Why don't we merge them into one with fantastic styles that everyone would love'in it. And...additionally, being a bit more international? 
 
@@ -79,7 +81,7 @@ Here comes with the icon part. Replace the image link with yours to get your own
 You are more then welcome to edit other parts of the `head` tag if you know what to do, expect the `<meta name="author" content="Huangxin, LF112" />` bit. You can only remove them if you really don't want them to appear while copyright reservation is require if you decide to use this project.
 
 ### Main Config Section
-Right under the `<body>` tag that you can see underneath the `<head>` section, there is the `Config part`. Configure everything you need here. and no where else.
+Right under the `<body>` tag that you can see underneath the `<head>` section, there is the `Config part`. Configure everything you need here. And no where else.
 
 There are detailed code comments in the `Config part`. Basically, everything is this format:
 
