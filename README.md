@@ -148,6 +148,6 @@ If you decide to use `Merger` in any form,
 
 If you against our copyright reservation requirements, your name might appears in our shame wall. Which is currently blank.
 
-Please be aware that `Merger` is opensourced and released under the **GNU General Public License v3.0**, you are **not allowed** to disclose source and you are restricted to use the same license when doing modifications. More about permissions, limitations and conditions of our license, please see [https://github.com/hifocus/merger/blob/master/LICENSE](https://github.com/hifocus/merger/blob/master/LICENSE) to learn more in detail.
+Please be aware that `Merger` is opensourced and released under the **GNU General Public License v3.0**, you are restricted to disclose source and use the same license when doing modifications. More about permissions, limitations and conditions of the license, please see [https://github.com/hifocus/merger/blob/master/LICENSE](https://github.com/hifocus/merger/blob/master/LICENSE) to learn more in detail.
 
 Author: [@hifocus](https://github.com/hifocus)
