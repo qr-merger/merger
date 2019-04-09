@@ -88,6 +88,9 @@ mv merger.html index.html
 
 ### 使用命令行
 ```bash
+cd /path/to/your/folder
+
+# Use wget
 wget https://raw.githubusercontent.com/hifocus/merger/master/merger.html
 
 # alternative method
