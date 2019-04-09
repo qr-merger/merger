@@ -90,6 +90,11 @@ mv merger.html index.html
 ```bash
 cd /path/to/your/folder
 
+# Download the whole repo
+wget https://github.com/hifocus/merger/archive/master.zip
+mv master.zip merger.zip && unzip merger.zip && cd merger-master && mv * ../ && cd ../ && rm -rf merger-master
+
+# Download 'merger.html' only
 # Use wget
 wget https://raw.githubusercontent.com/hifocus/merger/master/merger.html
 
