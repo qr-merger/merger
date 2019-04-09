@@ -22,7 +22,7 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 请浏览：[https://demo.qrcdn.com](https://demo.qrcdn.com)
 
 ## 截图
-以下截图展示了在不同客户端下打开 merger 链接的样式。
+以下截图展示了在不同客户端下打开 merger 链接的样式。[下载大图](https://dlc.justhx.com/Screenshot_Original.jpg.direct)
 ![](https://ae01.alicdn.com/kf/UTB8hFq3KlahduJk43Jaq6zM8FXaR.jpg)
 
 ## 社区
