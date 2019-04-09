@@ -1,4 +1,5 @@
-# merger
+<h1 align="center">merger 文档首页</h1>
+
 > 合并你的二维码。就是现在。
 
 ?> 请留意，**此文档尚未完成**；部分内容/样式可能缺失。
@@ -18,7 +19,7 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 - 除图片外的所有静态文件均默认使用 [jsDelivr](https://www.jsdelivr.com) 分发。
 
 ## 演示
-请浏览：[https://demo.qrcdn.com](https://demo.qrcdn.com/merger.html)
+请浏览：[https://demo.qrcdn.com](https://demo.qrcdn.com)
 
 ## 截图
 以下截图展示了在不同客户端下打开 merger 链接的样式。
