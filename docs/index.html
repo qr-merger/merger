@@ -11,15 +11,25 @@
 </head>
 <body>
   <div id="app">Initialising Docsify...</div>
+  <style>
+  /* Prioritised Styles Here */
+  .pagination-item-label>* {
+  line-height: 2;
+  text-align: center;
+}
+  </style>
   <script>
       window.$docsify = {
         name: 'merger',
         repo: 'https://github.com/hifocus/merger',
+        loadNavbar: '_navbar.md',
+        loadSidebar: '_sidebar.md',
+        subMaxLevel: 0,
         homepage: 'index.md',
         themeColor: '#00bbff',
         pagination: {
-          previousText: '上一章节',
-          nextText: '下一章节',
+          previousText: '上一页',
+          nextText: '下一页',
         },
         copyCode: {
           buttonText: 'Copy to clipboard',
