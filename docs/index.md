@@ -31,6 +31,7 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 ## 感谢
 - 本文档使用 [Docsify](https://docsify.js.org) 创建。
 - 本文档内的图片使用 [upimg-cli](https://github.com/metowolf/upimg-cli) 上传。
+<hr>
 - 本项目的部分 `JavaScript` 代码由 [@LF112](https://github.com/LF112) 贡献。
 - 本项目基于 [Grouper](https://github.com/hifocus/Grouper) 项目（请参见 [Grouper 的感谢列表](https://github.com/hifocus/Grouper#credit)）。
 - 本项目也使用了以下项目 / 服务：
