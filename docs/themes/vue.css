@@ -52,7 +52,7 @@ html,
 body {
   height: 100%;
 }
-body {
+body, input {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: #34495e;

@@ -10,19 +10,32 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">Initialising Docsify...</div>
   <script>
-    window.$docsify = {
-      name: 'merger',
-      repo: 'https://github.com/hifocus/merger',
-      homepage: 'index.md',
-      themeColor: '#00bbff',
-    }
+      window.$docsify = {
+        name: 'merger',
+        repo: 'https://github.com/hifocus/merger',
+        homepage: 'index.md',
+        themeColor: '#00bbff',
+        pagination: {
+          previousText: '上一章节',
+          nextText: '下一章节',
+        },
+        copyCode: {
+          buttonText: 'Copy to clipboard',
+          errorText: 'Error',
+          successText: 'Copied'
+        },
+        search: 'auto',
+        search : [
+      '/',
+    ],
+      }
   </script>
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('sw.js')
     }
   </script>
-<script src="https://cdn.jsdelivr.net/npm/docsify@4.9.1/lib/docsify.min.js" integrity="sha256-i4ldCcWDPFI2cpM/PU1wcuEVs+WjUaXlyAsEGl1BvXk=" crossorigin="anonymous"></script></body>
+<script src="https://cdn.jsdelivr.net/combine/npm/docsify@4.9.1,npm/docsify@4.9.1/lib/plugins/zoom-image.min.js,npm/docsify@4.9.1/lib/plugins/search.min.js,npm/docsify-copy-code@2.1.0,npm/docsify-pagination@2.3.5/dist/docsify-pagination.min.js"></script>
 </html>
