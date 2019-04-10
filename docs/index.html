@@ -17,6 +17,9 @@
   line-height: 2;
   text-align: center;
 }
+.docsify-copy-code-button {
+font-size: 12px
+}
   </style>
   <script>
       window.$docsify = {
@@ -34,19 +37,34 @@
           nextText: '下一页',
         },
         copyCode: {
-          buttonText: 'Copy to clipboard',
-          errorText: 'Error',
-          successText: 'Copied'
+    buttonText: {
+      '/': '复制到剪贴板',
+      '/en-gb/': 'Copy to Clipboard',
+    },
+    errorText: {
+      '/': '出现错误',
+      '/en-gb/'   : 'Something was not right',
+    },
+    successText: {
+      '/'      : '复制成功',
+      '/en-gb/': 'Copied',
+    }
+  },
+        search: {
+        noData: {
+          '/en-gb/': 'Cannot find relavent results',
+          '/': '找不到对应的内容',
         },
-        search: 'auto',
-        search : [
-      '/',
-      '/install',
-      '/configure',
-    ],
+        paths: 'auto',
+        placeholder: {
+          '/en-gb/': 'Search for Contents',
+          '/': '搜索'
+        }
+      },
+      auto2top: true,
+      mergeNavbar: true,
       }
-  </script>
-  <script>
+      
     if (typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('sw.js')
     }
