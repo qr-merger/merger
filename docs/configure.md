@@ -85,7 +85,7 @@ var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
 
 勘误模式一般只在开发的时候启用。如果启用，[merger](https://github.com/hifocus/merger) 会在控制台输出一些预先设定的提示；能够方便地确认某个组件能够工作。注释掉或者直接删除 `var debugmode = "xxx"` 这部分即可禁用勘误模式。
 
-[merger](https://github.com/hifocus/merger) 默认从 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 本地生成所需的二维码，这样能够节省 HTTP 请求数量和加快页面加载速度。然而，QQ 手机版无法解码 [merger](https://github.com/hifocus/merger) 默认生成 `data:image` 类型的二维码图片，故此这里仍然需要使用应用程序编程接口（API）生成二维码以供解码。
+[merger](https://github.com/hifocus/merger) 默认从 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 本地生成所需的二维码，这样能够节省 HTTP 请求数量和加快页面加载速度。然而，QQ 手机版无法解码 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 默认生成 `data:image` 类型的二维码图片，故此这里仍然需要使用应用程序编程接口（API）生成二维码以供解码。
 
 修改 `var qrcodeapi = "https://www.zhihu.com/qrcode?url=";` 部分即可更换调用的二维码 API。你可以从搜索引擎找到更多的二维码 API：
 - [https://www.google.com/search?q=qr+code+generate+api](https://www.google.com/search?q=qr+code+generate+api)
