@@ -216,7 +216,7 @@ main.hidden {
   transition: -webkit-transform 250ms ease-out;
   transition: transform 250ms ease-out;
   transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
-  width: 300px;
+  width: 250px;
   z-index: 20;
 }
 .sidebar > h1 {
