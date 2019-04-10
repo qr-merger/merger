@@ -2,8 +2,8 @@
   * [中文 / Chinese](/)
   * [英语 / English](en-gb/)
 
-* 链接
-  * [Submit Issues](https://github.com/hifocus/merger/issues)
+* 跳转
+  * [Issues](https://github.com/hifocus/merger/issues)
   * [Pull Requests](https://github.com/hifocus/merger/pulls)
   * [Merger Demo](https://demo.qrcdn.com)
   
