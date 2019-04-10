@@ -1,4 +1,4 @@
-* 语言
+* Languages
   * [中文 / Chinese](/)
   * [英语 / English](en-gb/)
 
