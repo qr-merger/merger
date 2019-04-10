@@ -70,9 +70,9 @@ var title = "选择你的支付方式";
 var subtitle = "跟随进一步的指示以向" + myname + "付款";
 ```
 
-## 勘误模式以及应用程序编程接口
+## 调试模式以及应用程序编程接口
 
-`Config Part` 最后的部分为勘误模式的开关以及二维码应用程序接口（API）的选择。具体代码如下：
+`Config Part` 最后的部分为调试模式的开关以及二维码应用程序接口（API）的选择。具体代码如下：
 
 ```javascript
 // See if you would like to enable debug mode (as console.log). If debug mode is disabled, the console will be cleared.
@@ -83,7 +83,7 @@ var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
 // var qrcodeapi = "https://chart.googleapis.com/chart?chs=500x500&cht=qr&chld=L|1&choe=UTF-8&chl="; // Inaccessible in China. Backup use only.
 ```
 
-勘误模式一般只在开发的时候启用。如果启用，[merger](https://github.com/hifocus/merger) 会在控制台输出一些预先设定的提示；能够方便地确认某个组件能够工作。注释掉或者直接删除 `var debugmode = "xxx"` 这部分即可禁用勘误模式。
+调试模式一般只在开发的时候启用。如果启用，[merger](https://github.com/hifocus/merger) 会在控制台输出一些预先设定的提示；能够方便地确认某个组件能够工作。注释掉或者直接删除 `var debugmode = "xxx"` 这部分即可禁用调试模式。
 
 [merger](https://github.com/hifocus/merger) 默认从 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 本地生成所需的二维码，这样能够节省 HTTP 请求数量和加快页面加载速度。然而，QQ 手机版无法解码 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 默认生成 `data:image` 类型的二维码图片，故此这里仍然需要使用应用程序编程接口（API）生成二维码以供解码。
 
