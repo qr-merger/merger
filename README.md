@@ -4,12 +4,8 @@
   </a>
 </p>
 
-<h1 align="center">
-merger
-</h1>
-
 <p align="center">
-Merge Your Qrcode Together. Even Quicker.
+📲 Merge Your Qrcode Together. Even Quicker.
 </p>
 
 <p  align="center">
