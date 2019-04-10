@@ -10,3 +10,4 @@
 * 更多
   * [惶心博客](https://www.justhx.com)
   * [LF112 的博客](https://blog.lf112.net)
+  * [Google Translate](https://translate.google.cn)
