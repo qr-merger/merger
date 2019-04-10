@@ -108,7 +108,7 @@ var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
 
 ## 选择静态文件加载源
 
-[merger](https://github.com/hifocus/merger) 在 [0.1.4 版本](https://github.com/hifocus/merger/releases/tag/0.14) 为静态资源提供了在 [jsDelivr CDN](https://www.jsdelivr.com) 和本地之间切换的选项。虽然 [jsDelivr](https://www.jsdelivr.com) 毫无疑问在全球范围内都拥有优秀的加载速度，但是在某些特殊情况下使用者也许想要从本地加载静态资源。以下说明了如何切换静态文件加载源。
+[merger](https://github.com/hifocus/merger) 在 [0.14 版本](https://github.com/hifocus/merger/releases/tag/0.14) 为静态资源提供了在 [jsDelivr CDN](https://www.jsdelivr.com) 和本地之间切换的选项。虽然 [jsDelivr](https://www.jsdelivr.com) 毫无疑问在全球范围内都拥有优秀的加载速度，但是在某些特殊情况下使用者也许想要从本地加载静态资源。以下说明了如何切换静态文件加载源。
 
 ### 在 merger.html 的头部 {docsify-ignore}
 
