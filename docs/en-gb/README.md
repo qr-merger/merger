@@ -2,8 +2,6 @@
 
 > Merge Your Qrcodes Together. Even Quicker.
 
-?> Please be aware that the document **hasn't fully finished**; part of the contents / styles might not be correct.
-
 ## Introduction
 Merger is a program to merge payment QR Codes using mainly `JavaScript`.
 
