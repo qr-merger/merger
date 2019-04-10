@@ -105,7 +105,7 @@ Modify the `href="xxx"` part in `<link rel="shortcut icon" type="image/x-icon" h
 
 ## Choose Loading Source for Static Files
 
-[merger](https://github.com/hifocus/merger) provides options to switch between [jsDelivr CDN](https://www.jsdelivr.com) and local for static resources at [verison 0.14](https://github.com/hifocus/merger/releases/tag/0.14). Although [jsDelivr](https://www.jsdelivr.com) has excellent loading speed throughout the globe without a question, but under some special situations the users might want to load static files from local. Below states how to switch loading source for static files.
+[merger](https://github.com/hifocus/merger) provides options to switch between [jsDelivr CDN](https://www.jsdelivr.com) and local for static resources at [version 0.14](https://github.com/hifocus/merger/releases/tag/0.14). Although [jsDelivr](https://www.jsdelivr.com) has excellent loading speed throughout the globe without a question, but under some special situations the users might want to load static files from local. Below states how to switch loading source for static files.
 
 ### At Header of merger.html {docsify-ignore}
 
