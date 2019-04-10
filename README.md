@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-📲 Merge Your Qrcode Together. Even Quicker.
+Merge Your Qrcode Together. Even Quicker.
 </p>
 
 <p  align="center">
