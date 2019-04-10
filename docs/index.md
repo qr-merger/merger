@@ -26,7 +26,7 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 ![](https://ae01.alicdn.com/kf/UTB8hFq3KlahduJk43Jaq6zM8FXaR.jpg)
 
 ## 社区
-- 如果你在使用过程中发现了任何问题，请使用 [issues](https://github.com/hifocus/Merger/issues) 告诉我们。
+- 如果你在使用过程中发现了任何问题，请使用 [Issues](https://github.com/hifocus/Merger/issues) 告诉我们。
 - 如果你希望让 merger 变得更好，欢迎提交 [Pull Requests](https://github.com/hifocus/Merger/pulls)。
 
 ## 感谢
