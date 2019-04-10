@@ -30,6 +30,7 @@ var paypal = "https://paypal.me/hxco";
 | paypal |   Paypal / 贝宝   | [https://www.paypal.com](https://www.paypal.com) | `https://paypal.me/{username}`                    | 网页端获取     |
 
 对于需要解码支付二维码获取支付链接的应用，请在应用内显示你的支付二维码，用内置保存功能 / 屏幕截图获取该二维码，随后使用二维码解码程序即可获取支付链接；你可以从搜索引擎获取一些二维码解锁程序：
+
 - [https://www.google.com/search?q=qr+code+decoder](https://www.google.com/search?q=qr+code+decoder)
 - [https://www.baidu.com/s?wd=二维码解码](https://www.baidu.com/s?wd=二维码解码)
 
@@ -88,6 +89,7 @@ var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
 [merger](https://github.com/hifocus/merger) 默认从 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 本地生成所需的二维码，这样能够节省 HTTP 请求数量和加快页面加载速度。然而，QQ 手机版无法解码 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 默认生成 `data:image` 类型的二维码图片，故此这里仍然需要使用应用程序编程接口（API）生成二维码以供解码。
 
 修改 `var qrcodeapi = "https://www.zhihu.com/qrcode?url=";` 部分即可更换调用的二维码 API。你可以从搜索引擎找到更多的二维码 API：
+
 - [https://www.google.com/search?q=qr+code+generate+api](https://www.google.com/search?q=qr+code+generate+api)
 - [https://www.baidu.com/s?wd=二维码生成接口](https://www.baidu.com/s?wd=二维码生成接口)
 
@@ -103,9 +105,48 @@ var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
 
 更改 `<title> </title>` 中间的内容即可更换页面标题。
 
-
 修改下方的 `<link rel="shortcut icon" type="image/x-icon" href="https://ae01.alicdn.com/kf/UTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg">` 内的 `href="xxx"` 部分即可修改页面图标。可以使用已经配置了的头像图片。
 
--------------------------------
+## 选择静态文件加载源
+
+[merger](https://github.com/hifocus/merger) 在 [0.1.4 版本](https://github.com/hifocus/merger/releases/tag/0.14) 为静态资源提供了在 [jsDelivr CDN](https://www.jsdelivr.com) 和本地之间切换的选项。虽然 [jsDelivr]((https://www.jsdelivr.com) 毫无疑问在全球范围内都拥有优秀的加载速度，但是在某些特殊情况下使用者也许想要从本地加载静态资源。以下说明了如何切换静态文件加载源。
+
+### 在 merger.html 的头部
+
+```html
+<!-- Load style files from local -->
+<!-- <link rel="stylesheet" href="assets/styles/spectre.css/spectre.min.css">
+     <link rel="stylesheet" href="assets/styles/style.min.css"> -->
+
+<!-- Load style files from jsDelivr - Default -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/picturepan2/spectre@0.5.7/dist/spectre.min.css,gh/hifocus/merger@0.14/assets/styles/style.min.css"/>
+```
+默认设定为使用 jsDelivr CDN 并且使用了文件合并功能。如果希望从本地加载对应的文件，请注释或者删除这行代码：
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/picturepan2/spectre@0.5.7/dist/spectre.min.css,gh/hifocus/merger@0.14/assets/styles/style.min.css"/>
+```
+
+并反向注释（恢复）这两行代码：
+
+```html
+<!-- <link rel="stylesheet" href="assets/styles/spectre.css/spectre.min.css">
+     <link rel="stylesheet" href="assets/styles/style.min.css"> -->
+```
+
+最终修改以后的头部如下：
+
+```html
+<!-- Load style files from local -->
+<link rel="stylesheet" href="assets/styles/spectre.css/spectre.min.css">
+<link rel="stylesheet" href="assets/styles/style.min.css">
+
+<!-- Load style files from jsDelivr - Default -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/picturepan2/spectre@0.5.7/dist/spectre.min.css,gh/hifocus/merger@0.14/assets/styles/style.min.css"/> -->
+```
+
+
+
+---
 
 至此，你已经将 [merger](https://github.com/hifocus/merger) 配置完毕。
