@@ -734,7 +734,7 @@ body {
   -moz-osx-font-smoothing: initial;
   -webkit-font-smoothing: initial;
   background-color: #f8f8f8;
-  font-family: 'Roboto Mono', Monaco, courier, monospace;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
   line-height: 1.5rem;
   margin: 1.2em 0;
   overflow: auto;
