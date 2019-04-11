@@ -65,7 +65,7 @@ sudo apt install git
 git --version
 ```
 
-If git return results normally, such as `git version 2.17.1`, the installation of Git had been successful. If failed, please check if the steps above were completed.
+If git returns outputs normally, such as `git version 2.17.1`, the installation of Git had been successful. If failed, please check if the steps above were completed.
 
 ### Using git clone
 ```bash
