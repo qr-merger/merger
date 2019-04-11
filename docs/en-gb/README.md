@@ -24,7 +24,7 @@ You can generate a QR Code for your merger, or send your merger link to someone 
 - Detailed code comments , make ease for second-time development.
 - Integrate with actual environment, present dedicated custimised style for each payment method.
 - Highly customisable, everthing on the page can be changed with simple js codes. No need for any programming technique.
-- All static files are distrubuted by [jsDelivr](https://www.jsdelivr.com) except images.
+- All static files are distributed by [jsDelivr](https://www.jsdelivr.com) except images.
 
 ## Demo
 See: [https://demo.qrcdn.com](https://demo.qrcdn.com)<br>Host Environment: Ubuntu 18.04.2 LTS | nginx/1.14.2 | Accelerate By [CloudFlare](https://www.cloudflare.com/) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
