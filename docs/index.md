@@ -1,6 +1,18 @@
 <h1 align="center">merger 文档首页</h1>
 
-> 合并你的二维码。就是现在。
+<p align="center">
+合并你的二维码。就是现在。
+</p>
+
+<p  align="center">
+<a href="https://github.com/hifocus/merger/releases"><img alt="Version" src="https://img.shields.io/github/release/hifocus/merger/all.svg?style=flat-square"/></a>
+<a href="https://github.com/hifocus/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/hifocus/merger.svg?style=flat-square"/></a>
+<a href="https://github.com/hifocus/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/hifocus/merger.svg?style=flat-square"/></a>
+<a href="https://github.com/hifocus/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/hifocus/merger.svg?style=flat-square"/></a>
+<a href="https://github.com/hifocus/merger/releases"><img alt="jsDelivr" src="https://img.shields.io/github/downloads/hifocus/merger/total.svg?style=flat-square"/></a>
+<a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
+</p>
+
 
 ## 概述
 merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合并程序。
@@ -17,7 +29,9 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 - 除图片外的所有静态文件均默认使用 [jsDelivr](https://www.jsdelivr.com) 分发。
 
 ## 演示
-请浏览：[https://demo.qrcdn.com](https://demo.qrcdn.com)
+请浏览：[https://demo.qrcdn.com](https://demo.qrcdn.com)<br>托管环境：Ubuntu 18.04.2 LTS | nginx/1.14.2 | Accelerate By [CloudFlare](https://www.cloudflare.com/) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
+
+或者使用 手机相机 | QQ 手机版 | 微信 | 支付宝 [扫描二维码](https://api.imjad.cn/qrcode/?text=https%3A%2F%2Fdemo.qrcdn.com%2Fmerger.html&logo=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FUTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg&size=500&level=H&bgcolor=%23ffffff&fgcolor=%23000000)
 
 ## 截图
 以下截图展示了在不同客户端下打开 merger 链接的样式。[下载大图](https://dlc.justhx.com/Screenshot_Original.jpg.direct)
@@ -39,4 +53,4 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
   - [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode)
   - [jsDelivr](https://www.jsdelivr.com)
   - [Pure CSS3 Gradient Background Animation](https://codepen.io/P1N2O/pen/pyBNzX)
-  - [Iconfont.cn](http://iconfont.cn)
+  - [Iconfont.cn](https://www.iconfont.cn)

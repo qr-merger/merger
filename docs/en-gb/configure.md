@@ -1,4 +1,4 @@
-<h1 align="center">Merger Doucments</h1>
+<h1 align="center">Merger Documents</h1>
 
 The configuration of [merger](https://github.com/hifocus/merger) is simple. Generally, you would only need to modify the `Config Part` in `merger.html` to create your own merger page.
 
@@ -144,3 +144,6 @@ The final header after modification is as follows:
 ---
 
 Now, you have completed the configuration of [merger](https://github.com/hifocus/merger).
+
+Major Mistake Fixes With Optiumise on Requests Amount
+
