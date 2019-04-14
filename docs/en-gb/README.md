@@ -27,7 +27,7 @@ You can generate a QR Code for your merger, or send your merger link to someone 
 - All static files are distributed by [jsDelivr](https://www.jsdelivr.com) except images.
 
 ## Demo
-See: [https://demo.qrcdn.com](https://demo.qrcdn.com)<br>Host Environment: Ubuntu 18.04.2 LTS | nginx/1.14.2 | Accelerate By [CloudFlare](https://www.cloudflare.com/) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
+See: [https://demo.qrcdn.com](https://demo.qrcdn.com)<br>Host Environment: Ubuntu 18.04.2 LTS | nginx/1.14.2 | Accelerated By [CloudFlare](https://www.cloudflare.com/) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
 
 Or Use Phone Camera | QQ Mobile | WeChat | Alipay to [Scan the QR Code](https://api.imjad.cn/qrcode/?text=https%3A%2F%2Fdemo.qrcdn.com%2Fmerger.html&logo=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FUTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg&size=500&level=H&bgcolor=%23ffffff&fgcolor=%23000000)
 ## Screenshot

@@ -29,7 +29,7 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 - 除图片外的所有静态文件均默认使用 [jsDelivr](https://www.jsdelivr.com) 分发。
 
 ## 演示
-请浏览：[https://demo.qrcdn.com](https://demo.qrcdn.com)<br>托管环境：Ubuntu 18.04.2 LTS | nginx/1.14.2 | Accelerate By [CloudFlare](https://www.cloudflare.com/) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
+请浏览：[https://demo.qrcdn.com](https://demo.qrcdn.com)<br>托管环境：Ubuntu 18.04.2 LTS | nginx/1.14.2 | Accelerated By [CloudFlare](https://www.cloudflare.com/) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
 
 或者使用 手机相机 | QQ 手机版 | 微信 | 支付宝 [扫描二维码](https://api.imjad.cn/qrcode/?text=https%3A%2F%2Fdemo.qrcdn.com%2Fmerger.html&logo=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FUTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg&size=500&level=H&bgcolor=%23ffffff&fgcolor=%23000000)
 
