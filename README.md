@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-Merge Your Qrcode Together. Even Quicker.
+Merge Your Qrcodes Together. Even Quicker.
 </p>
 
 <p  align="center">
@@ -32,6 +32,8 @@ Merge Your Qrcode Together. Even Quicker.
 - Integrate with actual environment, present dedicated custimised style for each payment method.
 - Highly customisable, everthing on the page can be changed with simple js codes. No need for any programming technique.
 - All static files are distrubuted by [jsDelivr](https://www.jsdelivr.com) except images.
+
+[Let us know if you are using merger!](https://github.com/hifocus/merger/issues/4)
 
 ## License
 [GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE)
