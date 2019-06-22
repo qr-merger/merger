@@ -3,7 +3,7 @@
 Merge Your Qrcode Together. Even Quicker.
 </p>
 
-<p  align="center">
+<p align="center">
 <a href="https://github.com/hifocus/merger/releases"><img alt="Version" src="https://img.shields.io/github/release/hifocus/merger/all.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/hifocus/merger.svg?style=flat-square"/></a>
