@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://merger.hxco.dev">
-    <img alt="merger" src="./docs/themes/merge.svg">
+    <img alt="merger" src="/docs/themes/merge.svg">
   </a>
 </p>
 
@@ -8,7 +8,7 @@
 合并你的二维码。就是现在。
 </p>
 <p align="center">
-语言：<a href="./README.md">English 英语</a> / <strong>中文</strong>
+语言：<a href="/README.md">English 英语</a> / <strong>中文</strong>
 </p>
 
 

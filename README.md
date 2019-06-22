@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://merger.hxco.dev">
-    <img alt="merger" src="./docs/themes/merge.svg">
+    <img alt="merger" src="/docs/themes/merge.svg">
   </a>
 </p>
 
