@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-Merge Your Qrcodes Together. Even Quicker.
+合并你的二维码。就是现在。
 </p>
 <p align="center">
-Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
+语言：<a href="/README.md">English 英语</a> / <strong>中文</strong>
 </p>
 
 
@@ -20,23 +20,22 @@ Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
 <a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
 </p>
 
-Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
+在[这里](https://github.com/hifocus/merger/issues/4)提交你的 merger 站点以供[展示](https://merger.hxco.dev/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
 
+## 链接
+- [说明文档](https://merger.hxco.dev/)
+- [演示站点](https://demo.qrcdn.com)
+- [其他演示站点](https://merger.hxco.dev/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
+- [提交问题](https://github.com/hifocus/merger/issues)
+- [合并请求](https://github.com/hifocus/merger/pulls)
+- [感谢](https://merger.hxco.dev/#/?id=credit)
 
-## Links
-- [Documentation](https://merger.hxco.dev/#/en-gb/)
-- [Demo Site](https://demo.qrcdn.com)
-- [Other Demo Sites](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
-- [Issues](https://github.com/hifocus/merger/issues)
-- [Pull Requests](https://github.com/hifocus/merger/pulls)
-- [Credit](https://merger.hxco.dev/#/en-gb/?id=credit)
+## 特性
+- 最小化的请求数，最大化的速度。
+- 拥有详尽的代码注释，方便二次开发。
+- 结合实际使用场景为每一种支付方式独立定制的展示样式。
+- 高度可定制化，页面上一切内容均可通过简单的 Javascript 代码更改。无需任何编程技巧。
+- 所有静态文件均默认使用开源 CDN [jsDelivr](https://www.jsdelivr.com) 分发。
 
-## Features
-- Minimised request accounts, maximised loading speed.
-- Detailed code comments , make ease for second-time development.
-- Integrate with actual usage scenes, presenting dedicated custimised style for each payment method.
-- Highly customisable, everthing on the page can be changed with simple Javascript codes. No need for any programming technique.
-- All static contents are distributed by the Opne Source CDN [jsDelivr](https://www.jsdelivr.com).
-
-## License
+## 开源许可证
 [GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE)
