@@ -27,19 +27,20 @@ mv merger.html index.html
 ```bash
 cd /path/to/your/folder
 
-# Download the whole repo
+# Download the whole master branch / 下载整个 master 分支
 wget https://github.com/hifocus/merger/archive/master.zip
 mv master.zip merger.zip && unzip merger.zip && cd merger-master && mv * ../ && cd ../ && rm -rf merger-master
 
-# Download 'merger.html' only
+# Download 'merger.html' only / 只下载 `merger.html`
 # Use wget
 wget https://raw.githubusercontent.com/hifocus/merger/master/merger.html
 
-# alternative method
+# alternative method / 替代方式
 curl https://raw.githubusercontent.com/hifocus/merger/master/merger.html --output merger.html
 
-# optional
+# optional / 可选
 mv merger.html index.html
 ```
+
 -----------------------
 此时，[merger](https://github.com/hifocus/merger) 已经被成功安装（下载）。

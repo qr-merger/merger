@@ -27,7 +27,7 @@ mv merger.html index.html
 ```bash
 cd /path/to/your/folder
 
-# Download the whole repo
+# Download the whole master branch
 wget https://github.com/hifocus/merger/archive/master.zip
 mv master.zip merger.zip && unzip merger.zip && cd merger-master && mv * ../ && cd ../ && rm -rf merger-master
 
