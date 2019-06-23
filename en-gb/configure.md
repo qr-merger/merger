@@ -144,6 +144,3 @@ The final header after modification is as follows:
 ---
 
 Now, you have completed the configuration of [merger](https://github.com/hifocus/merger).
-
-Major Mistake Fixes With Optiumise on Requests Amount
-
