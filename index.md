@@ -47,8 +47,9 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 - 如果你希望让 merger 变得更好，欢迎提交 [Pull Requests](https://github.com/hifocus/Merger/pulls)。
 
 ## 感谢
-- 本文档使用 [Docsify](https://docsify.js.org) 创建。
+- 本文档使用 [Docsify](https://docsify.js.org) 创建，托管于 [GitHub Pages](https://pages.github.com)，以 [GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE) 发布。
 - 本文档内的图片使用 [upimg-cli](https://github.com/metowolf/upimg-cli) 上传。
+- 本项目的[图标](https://github.com/hifocus/merger/blob/gh-pages/themes/merge.png)和[展示横幅](https://github.com/hifocus/merger/blob/gh-pages/themes/banner.psd)素材来自 [zylbiubiubiu, Iconfont](https://www.iconfont.cn/user/detail?uid=724490)
 <hr>
 - 本项目的部分 `JavaScript` 代码由 [@LF112](https://github.com/LF112) 贡献。
 - 本项目基于 [Grouper](https://github.com/hifocus/Grouper) 项目（请参见 [Grouper 的感谢列表](https://github.com/hifocus/Grouper#credit)）。
@@ -59,3 +60,5 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
   - [jsDelivr](https://www.jsdelivr.com)
   - [Pure CSS3 Gradient Background Animation](https://codepen.io/P1N2O/pen/pyBNzX)
   - [Iconfont.cn](https://www.iconfont.cn)
+<hr>
+在 [GitHub](https://github.com/hifocus/merger/tree/gh-pages) 上编辑此页面。

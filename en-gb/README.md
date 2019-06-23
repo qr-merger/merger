@@ -47,6 +47,7 @@ The screenshot below showed different styles whlist opening merger in different 
 ## Credit
 - This documentation is created using [Docsify](https://docsify.js.org).
 - Images in this documentation is uploaded using [upimg-cli](https://github.com/metowolf/upimg-cli).
+- The origin material in both [icon](https://github.com/hifocus/merger/blob/gh-pages/themes/merge.png) and [presentation banner](https://github.com/hifocus/merger/blob/gh-pages/themes/banner.psd) is from [zylbiubiubiu, Iconfont](https://www.iconfont.cn/user/detail?uid=724490).
 <hr>
 - Part of the `Javascript` codes in this project are contributed by [@LF112](https://github.com/LF112).
 - This project is based on [Grouper](https://github.com/hifocus/Grouper) (please refer to the <a href="https://github.com/hifocus/Grouper#credit" target="_blank">credit list of Grouper</a>)
@@ -57,3 +58,5 @@ The screenshot below showed different styles whlist opening merger in different 
   - [jsDelivr](https://www.jsdelivr.com)
   - [Pure CSS3 Gradient Background Animation](https://codepen.io/P1N2O/pen/pyBNzX)
   - [Iconfont.cn](http://iconfont.cn)
+  <hr>
+  Edit this documentation on [GitHub](https://github.com/hifocus/merger/tree/gh-pages/en-gb).
