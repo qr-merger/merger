@@ -45,7 +45,7 @@ The screenshot below showed different styles whlist opening merger in different 
 - If you want to make merger even better, welcome to submit  [Pull Requests](https://github.com/hifocus/Merger/pulls).
 
 ## Credit
-- This documentation is created using [Docsify](https://docsify.js.org).
+- The documentation is written in both Chinese and English, created via [Docsify](https://docsify.js.org) and published with [GitHub Pages](https://pages.github.com) under [GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE).
 - Images in this documentation is uploaded using [upimg-cli](https://github.com/metowolf/upimg-cli).
 - The origin material in both [icon](https://github.com/hifocus/merger/blob/gh-pages/themes/merge.png) and [presentation banner](https://github.com/hifocus/merger/blob/gh-pages/themes/banner.psd) is from [zylbiubiubiu, Iconfont](https://www.iconfont.cn/user/detail?uid=724490).
 <hr>
