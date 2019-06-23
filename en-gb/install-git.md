@@ -1,4 +1,4 @@
-<h1 align="center">Merger Documents</h1>
+<h1 align="center">Merger Documentation</h1>
 
 ### Install Git
 > If you have got Git installed, please ignore this step.

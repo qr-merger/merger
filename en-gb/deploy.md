@@ -1,4 +1,4 @@
-<h1 align="center">Merger Documents</h1>
+<h1 align="center">Merger Documentation</h1>
 
 [merger](https://github.com/hifocus/merger) is a simple HTML application, therefore you can deploy it to any services that can host static websites and browse it through a domain. Before this, please make sure you have done the personalised settings according to the <a href="#/configure">Configure</a> page.
 

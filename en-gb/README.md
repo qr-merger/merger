@@ -1,4 +1,4 @@
-<h1 align="center">Merger Documents</h1>
+<h1 align="center">Merger Documentation</h1>
 <p align="center">
 Merge Your Qrcode Together. Even Quicker.
 </p>

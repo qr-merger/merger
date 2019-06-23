@@ -1,4 +1,4 @@
-<h1 align="center">Merger Documents</h1>
+<h1 align="center">Merger Documentation</h1>
 
 ## Install Using Git
 
