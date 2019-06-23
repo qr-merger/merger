@@ -1,0 +1,9 @@
+# Merger Documentation
+
+This is an individual branch for documentation of merger, since we would like to keep the master branch nice and clean and not to get to large in size.
+
+The documentation is written in both Chinese and English, created via [Docsify](https://docsify.js.org) and published with [GitHub Pages](https://pages.github.com) under [GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE).
+
+**View the documentation:** [https://merger.hxco.dev](https://merger.hxco.dev)
+
+Please help us to improve this documentation by submitting a [Pull Request](https://github.com/hifocus/merger/pulls).
