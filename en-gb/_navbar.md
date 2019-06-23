@@ -7,6 +7,6 @@
   * [Pull Requests](https://github.com/hifocus/merger/pulls)
   * [Merger Demo](https://demo.qrcdn.com)
   
-* Discover
+* More
   * [Huangxin's Blog](https://www.justhx.com)
   * [LF112's Blog](https://blog.lf112.net)
