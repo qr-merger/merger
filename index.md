@@ -60,5 +60,6 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
   - [jsDelivr](https://www.jsdelivr.com)
   - [Pure CSS3 Gradient Background Animation](https://codepen.io/P1N2O/pen/pyBNzX)
   - [Iconfont.cn](https://www.iconfont.cn)
-<hr>
+
+
 在 [GitHub](https://github.com/hifocus/merger/tree/gh-pages) 上编辑此页面。

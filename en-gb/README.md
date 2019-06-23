@@ -58,5 +58,6 @@ The screenshot below showed different styles whlist opening merger in different 
   - [jsDelivr](https://www.jsdelivr.com)
   - [Pure CSS3 Gradient Background Animation](https://codepen.io/P1N2O/pen/pyBNzX)
   - [Iconfont.cn](http://iconfont.cn)
-  <hr>
-  Edit this documentation on [GitHub](https://github.com/hifocus/merger/tree/gh-pages/en-gb).
+
+
+Edit this documentation on [GitHub](https://github.com/hifocus/merger/tree/gh-pages/en-gb).
