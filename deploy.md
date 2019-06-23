@@ -4,7 +4,7 @@
 
 以下为一些可能有用的链接：
 - 部署至 [GitHub Pages](https://pages.github.com)
-  - [https://help.github.com/en/articles/fork-a-repo]
+  - [https://help.github.com/en/articles/fork-a-repo](https://help.github.com/en/articles/fork-a-repo)
   - [https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages)
   - [https://help.github.com/en/articles/using-a-custom-domain-with-github-pages](https://help.github.com/en/articles/using-a-custom-domain-with-github-pages)
   - [https://help.github.com/en/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site](https://help.github.com/en/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site)
@@ -18,7 +18,7 @@
   - [https://nginxconfig.io](https://nginxconfig.io)
 
 - 部署至 [Netlify](https://www.netlify.com)
-  - [https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/]
+  - [https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
   - [https://www.netlify.com/docs/custom-domains/](https://www.netlify.com/docs/custom-domains/)
 
 - 部署至 [now.sh](https://zeit.co)
