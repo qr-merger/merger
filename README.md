@@ -22,12 +22,9 @@ Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
 
 Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
 
-## Documentation
+## Relevant Links
 
-To learn how to install, configure and deploy merger, visit [merger.hxco.dev](https://merger.hxco.dev/#/en-gb/).
-
-## Other Links
-
+- [Docs](https://merger.hxco.dev)
 - [Live Demo](https://demo.qrcdn.com)
 - [Demo From Users](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
 - [Issues](https://github.com/hifocus/merger/issues)
