@@ -22,8 +22,14 @@
 
 在[这里](https://github.com/hifocus/merger/issues/4)提交你的 merger 站点以供[展示](https://merger.hxco.dev/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
 
-## 链接
-- [说明文档](https://merger.hxco.dev/)
+## 说明文档
+
+浏览 [https://merger.hxco.dev](https://merger.hxco.dev) 以学习如何安装、配置并部署 merger.
+
+你也可以浏览在语雀上的文档镜像：[https://www.yuque.com/hifocus/merger](https://www.yuque.com/hifocus/merger)
+
+## 其他链接
+
 - [演示站点](https://demo.qrcdn.com)
 - [其他演示站点](https://merger.hxco.dev/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
 - [提交问题](https://github.com/hifocus/merger/issues)
@@ -31,11 +37,13 @@
 - [感谢](https://merger.hxco.dev/#/?id=credit)
 
 ## 特性
-- 最小化的请求数，最大化的速度。
-- 拥有详尽的代码注释，方便二次开发。
-- 结合实际使用场景为每一种支付方式独立定制的展示样式。
-- 高度可定制化，页面上一切内容均可通过简单的 Javascript 代码更改。无需任何编程技巧。
-- 所有静态文件均默认使用开源 CDN [jsDelivr](https://www.jsdelivr.com) 分发。
+
+- 最少的请求数，最快的速度。
+- 详尽的代码注释，方便二次开发。
+- 结合实际使用场景为每一种支付方式单独设计的展示样式。
+- 高度可定制化，页面上一切内容均可通过预设的 Javascript 代码更改。无需任何编程技巧。
+- 所有静态文件均默认通过开源 CDN [jsDelivr](https://www.jsdelivr.com) 分发。
 
 ## 开源许可证
+
 [GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE)

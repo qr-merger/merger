@@ -22,21 +22,26 @@ Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
 
 Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
 
+## Documentation
 
-## Links
-- [Documentation](https://merger.hxco.dev/#/en-gb/)
-- [Demo Site](https://demo.qrcdn.com)
-- [Other Demo Sites](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
+To learn how to install, configure and deploy merger, visit [https://merger.hxco.dev](https://merger.hxco.dev/#/en-gb/).
+
+## Other Links
+
+- [Live Demo](https://demo.qrcdn.com)
+- [Demo From Users](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
 - [Issues](https://github.com/hifocus/merger/issues)
 - [Pull Requests](https://github.com/hifocus/merger/pulls)
 - [Credit](https://merger.hxco.dev/#/en-gb/?id=credit)
 
 ## Features
-- Minimised request accounts, maximised loading speed.
+
+- Minimal number of requests, fastest loading speed.
 - Detailed code comments , make ease for second-time development.
-- Integrate with actual usage scenes, presenting dedicated custimised style for each payment method.
-- Highly customisable, everthing on the page can be changed with simple Javascript codes. No need for any programming technique.
-- All static contents are distributed by the Opne Source CDN [jsDelivr](https://www.jsdelivr.com).
+- Integrate with actual usage scenes, to present a individually-designed style for each payment method.
+- Highly customisable, everthing on the page can be changed through the preset Javascript codes. No need for any programming technique.
+- All static contents are served through the Opne Source CDN [jsDelivr](https://www.jsdelivr.com).
 
 ## License
+
 [GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE)
