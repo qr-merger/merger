@@ -16,19 +16,19 @@ Merger is a program to merge payment QR Codes using mainly `JavaScript`.
 
 In China, as in our daily life, we usually need to use muitiple methods to received a fund. Whether it is QQ Wallet, Wechat Pay, or Alipay, even though Paypal - Configure merger easily and deploy it to your server, to enrich your payment receival experience in seconds.
 
-You can generate a QR Code for your merger [(see an example)](https://api.imjad.cn/qrcode/?text=https%3A%2F%2Fdemo.qrcdn.com%2Fmerger.html&logo=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FUTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg&size=500&level=H&bgcolor=%23ffffff&fgcolor=%23000000) or send your merger link to someone else. Merger will detect the person's client by `User Agent`, then present relavent contents.
+You can generate a QR Code for your merger [(see an example)](https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png) or send your merger link to someone else. Merger will detect the person's client by `User Agent`, then present relavent contents.
 
 ## Features
-- Minimised request accounts, maximised loading speed.
+- Minimal number of requests, fastest loading speed.
 - Detailed code comments , make ease for second-time development.
-- Integrate with actual usage scenes, presenting dedicated custimised style for each payment method.
-- Highly customisable, everthing on the page can be changed with simple Javascript codes. No need for any programming technique.
-- All static contents are distributed by the Opne Source CDN [jsDelivr](https://www.jsdelivr.com).
+- Integrate with actual usage scenes, to present a individually-designed style for each payment method.
+- Highly customisable, everthing on the page can be changed through the preset Javascript codes. No need for any programming technique.
+- All static contents are served through the Opne Source CDN [jsDelivr](https://www.jsdelivr.com).
 
 ## Demo Site
 See: [https://demo.qrcdn.com](https://demo.qrcdn.com)<br>Host Environment: Ubuntu 18.04.2 LTS | nginx/1.16.0 | Accelerated By [CloudFlare](https://www.cloudflare.com) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
 
-Or Use Phone Camera | QQ Mobile | WeChat | Alipay to [Scan the QR Code](https://api.imjad.cn/qrcode/?text=https%3A%2F%2Fdemo.qrcdn.com%2Fmerger.html&logo=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FUTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg&size=500&level=H&bgcolor=%23ffffff&fgcolor=%23000000)
+Or Use Phone Camera | QQ Mobile | WeChat | Alipay to [Scan this QR Code](https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png)
 
 ### Other Demo Sites
 - [https://pay.ryanc.cc](https://pay.ryanc.cc/)

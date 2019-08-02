@@ -18,19 +18,19 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 
 日常生活里，我们往往需要使用多个途径收取款项。无论是QQ钱包还是微信支付，亦或是支付宝，甚至 Paypal - 轻松配置 merger 并部署到你的服务器，即可拥有无与伦比的一体化收款体验。
 
-你可以为你的 merger 生成一张二维码 [(查看示例)](https://api.imjad.cn/qrcode/?text=https%3A%2F%2Fdemo.qrcdn.com%2Fmerger.html&logo=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FUTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg&size=500&level=H&bgcolor=%23ffffff&fgcolor=%23000000)，或者直接把你的 merger 链接发送给对方。merger 会通过 `User Agent` 识别对方的客户端，随即展示相应的内容。
+你可以为你的 merger 生成一张二维码 [（查看示例）](https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png)，或者直接把你的 merger 链接发送给对方。merger 会通过 `User Agent` 识别对方的客户端，随即展示相应的内容。
 
 ## 特性
-- 最小化的请求数，最大化的速度。
-- 拥有详尽的代码注释，方便二次开发。
-- 结合实际使用场景为每一种支付方式独立定制的展示样式。
-- 高度可定制化，页面上一切内容均可通过简单的 Javascript 代码更改。无需任何编程技巧。
-- 所有静态文件均默认使用开源 CDN [jsDelivr](https://www.jsdelivr.com) 分发。
+- 最少的请求数，最快的速度。
+- 详尽的代码注释，方便二次开发。
+- 结合实际使用场景为每一种支付方式单独设计的展示样式。
+- 高度可定制化，页面上一切内容均可通过预设的 Javascript 代码更改。无需任何编程技巧。
+- 所有静态文件均默认通过开源 CDN [jsDelivr](https://www.jsdelivr.com) 分发
 
 ## 演示站点
 请浏览：[https://demo.qrcdn.com](https://demo.qrcdn.com)<br>托管环境：Ubuntu 18.04.2 LTS | nginx/1.16.0 | Accelerated By [CloudFlare](https://www.cloudflare.com) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
 
-或者使用 手机相机 | QQ 手机版 | 微信 | 支付宝 [扫描二维码](https://api.imjad.cn/qrcode/?text=https%3A%2F%2Fdemo.qrcdn.com%2Fmerger.html&logo=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FUTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg&size=500&level=H&bgcolor=%23ffffff&fgcolor=%23000000)
+或者使用 手机相机 | QQ 手机版 | 微信 | 支付宝 [扫描这个二维码](https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png)
 
 ### 其他演示站点
 - [https://pay.ryanc.cc](https://pay.ryanc.cc/)
