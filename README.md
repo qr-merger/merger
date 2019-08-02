@@ -24,7 +24,7 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 
 ## Documentation
 
-To learn how to install, configure and deploy merger, visit [https://merger.hxco.dev](https://merger.hxco.dev/#/en-gb/).
+To learn how to install, configure and deploy merger, visit [merger.hxco.dev](https://merger.hxco.dev/#/en-gb/).
 
 ## Other Links
 

@@ -24,7 +24,7 @@
 
 ## 说明文档
 
-浏览 [https://merger.hxco.dev](https://merger.hxco.dev) 以学习如何安装、配置并部署 merger.
+浏览 [merger.hxco.dev](https://merger.hxco.dev) 以学习如何安装、配置并部署 merger.
 
 你也可以浏览在语雀上的文档镜像：[https://www.yuque.com/hifocus/merger](https://www.yuque.com/hifocus/merger)
 
