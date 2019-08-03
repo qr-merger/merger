@@ -25,14 +25,15 @@ You can generate a QR Code for your merger [(see an example)](https://ae01.alicd
 - Highly customisable, everthing on the page can be changed through the preset Javascript codes. No need for any programming technique.
 - All static contents are served through the Opne Source CDN [jsDelivr](https://www.jsdelivr.com).
 
-## Demo Site
+## Live Demo
 See: [https://demo.qrcdn.com](https://demo.qrcdn.com)<br>Host Environment: Ubuntu 18.04.2 LTS | nginx/1.16.0 | Accelerated By [CloudFlare](https://www.cloudflare.com) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
 
 Or Use Phone Camera | QQ Mobile | WeChat | Alipay to [Scan this QR Code](https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png)
 
-### Other Demo Sites
+### Demo From Users
 - [https://pay.ryanc.cc](https://pay.ryanc.cc/)
 - [https://dora.cat/zs/](https://dora.cat/zs/)
+- [https://donate.hcooh.top](https://donate.hcooh.top/)
 
 [Submit your merger site here for presentation](https://github.com/hifocus/merger/issues/4)
 

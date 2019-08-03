@@ -35,6 +35,7 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 ### 其他演示站点
 - [https://pay.ryanc.cc](https://pay.ryanc.cc/)
 - [https://dora.cat/zs/](https://dora.cat/zs/)
+- [https://donate.hcooh.top](https://donate.hcooh.top/)
 
 [在这里提交你的 merger 站点以供展示](https://github.com/hifocus/merger/issues/4)
 
