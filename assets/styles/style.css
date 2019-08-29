@@ -1,21 +1,15 @@
-/*  Merger - Merge your qrcode together. Even quicker.
+/*
+Merger - Merge your qrcode together. Even quicker.
 Released under GNU General Public License v3.0. Opensourced. (https://github.com/hifocus/merger)
 Author @hifocus (https://github.com/hifocus), @LF112 (https://github.com/lf112)
-Copyright reservation is required. */
-
-/* 
-HTML Templete Grouper - The Best Way To Share Your Chatting Group To The Public. 
-GitHub: [https:/github.com/hifocus/Grouper] , Released Under MIT Lisence 
-Original Version: [https://i.chainwon.com/946.html] 
-Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
-Please DO NOT Remove Any Of The Copyright Information
+Copyright reservation is required.
 */
 
 html,
 body {
   height: 100%;
   margin: 0;
-  /* Custom Fonts Disabled Due to Load Speed Requirements */
+  /* Custom Fonts Disabled Due to Need on Load Speed */
   /* font-family: "Noto Sans SC Sliced", sans-serif; */
   background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -67,7 +61,7 @@ body {
 
 .main {
   position: absolute;
-  top: calc(50% - 207px);
+  top: calc(50% - 178px);
   width: 100%;
 }
 .main i {
@@ -100,7 +94,7 @@ p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.85;
+  opacity: 0.80;
 }
 
 .details {
@@ -142,6 +136,10 @@ p {
   fill: currentColor;
   overflow: hidden;
   font-size: 16;
+}
+
+.paypal-wide {
+  width: 3em;
 }
 
 /* .qrcode {
