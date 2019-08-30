@@ -136,6 +136,7 @@ p {
   fill: currentColor;
   overflow: hidden;
   font-size: 16;
+  opacity: 1;
 }
 
 .paypal-wide {

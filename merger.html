@@ -1,112 +1,137 @@
 <!-- 
-HTML Template Merger - Merge your qrcode quicker.
-Released under GNU General Public License v3.0. Opensourced. (https://github.com/hifocus/merger)
-Author @hifocus (https://github.com/hifocus), @LF112 (https://github.com/lf112)
-Copyright reservation is required.
-
-HTML Templete Grouper - The Best Way To Share Your Chatting Group To The Public. 
-GitHub: [https:/github.com/hifocus/Grouper] , Released Under MIT Lisence 
-Original Version: [https://i.chainwon.com/946.html] 
-Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
-Please DO NOT Remove Any Of The Copyright Information
+  Merger - Merge Your Qrcode Together. Even Quicker.
+  User docs: https://merger.hxco.dev/#/
+  Released under GNU General Public License v3.0. Open source at https://github.com/hifocus/merger.
+  Author @hifocus (https://github.com/hifocus), @LF112 (https://github.com/LF112)
+  Copyright reservation is required.
  -->
 
- <!DOCTYPE html>
- <html lang="zh">
- 
- <head>
-     <title>Merger - Merge your qrcode together. Even quicker.</title>
-     <meta charset="utf-8">
-     <meta name="author" content="Huangxin, LF112" />
-     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><!-- Upgrade HTTP Connections to HTTPS - Default -->
-     <meta name="Keywords" content="Merger,open source,hxco,hifocus,merge qrcode,qrcode" />
-     <meta name="Description" content="Merger is the most simple way to merge your qrcode together." />
-     <link rel="shortcut icon" type="image/x-icon" href="https://ae01.alicdn.com/kf/UTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg">
+<!DOCTYPE html>
 
-     <!-- Load style files from local -->
-     <!-- <link rel="stylesheet" href="assets/styles/spectre.css/spectre.min.css">
-     <link rel="stylesheet" href="assets/styles/style.min.css"> -->
-     
-     <!-- Load style files from jsDelivr - Default -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/picturepan2/spectre@0.5.7/dist/spectre.min.css,gh/hifocus/merger@0.14/assets/styles/style.min.css">
+<html>
 
- </head>
- 
- <body>
- 
-     <script>
-         // Config Part - Please follow the instruction.
-         // Replace with your own qrcode (or paypal) links.
-         // If you don't have a Paypal account, or don't want to use it here, comment out (or just delete) the `var paypal = "xxx" part` ↓.
- 
-         var wechat = "wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN";
-         var alipay = "https://qr.alipay.com/fkx01299q4zug8xxsp2vc0a?t=1545238142543";
-         var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&u=1031092401&n=惶心";
-         var paypal = "https://paypal.me/hxco";
- 
-         // Replace with your id and profile photo link ↓.
-         var myname = "惶心";
-         var profile ="https://ae01.alicdn.com/kf/UTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg";
- 
-         // Replace the title and subtitle if preferred (not required) ↓.
-         var title = "选择你的支付方式";
-         var subtitle = "跟随进一步的指示以向" + myname + "付款";
- 
-         // See if you would like to enable debug mode (as console.log). If debug mode is disabled, the console will be cleared.
-         // To disable it, comment out (or just delete) the `var debugmode = "xxx" part` ↓.
-         var debugmode = "true";
-         // QQ Mobile wouldn't decode qrcode from `data:image`, so for qq mobile only speical qrcode that generate from qrcode api is required.
-         var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-         // var qrcodeapi = "https://chart.googleapis.com/chart?chs=500x500&cht=qr&chld=L|1&choe=UTF-8&chl="; // Inaccessible in China. Backup use only.
+<head>
+    <title></title><!-- There is no need to set the page title manually -->
+    <meta charset="utf-8">
+    <meta name="author" content="Huangxin, LF112" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- Upgrade HTTP Connections to HTTPS - Default -->
+    <link rel="shortcut icon" type="image/x-icon" id="favicon"><!-- There is no need to set the page icon manually -->
 
-     </script>
- 
-         <div class="main" id="h">
-             <i id="i"></i>
-         
-             <h2 id="name"></h2>
-             <p id="description" style="font-weight: lighter"></p>
-         
-             <!-- Button Part Starts -->
-             <div id="pending">
-                <p id="depends" class="middlebtn">
-                    <a href="#showqrcode" class="btn btn-primary" onclick="openwechat()" id="toclick"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixinzhifu"></use></svg></a>
-                    <a href="#showqrcode" class="btn btn-primary" onclick="openalipay()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-iconfontrectangle390"></use></svg></a>
-                    <a href="#showqrcode" class="btn btn-primary" onclick="opentenpay()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg></a>
-                    <button class="btn btn-primary" id="paypalbtn" onclick="openbox()"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-paypal"></use></svg></button>
+    <!-- Load style files from local -->
+    <!-- <link rel="stylesheet" href="assets/styles/spectre.css/spectre-modified.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css"> -->
+
+    <!-- Load style files from jsDelivr - Default -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh//hifocus/merger@0.20/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.20/assets/styles/style.min.css">
+
+</head>
+
+<body>
+
+    <script>
+        // Config Part - Please follow the instruction.
+        // Replace with your own qrcode (or paypal) links.
+        // If you don't have a Paypal account, or don't want to use it here, comment out (or just delete) the `var paypal = "xxx" part` ↓.
+
+        var usage = "payment"; // Available variables: `payment`, `donate`, unavailable if multilingual is disabled
+        var wechat = "wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN";
+        var alipay = "https://qr.alipay.com/fkx01299q4zug8xxsp2vc0a?t=1545238142543";
+        var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&u=1031092401&n=惶心";
+        var paypal = "https://paypal.me/hxco";
+
+        // Replace with your preferred name and profile photo link below
+        // Please note there is a multilingual support function enabled by default below
+        var myname = "惶心";
+        var profile = "https://ae01.alicdn.com/kf/H0b798980349e4042bd9dabb1acc79cb6U.jpg"; // Please note that the profile image has to be served via HTTPS otherwise will not be loaded
+
+
+        // Dynamic Page Title Supoort
+        // Merger now supports dynamic page tile, however it's your freedom to choose whether you want to brand merger
+        // If you set branding to true, there will be a `| Merger` added after the preset page title
+        var branding = true; // Set variable to `false` to disable branding
+
+        // Multilingual Support
+        // If you are a non-Chinese user and wish to enable multilingual, set below to true (default) and leave everything else blank
+        var multilingual = true; // Set variable to false to disable multilingual feature
+        var myname_hans = myname // Default setting for Chinese Simplified users; change it to a speicify value if needed
+        var myname_hant = "惶心"; // Choose how you want your name to be displayed for Traditional Chinese users
+        var myname_eng = "Focus Chen"; // Choose how you want your name to be displayed for English / Non-Chinese users - 
+
+        // Customise pay instruction
+        // Will only be effective if multilingual function is disabled
+        var title = "选择你的支付方式";
+        var subtitle = "跟随进一步的指示以向" + myname + "付款"; // Do not change the `finalname` variable here
+
+        // QQ Mobile wouldn't decode qrcode from `data:image`, so for qq mobile only speical qrcode that generate from qrcode api is necessary
+        var qrcodeapi = "https://www.zhihu.com/qrcode?url="; // Please note that the API has to support HTTPS connection otherwise will not be loaded
+    </script>
+
+    <div class="main" id="h">
+        <i id="i"></i>
+
+        <h2 id="name"></h2>
+        <p id="description"></p>
+
+        <!-- Button Part Starts -->
+        <div id="pending">
+            <p id="depends" class="middlebtn">
+                <a href="#showqrcode" class="btn btn-primary" id="tenpaybtn" onclick="opentenpay()"><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#icon-QQ"></use>
+                    </svg></a>
+                <a href="#showqrcode" class="btn btn-primary" id="toclick" onclick="openwechat()"><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#icon-weixinzhifu"></use>
+                    </svg></a>
+                <a href="#showqrcode" class="btn btn-primary" id="alipaybtn" onclick="openalipay()"><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#icon-iconfontrectangle390"></use>
+                    </svg></a>
+                <button class="btn btn-primary" id="paypalbtn" onclick="openbox()"><svg class="icon paypal-wide"
+                        aria-hidden="true">
+                        <use xlink:href="#icon-paypal"></use>
+                    </svg></button>
             </p>
-             </div>
+        </div>
 
-             <!-- Button Part Ends -->
-             
-             <!-- Modal Part Starts -->
-             <div class="modal" id="showqrcode">
-                 <div class="modal-container" role="document">
-                     <div class="modal-header" id="btncontainer">
-                         <a href="#" class="btn btn-clear float-right" id="qrcodeclose" aria-label="Close"></a>
-                         <div id="titleinfo" class="modal-title h5" style="text-align: center"></div>
-                     </div>
-                     <div class="modal-body">
-                         <div class="content" id="qrcontainer">
-                             <div id="currentqrcode" class="img smaller"></div> <!-- qrcode imported here -->
-                             <img id="tenpayonly" class="img smaller"> <!-- if mobile qq, qrcode imported here -->
-                            </div>
-                     </div>
-                 </div>
-             </div>
-             <!-- Modal Part Ends -->
+        <!-- Button Part Ends -->
 
-     <!-- Footer Scripts --> <!-- Please do not swap orders -->
-     <!-- Load Javascript files from jsDelivr - Default -->
-     <script src="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.1.5/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.1.5/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.1.5/assets/js/function.min.js,gh/hifocus/merger@0.1.5/assets/js/font_974919_xgtacm93vxp.min.js"></script>     
-     
-     <!-- Load Javascript files from local -->
-     <!-- <script src="assets/js/jQuery/jquery.min.js"></script>
-     <script src="assets/js/jquery-qrcode/jquery-qrcode.min.js"></script>
-     <script src="assets/js/function.min.js"></script>
-     <script src="assets/js/font_974919_xgtacm93vxp.js"></script> -->
+        <!-- Modal Part Starts -->
+        <div class="modal" id="showqrcode">
+            <div class="modal-container" role="document">
+                <div class="modal-header" id="btncontainer">
+                    <a href="#" class="btn btn-clear float-right" id="qrcodeclose" aria-label="Close"></a>
+                    <div id="titleinfo" class="modal-title h5" style="text-align: center"></div>
+                </div>
+                <div class="modal-body">
+                    <div class="content" id="qrcontainer">
+                        <div id="currentqrcode" class="img smaller"></div> <!-- qrcode imported here -->
+                        <img id="tenpayonly" class="img smaller"> <!-- if mobile qq, qrcode imported here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Part Ends -->
+    </div>
 
-     </body>
-     
-     </html>
+    <!-- Footer Scripts -->
+    <!-- Please do not swap orders -->
+    <!-- Load Javascript files from jsDelivr - Default -->
+    <script src="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.20/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.20/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.1.5/assets/js/function.min.js,gh/hifocus/merger@0.20/assets/js/font_974919_xgtacm93vxp.min.js"></script>
+
+    <!-- Load Javascript files from local -->
+    <!-- <script src="assets/js/jQuery/jquery.min.js"></script>
+    <script src="assets/js/jquery-qrcode/jquery-qrcode.min.js"></script>
+    <script src="assets/js/dev-files/function.original.js"></script>
+    <script src="assets/js/font_974919_xgtacm93vxp.js"></script> -->
+
+    <script>
+        // Set page favicon using jQuery
+        $("#favicon").attr("href", profile);
+    </script>
+
+</body>
+
+</html>
