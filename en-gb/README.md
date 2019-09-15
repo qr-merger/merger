@@ -23,7 +23,7 @@ You can generate a QR Code for your merger [(see an example)](https://ae01.alicd
 - Detailed code comments , make ease for second-time development.
 - Integrate with actual usage scenes, to present a individually-designed style for each payment method.
 - Highly customisable, everthing on the page can be changed through the preset Javascript codes. No need for any programming technique.
-- All static contents are served through the Opne Source CDN [jsDelivr](https://www.jsdelivr.com).
+- All static contents are served through the Open Source CDN [jsDelivr](https://www.jsdelivr.com).
 
 ## Live Demo
 See: [https://demo.qrcdn.com](https://demo.qrcdn.com)<br>Host Environment: Ubuntu 18.04.2 LTS | nginx/1.16.0 | Accelerated By [CloudFlare](https://www.cloudflare.com) | Hosted By [Digital Ocean](https://m.do.co/c/37a758514a02)
