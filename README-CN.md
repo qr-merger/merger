@@ -32,7 +32,7 @@
 - [合并请求](https://github.com/hifocus/merger/pulls)
 - [感谢](https://merger.hxco.dev/#/?id=credit)
 
-> 说明文档已为中国大陆网络环境优化
+> <del>说明文档已为中国大陆网络环境优化</del>
 
 ## 特性
 
