@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://merger.hxco.dev">
+  <a href="https://merger.justhx.com">
     <img alt="merger" src="https://ae01.alicdn.com/kf/HTB1M9ondUKF3KVjSZFE760ExFXae.png" height="75">
   </a>
 </p>
@@ -20,16 +20,16 @@ Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
 <a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
 </p>
 
-Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
+Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.justhx.com/#/en-gb/?id=other-demo-sites)
 
 ## Relevant Links
 
-- [Docs](https://merger.hxco.dev)
+- [Docs](https://merger.justhx.com)
 - [Live Demo](https://demo.qrcdn.com)
-- [Demo From Users](https://merger.hxco.dev/#/en-gb/?id=other-demo-sites)
+- [Demo From Users](https://merger.justhx.com/#/en-gb/?id=other-demo-sites)
 - [Issues](https://github.com/hifocus/merger/issues)
 - [Pull Requests](https://github.com/hifocus/merger/pulls)
-- [Credit](https://merger.hxco.dev/#/en-gb/?id=credit)
+- [Credit](https://merger.justhx.com/#/en-gb/?id=credit)
 
 ## Features
 
