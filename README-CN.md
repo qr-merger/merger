@@ -25,14 +25,12 @@
 
 ## 相关链接
 
-- [说明文档](https://merger.castle.freejishu.com)
+- [说明文档](https://merger.justhx.com/#/)
 - [演示站点](https://demo.qrcdn.com)
 - [其他演示站点](https://merger.justhx.com/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
 - [提交问题](https://github.com/hifocus/merger/issues)
 - [合并请求](https://github.com/hifocus/merger/pulls)
 - [感谢](https://merger.justhx.com/#/?id=credit)
-
-> <del>说明文档已为中国大陆网络环境优化</del>
 
 ## 特性
 

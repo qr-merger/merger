@@ -24,7 +24,7 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 
 ## Relevant Links
 
-- [Docs](https://merger.justhx.com)
+- [Docs](https://merger.justhx.com/#/en-gb/)
 - [Live Demo](https://demo.qrcdn.com)
 - [Demo From Users](https://merger.justhx.com/#/en-gb/?id=other-demo-sites)
 - [Issues](https://github.com/hifocus/merger/issues)
