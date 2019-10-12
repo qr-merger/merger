@@ -131,13 +131,15 @@ var subtitle = "跟随进一步的指示以向" + myname + "付款";
 
 `Config Part` 最后的部分为调试模式的开关以及二维码应用程序接口（API）的选择。
 
-[merger](https://github.com/hifocus/merger) 默认从 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 本地生成所需的二维码，这样能够节省 HTTP 请求数量和加快页面加载速度。然而，QQ 手机版无法解码 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 默认生成 `data:image` 类型的二维码图片，故此这里仍然需要使用二维码接口（API）生成二维码以供解码。
+[merger](https://github.com/hifocus/merger) 默认从 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 本地生成所需的二维码，这样能够节省 HTTP 请求数和加快页面加载速度。然而，QQ 手机版无法解码 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 默认生成 `data:image` 类型的二维码图片，故此这里仍然需要使用二维码接口（API）生成二维码以供解码。
 
 ```javascript
 var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
 ```
 
-你也可以自由使用你喜爱的接口；然而，非通过 HTTPS 调用的内容不会被加载。
+你也可以自由使用你喜爱的接口。
+
+!> 通过非 HTTPS 调用（即 HTTP）的内容不会被加载。
 
 修改 `var qrcodeapi = "https://www.zhihu.com/qrcode?url=";` 部分即可更换调用的二维码 API。你可以从搜索引擎找到更多的二维码 API：
 
