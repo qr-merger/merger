@@ -11,7 +11,7 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 
 你可以为你的 merger 生成一张二维码 [(查看示例)](https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png)，或者直接把你的 merger 链接发送给对方。merger 会通过 `User Agent` 识别对方的客户端，随即展示相应的内容。
 
-自从[更新 0.20](https://github.com/hifocus/merger/releases/tag/0.20) 以来，merger 首次支持了多语言、用途定义和自动页面标题和图标；这意味着你可以更为简便地配置 merger，而你的用户也会获得更好的使用体验。
+自从 [更新 0.20](https://github.com/hifocus/merger/releases/tag/0.20) 以来，merger 首次支持了多语言、用途定义和自动页面标题和图标；这意味着你可以更为简便地配置 merger，而你的用户也会获得更好的使用体验。
 
 ## 特性
 - 多语言支持。
