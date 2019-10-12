@@ -53,7 +53,7 @@ var paypal = "https://paypal.me/hxco";
 
 对于 Paypal，你需要到 [https://paypal.me](https://paypal.me) 生成个人支付链接。
 
-如果你没有，或者不想展示以上四个收款方式的任意一个 / 数个，你可以删除或留空相应的变量。
+!> 如果你没有，或者不想展示以上四个收款方式的任意一个 / 数个，你可以删除或留空相应的变量。
 
 如：我没有支付宝，且不希望展示我的 Paypal 收款地址：
 
@@ -81,8 +81,9 @@ var profile = "https://ae01.alicdn.com/kf/UTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg";
 var profile = "https://i.loli.net/2019/04/10/5cad38f6e8694.png";
 ```
 
-为了保证尽可能高的可用性，除非有绝对自信，否则不推荐自主托管头像图片文件。
-至此，你已经配置完成所有必要变量。
+!> 为了保证尽可能高的可用性，除非有绝对自信，否则不推荐自主托管头像图片文件。
+
+?> 至此，你已经配置完成所有必要变量。
 
 ## 动态页面标题
 
@@ -112,7 +113,7 @@ var myname_eng = "Focus Chen"; // Choose how you want your name to be displayed 
 
 ?> 你也可以通过设置 ` var multilingual = false;` 以禁用多语言。
 
-## 配置引导文字（非必须）
+## 配置引导文字
 
 !> 仅在 multilingual 功能被禁用时，这个部分才会生效
 
