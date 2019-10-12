@@ -1,46 +1,25 @@
-<h1 align="center">merger 使用文档</h1>
+<h1 align="center">Merger 使用文档</h1>
 
-## 使用 Git 安装
+我们仅建议使用已经发布的版本，而非复制整个正在开发过程中的代码仓库。
 
-如果你还没有安装 [Git](https://git-scm.com)，请参考[这个页面](install-git.md)。
+在任何版本以前，请确保已经阅读相应的版本说明。
 
-### 使用 git clone
+## 最新版本
+
+稳定版本：[https://github.com/hifocus/merger/releases/latest](https://github.com/hifocus/merger/releases/latest)<br>
+预发布版本：[https://github.com/hifocus/merger/releases/tag/0.20](https://github.com/hifocus/merger/releases/tag/0.20)
+
+你可以通过以下链接下载相应的 merger 更新：<br>
+**[最新版本](https://github.com/hifocus/merger/archive/0.15.zip) / [预发布版本](https://github.com/hifocus/merger/archive/0.20.zip)**
+
+## 使用命令行
+
+你也可以通过以下命令下载相应的 merger 更新：
+
 ```bash
-cd /path/to/your/folder
-git clone https://github.com/hifocus/merger.git
-
-# optional
-mv merger.html index.html
+wget https://github.com/hifocus/merger/archive/0.15.zip # latest
 ```
 
-## 直接下载
-### 使用浏览器
-- 从此处下载完整代码仓库：[https://github.com/hifocus/merger/archive/master.zip](https://github.com/hifocus/merger/archive/master.zip)
-- 仅下载 `merger.html`：[https://github.com/hifocus/merger/raw/master/merger.html](https://github.com/hifocus/merger/raw/master/merger.html)
+<hr>
 
-### 使用 GitHub Desktop
-1. 下载并安装 GitHub Desktop：[https://get.js.org/githubdesktop](https://get.js.org/githubdesktop)
-2. - [从此处打开完整代码仓库](x-github-client://openRepo/https://github.com/hifocus/merger)
-   - [仅打开 merger.html](x-github-client://openRepo/https://github.com/hifocus/merger?branch=master&filepath=merger.html)
-
-### 使用命令行
-```bash
-cd /path/to/your/folder
-
-# Download the whole master branch / 下载整个 master 分支
-wget https://github.com/hifocus/merger/archive/master.zip
-mv master.zip merger.zip && unzip merger.zip && cd merger-master && mv * ../ && cd ../ && rm -rf merger-master
-
-# Download 'merger.html' only / 只下载 `merger.html`
-# Use wget
-wget https://raw.githubusercontent.com/hifocus/merger/master/merger.html
-
-# alternative method / 替代方式
-curl https://raw.githubusercontent.com/hifocus/merger/master/merger.html --output merger.html
-
-# optional / 可选
-mv merger.html index.html
-```
-
------------------------
-此时，[merger](https://github.com/hifocus/merger) 已经被成功安装（下载）。
+下载 merger 以后，你应当首先完成对 merger 的配置（详见 [配置](/configure) 页面），然后使用你喜爱的工具上传整个 merger 目录至你的服务器，完成部署（详见 [部署](/deploy) 页面）。
