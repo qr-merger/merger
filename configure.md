@@ -1,18 +1,18 @@
 <h1 align="center">Merger 使用文档</h1>
 
-[merger](https://github.com/hifocus/merger) 的配置十分简单。通常来说，你只要修改 `merger.html` 里面的 `Config Part` 即可配置你自己的 merger 页面。
+[merger](https://github.com/hifocus/merger) 的配置十分简单。通常来说，你只要修改 `merger.html` 里面的 `Config Section` 即可配置你自己的 merger 页面。
 
-> [在 GitHub.com 上浏览 Config Part](https://github.com/hifocus/merger/blob/master/merger.html#L33-L69)
+> [在 GitHub.com 上浏览 Config Section](https://github.com/hifocus/merger/blob/master/merger.html#L33-L69)
 
-在 `Config Part` 内，每一个变量都会有详细的英文注释帮助你的配置。如果无法阅读，你依然可以参照本页面。
+在 `Config Section` 内，每一个变量都会有详细的英文注释帮助你的配置。如果无法阅读，你依然可以参照本页面。
 
-在 `Config Part` 所使用的 Javascirpt 代码里，每一**行**配置都需要以半角分号 `;` 结尾。如果缺少或者填入了错误的分号，如全角分号 `；`，`Config Part` 将无法运作。
+在 `Config Section` 所使用的 Javascirpt 代码里，每一**行**配置都需要以半角分号 `;` 结尾。如果缺少或者填入了错误的分号，如全角分号 `；`，`Config Section` 将无法运作。
 
-`Config Part` 的格式为：`var something = "something_actual"` （定义 某物 = 实际值）。同样地，请勿忽略等于号 `=` 前后的空格以及 `something_acutal` 前后的半角双引号 `" "`。
+`Config Section` 的格式为：`var something = "something_actual"` （定义 某物 = 实际值）。同样地，请勿忽略等于号 `=` 前后的空格以及 `something_acutal` 前后的半角双引号 `" "`。
 
 ## 配置用途
 
-在 `Config Part` 内，你需要首先定义 merger 的用途。
+在 `Config Section` 内，你需要首先定义 merger 的用途。
 
 目前，我们提供两种用途：payment（付款）和 donate（捐款）。
 
@@ -28,7 +28,7 @@ var usage = "payment";
 
 ## 配置支付链接
 
-在 `Config Part` 中，你需要定义自己的收款链接 - 将以下内容修改为自己的：
+在 `Config Section` 中，你需要定义自己的收款链接 - 将以下内容修改为自己的：
 
 ```javascript
 var wechat = "wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN";
@@ -66,7 +66,7 @@ var paypal = ""; // Leave paypal to blank
 
 ## 配置昵称和头像地址
 
-`Config Part` 下一部分需要填入昵称和头像地址。这部分如下所示：
+`Config Section` 下一部分需要填入昵称和头像地址。这部分如下所示：
 
 ```javascript
 // Replace with your id and profile photo link ↓.
@@ -117,7 +117,7 @@ var myname_eng = "Focus Chen"; // Choose how you want your name to be displayed 
 
 !> 仅在 multilingual 功能被禁用时，这个部分才会生效
 
-`Config Part` 下一部分为引导文字。这些文字被用以引导访客进行下一步的操作；例如点击按钮，扫码等等。
+`Config Section` 下一部分为引导文字。这些文字被用以引导访客进行下一步的操作；例如点击按钮，扫码等等。
 
 默认的引导文字如下，你可以随意自定义：
 
@@ -129,7 +129,7 @@ var subtitle = "跟随进一步的指示以向" + myname + "付款";
 
 ## 二维码接口
 
-`Config Part` 最后的部分为调试模式的开关以及二维码应用程序接口（API）的选择。
+`Config Section` 最后的部分为调试模式的开关以及二维码应用程序接口（API）的选择。
 
 [merger](https://github.com/hifocus/merger) 默认从 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 本地生成所需的二维码，这样能够节省 HTTP 请求数和加快页面加载速度。然而，QQ 手机版无法解码 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 默认生成 `data:image` 类型的二维码图片，故此这里仍然需要使用二维码接口（API）生成二维码以供解码。
 
