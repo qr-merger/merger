@@ -6,7 +6,7 @@ Merge Your Qrcode Together. Even Quicker.
 ## Introduction
 Merger is a program to merge payment QR Codes using mainly `JavaScript`.
 
-In China, as in our daily life, we usually need to use muitiple methods to received a fund. Whether it is QQ Wallet, Wechat Pay, or Alipay, even though Paypal - Configure merger easily and deploy it to your server, to enrich your payment receival experience in seconds.
+In China, as in our daily life, we normally need to use muitiple approachs to received a payment. Whether it is QQ Wallet, Wechat Pay, or Alipay, even though Paypal - Configure merger easily and deploy it onto your server, your payment receival experience will be enriched in seconds.
 
 You can generate a QR Code for your merger [(see an example)](https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png) or send your merger link to someone else. Merger will detect the person's client by `User Agent`, then present relavent contents.
 
