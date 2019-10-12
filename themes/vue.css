@@ -56,8 +56,9 @@ body, input, .docsify-copy-code-button {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: #34495e;
-  font-family: "Lato", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
-  font-size: 15px;
+  font-family: Segoe UI, SegoeUI, -apple-system, system-ui, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0;
   margin: 0;
   overflow-x: hidden;
@@ -85,6 +86,7 @@ li input[type='checkbox'] {
 }
 .app-nav {
   margin: 25px 60px 0 0;
+  font-weight: 600;
   position: absolute;
   right: 0;
   text-align: right;
@@ -222,7 +224,6 @@ main.hidden {
 .sidebar > h1 {
   margin: 0 auto 1rem;
   font-size: 1.5rem;
-  font-weight: 300;
   text-align: center;
 }
 .sidebar > h1 a {
@@ -370,7 +371,7 @@ body.sticky .sidebar-toggle {
   border-radius: 100%;
   color: #fff;
   content: '!';
-  font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Segoe UI", -apple-system, system-ui, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: bold;
   left: -12px;
@@ -559,7 +560,6 @@ section.cover p {
 section.cover h1 {
   color: inherit;
   font-size: 2.5rem;
-  font-weight: 300;
   margin: 0.625rem 0 2.5rem;
   position: relative;
   text-align: center;
@@ -662,7 +662,7 @@ body {
 .markdown-section h4,
 .markdown-section strong {
   color: #2c3e50;
-  font-weight: 600;
+  font-weight: 400;
 }
 .markdown-section a {
   color: var(--theme-color, #42b983);
@@ -826,7 +826,7 @@ body {
   border-radius: 2px;
   color: #525252;
   display: block;
-  font-family: 'Roboto Mono', Monaco, courier, monospace;
+  font-family: Monaco, courier, monospace;
   font-size: 0.8rem;
   line-height: inherit;
   margin: 0 2px;
