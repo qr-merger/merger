@@ -1,4 +1,4 @@
-<h1 align="center">merger 使用文档</h1>
+<h1 align="center">Merger 使用文档</h1>
 
 <p align="center">
 合并你的二维码。就是现在。
