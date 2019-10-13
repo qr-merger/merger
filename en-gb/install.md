@@ -1,45 +1,28 @@
 <h1 align="center">Merger Documentation</h1>
 
-## Install Using Git
+We would only suggest you to use versions that are released, instead of copying the whole code repository that would maintain its development progress.
 
-If you haven't got [Git](https://git-scm.com) installed, please refer to [this page](install-git.md).
+Before using any releases, please make sure you have read relevent release notes.
 
-### Using git clone
+## Latest Release
+
+Stable Release: ![](https://img.shields.io/github/v/release/hifocus/merger?style=flat-square)<br>
+Pre-release: ![](https://img.shields.io/github/v/release/hifocus/merger?include_prereleases&style=flat-square)
+
+**Get Stable Release**: [https://github.com/hifocus/merger/releases/latest](https://github.com/hifocus/merger/releases/latest)<br>
+**Get Pre-release**: [https://github.com/hifocus/merger/releases/tag/0.20](https://github.com/hifocus/merger/releases/tag/0.20)
+
+You may use the links below to download relevent merger releases:<br>
+**[Latest](https://github.com/hifocus/merger/archive/0.15.zip) / [Pre-release](https://github.com/hifocus/merger/archive/0.20.zip)**
+
+## Using Command Line
+
+You may also use the command below to download relevent merger release:
+
 ```bash
-cd /path/to/your/folder
-git clone https://github.com/hifocus/merger.git
-
-# optional
-mv merger.html index.html
+wget https://github.com/hifocus/merger/archive/0.15.zip # latest
 ```
 
-## Download Directly
-### Using browser
-- Download the whole code repository from [https://github.com/hifocus/merger/archive/master.zip](https://github.com/hifocus/merger/archive/master.zip)
-- Download `merger.html` only: [https://github.com/hifocus/merger/raw/master/merger.html](https://github.com/hifocus/merger/raw/master/merger.html)
+<hr>
 
-### Using GitHub Desktop
-1. Download and install GitHub Desktop: [https://get.js.org/githubdesktop](https://get.js.org/githubdesktop)
-2. - [Open the whole code repository from here](x-github-client://openRepo/https://github.com/hifocus/merger)
-   - [Open merger.html only](x-github-client://openRepo/https://github.com/hifocus/merger?branch=master&filepath=merger.html)
-
-### Using command line
-```bash
-cd /path/to/your/folder
-
-# Download the whole master branch
-wget https://github.com/hifocus/merger/archive/master.zip
-mv master.zip merger.zip && unzip merger.zip && cd merger-master && mv * ../ && cd ../ && rm -rf merger-master
-
-# Download 'merger.html' only
-# Use wget
-wget https://raw.githubusercontent.com/hifocus/merger/master/merger.html
-
-# alternative method
-curl https://raw.githubusercontent.com/hifocus/merger/master/merger.html --output merger.html
-
-# optional
-mv merger.html index.html
-```
------------------------
-Now, [merger](https://github.com/hifocus/merger) had been successfully installed (downloaded).
+After you downloaded merger, you should firstly finish the configuration to merger (see [Configure](/configure)), then use your preferred tool to upload the whole merger directory to your server to complete the deployment (see [Deploy](/deploy)).
