@@ -659,8 +659,7 @@ body {
 .markdown-section h1,
 .markdown-section h2,
 .markdown-section h3,
-.markdown-section h4,
-.markdown-section strong {
+.markdown-section h4{
   color: #2c3e50;
   font-weight: 400;
 }
