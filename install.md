@@ -6,8 +6,11 @@
 
 ## 最新版本
 
-稳定版本：[https://github.com/hifocus/merger/releases/latest](https://github.com/hifocus/merger/releases/latest)<br>
-预发布版本：[https://github.com/hifocus/merger/releases/tag/0.20](https://github.com/hifocus/merger/releases/tag/0.20)
+稳定版本：![](https://img.shields.io/github/v/release/hifocus/merger?style=flat-square)<br>
+预发布版本：![](https://img.shields.io/github/v/release/hifocus/merger?include_prereleases&style=flat-square)
+
+**获取稳定版本**：[https://github.com/hifocus/merger/releases/latest](https://github.com/hifocus/merger/releases/latest)<br>
+**获取预发布版本**：[https://github.com/hifocus/merger/releases/tag/0.20](https://github.com/hifocus/merger/releases/tag/0.20)
 
 你可以通过以下链接下载相应的 merger 更新：<br>
 **[最新版本](https://github.com/hifocus/merger/archive/0.15.zip) / [预发布版本](https://github.com/hifocus/merger/archive/0.20.zip)**
