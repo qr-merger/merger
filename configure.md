@@ -64,6 +64,8 @@ var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&
 var paypal = ""; // Leave paypal to blank
 ```
 
+!> 在没有设置任何有效付款方式时，浏览器 console 会显示一个红色的错误信息，而此时用户会被提示 “目前没有可用的支付方式”。
+
 ## 配置昵称和头像地址
 
 `Config Section` 下一部分需要填入昵称和头像地址。这部分如下所示：
@@ -75,7 +77,7 @@ var profile = "https://ae01.alicdn.com/kf/UTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg";
 ```
 
 `var myname = "xxx"` 部分需要填入你喜欢的任意昵称。
-`var profile = "xxx"` 部分需要填入你喜欢的头像的**地址**。如果你不知道怎么做，最简单的方式是将图片上传至 [https://sm.ms](https://sm.ms)，然后填入 SM.MS 返回的地址，如：
+`var profile = "xxx"` 部分需要填入你喜欢的头像的**地址**。如果你不知道怎么做，最简单的方式是将图片上传至[图床](https://sspai.com/post/40499)，如 [https://sm.ms](https://sm.ms)，然后填入图床返回的地址，如：
 
 ```javascript
 var profile = "https://i.loli.net/2019/04/10/5cad38f6e8694.png";
@@ -111,25 +113,24 @@ var myname_hant = "惶心"; // Choose how you want your name to be displayed for
 var myname_eng = "Focus Chen"; // Choose how you want your name to be displayed for English / Non-Chinese users - 
 ```
 
-?> 你也可以通过设置 ` var multilingual = false;` 以禁用多语言。
+?> 你也可以通过设置 ` var multilingual = false;` 以禁用多语言。但是我们并不推荐。
 
 ## 配置引导文字
 
-!> 仅在 multilingual 功能被禁用时，这个部分才会生效
+!> 仅在多语言功能被禁用时，这个部分才会生效
 
-`Config Section` 下一部分为引导文字。这些文字被用以引导访客进行下一步的操作；例如点击按钮，扫码等等。
+引导文字被用以引导访客进行下一步的操作；例如点击按钮，扫码等等。
 
 默认的引导文字如下，你可以随意自定义：
 
 ```javascript
-// Replace the title and subtitle if preferred (not required) ↓.
 var title = "选择你的支付方式";
 var subtitle = "跟随进一步的指示以向" + myname + "付款";
 ```
 
 ## 二维码接口
 
-`Config Section` 最后的部分为调试模式的开关以及二维码应用程序接口（API）的选择。
+`Config Section` 最后的部分为二维码应用程序接口（API）的选择。
 
 [merger](https://github.com/hifocus/merger) 默认从 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 本地生成所需的二维码，这样能够节省 HTTP 请求数和加快页面加载速度。然而，QQ 手机版无法解码 [lrsjng/jquery-qrcode](https://github.com/lrsjng/jquery-qrcode) 默认生成 `data:image` 类型的二维码图片，故此这里仍然需要使用二维码接口（API）生成二维码以供解码。
 
@@ -146,7 +147,7 @@ var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
 - [https://www.google.com/search?q=qr+code+generate+api](https://www.google.com/search?q=qr+code+generate+api)
 - [https://www.baidu.com/s?wd=二维码生成接口](https://www.baidu.com/s?wd=二维码生成接口)
 
-请注意，一般情况下无需替换二维码 API。此外，替换之前请确保 API 可用。
+?> 请注意，一般情况下无需替换二维码 API。此外，替换之前请确保 API 可用。
 
 ## 选择静态文件加载源
 
