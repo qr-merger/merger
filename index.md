@@ -9,7 +9,7 @@ merger 是一个使用 `JavaScript` 实现大部分功能的付款二维码合�
 
 日常生活里，我们往往需要使用多个途径收取款项。无论是QQ钱包还是微信支付，亦或是支付宝，甚至 Paypal - 轻松配置 merger 并部署到你的服务器，即可拥有无与伦比的一体化收款体验。
 
-你可以为你的 merger 生成一张二维码 [(查看示例)](https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png)，或者直接把你的 merger 链接发送给对方。merger 会通过 `User Agent` 识别对方的客户端，随即展示相应的内容。
+你可以为你的 merger 生成一张二维码 [(查看示例)](https://ae01.alicdn.com/kf/U22a893338c7d4c33892fd982994e07b5W.png)，或者直接把你的 merger 链接发送给对方。merger 会通过 `User Agent` 识别对方的客户端，随即展示相应的内容。
 
 自从 [更新 0.20](https://github.com/hifocus/merger/releases/tag/0.20) 以来，merger 首次支持了多语言、用途定义和自动页面标题和图标；这意味着你可以更为简便地配置 merger，而你的用户也会获得更好的使用体验。
 
