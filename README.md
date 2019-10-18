@@ -37,7 +37,7 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 - Detailed code comments , make ease for second-time development.
 - Integrate with actual usage scenes, to present a individually-designed style for each payment method.
 - Highly customisable, everthing on the page can be changed through the preset Javascript codes. No need for any programming technique.
-- All static contents are served through the Open Source CDN [jsDelivr](https://www.jsdelivr.com).
+- All static contents are merged (where possible) and served through the Open Source CDN [jsDelivr](https://www.jsdelivr.com) to deliver the most optimal loading speed.
 
 ## License
 
