@@ -665,7 +665,7 @@ body {
 }
 .markdown-section a {
   color: var(--theme-color, #42b983);
-  font-weight: 600;
+  font-weight: 400;
 }
 .markdown-section h1 {
   font-size: 2rem;
@@ -710,7 +710,7 @@ body {
   padding-left: 20px;
 }
 .markdown-section blockquote p {
-  font-weight: 600;
+  font-weight: 400;
   margin-left: 0;
 }
 .markdown-section iframe {
@@ -858,4 +858,8 @@ pre::after {
 }
 .app-name-link {
   font-weight: 600;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+    text-decoration-line: none;
 }
