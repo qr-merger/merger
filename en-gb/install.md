@@ -4,6 +4,16 @@ We would only suggest you to use versions that are released, instead of copying 
 
 Before using any releases, please make sure you have read relevent release notes.
 
+## Before We Start
+
+?> We would strongly advise you to subscribe our releases through the Release Only option to get further version updates.
+
+![](https://ae01.alicdn.com/kf/U9b0fe026b30946de850fafb9605207672.png)
+
+> [Subscribe on GitHub.com](https://github.com/hifocus/merger)
+
+!> Once a new version is released, the primary email you set in [GitHub Settings](https://github.com/settings/emails) will receive a notification email.
+
 ## Latest Release
 
 Stable Release: ![](https://img.shields.io/github/v/release/hifocus/merger?style=flat-square)<br>
