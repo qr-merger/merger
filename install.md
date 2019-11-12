@@ -12,7 +12,7 @@
 
 > [前往 GitHub.com 订阅](https://github.com/hifocus/merger)
 
-!> 新版本发布后，你在 [GitHub Settings](https://github.com/settings/emails) 里指定的主要邮箱（Primary Email）就会收到一封提示邮件。
+!> 新版本发布后，你在 [GitHub Settings](https://github.com/settings/emails) 里指定的主要邮箱（Primary Email）将会收到一封提示邮件。
 
 
 ## 最新版本
