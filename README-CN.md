@@ -25,12 +25,12 @@
 
 ## 相关链接
 
-- [说明文档](https://merger.justhx.com/#/)
+- [说明文档](https://merger.justhx.com/cn/)
 - [演示站点](https://demo.qrcdn.com)
-- [其他演示站点](https://merger.justhx.com/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
+- [其他演示站点](https://merger.justhx.com/cn/docs/introduction#%E5%85%B6%E4%BB%96%E6%BC%94%E7%A4%BA%E7%AB%99%E7%82%B9)
 - [提交问题](https://github.com/hifocus/merger/issues)
 - [合并请求](https://github.com/hifocus/merger/pulls)
-- [感谢](https://merger.justhx.com/#/?id=credit)
+- [感谢](https://merger.justhx.com/cn/docs/introduction#%E6%84%9F%E8%B0%A2)
 
 ## 特性
 

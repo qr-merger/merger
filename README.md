@@ -24,12 +24,12 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 
 ## Relevant Links
 
-- [Docs](https://merger.justhx.com/#/en-gb/)
+- [Docs](https://merger.justhx.com/)
 - [Live Demo](https://demo.qrcdn.com)
-- [Demo From Users](https://merger.justhx.com/#/en-gb/?id=other-demo-sites)
+- [Demo From Users](https://merger.justhx.com/docs/introduction#Demo-From-Users)
 - [Issues](https://github.com/hifocus/merger/issues)
 - [Pull Requests](https://github.com/hifocus/merger/pulls)
-- [Credit](https://merger.justhx.com/#/en-gb/?id=credit)
+- [Credit](https://merger.justhx.com/docs/introduction#Credit)
 
 ## Features
 
