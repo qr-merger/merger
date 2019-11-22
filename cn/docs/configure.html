@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.0.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>配置 - Merger</title>
+
+
+    <meta name="description" content="merger 的配置十分简单。通常来说，你只要修改 merger.html 里面的 Config Section 即可配置你自己的 merger 页面。">
+<meta name="keywords" content="merger,二维码合并,三码合一,合并支付二维码,支付二维码,微信支付宝合并,多码合一,开源">
+<meta property="og:type" content="article">
+<meta property="og:title" content="配置">
+<meta property="og:url" content="https:&#x2F;&#x2F;merger.justhx.com&#x2F;docs&#x2F;configure.html">
+<meta property="og:site_name" content="Merger">
+<meta property="og:description" content="merger 的配置十分简单。通常来说，你只要修改 merger.html 里面的 Config Section 即可配置你自己的 merger 页面。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;162460221&#x2F;2b3baa00-b9f4-11e9-9789-471ad471ba68">
+<meta property="og:updated_time" content="2019-11-21T04:09:30.347Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;162460221&#x2F;2b3baa00-b9f4-11e9-9789-471ad471ba68">
+
+
+
+
+
+
+
+<link rel="icon" href="https://ae01.alicdn.com/kf/U9711a26e589447a29ca3c46885883522D.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.4.1/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/cn/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    
+    
+
+
+<link rel="stylesheet" href="/cn/css/style.css">
+<link rel="alternate" href="/cn/atom.xml" title="Merger" type="application/atom+xml">
+</head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/cn/">
+            
+                <img src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="配置" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/cn/">首页</a>
+                
+                <a class="navbar-item"
+                href="https://demo.qrcdn.com">演示</a>
+                
+                <a class="navbar-item"
+                href="/cn/categories/docs/">文档</a>
+                
+                <a class="navbar-item"
+                href="/cn/categories/posts/">博文</a>
+                
+                <a class="navbar-item"
+                href="https://github.com/hifocus/merger">GitHub</a>
+                
+                <a class="navbar-item"
+                href="/cn/../">English</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" title="在 GitHub 上获取" href="https://github.com/hifocus/merger">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2008-01-01T00:00:00.000Z">2008-01-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/cn/categories/docs/">docs</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    16 分钟 读完 (大约 2338 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                配置
+            
+        </h1>
+        <div class="content">
+            <p><a href="https://github.com/hifocus/merger" target="_blank" rel="noopener">merger</a> 的配置十分简单。通常来说，你只要修改 <code>merger.html</code> 里面的 <code>Config Section</code> 即可配置你自己的 merger 页面。</p>
+<a id="more"></a>
+
+<blockquote>
+<p><a href="https://github.com/hifocus/merger/blob/master/merger.html#L33-L69" target="_blank" rel="noopener">在 GitHub.com 上浏览 Config Section</a></p>
+</blockquote>
+<p>在 <code>Config Section</code> 内，每一个变量都会有详细的英文注释帮助你的配置。如果无法阅读，你依然可以参照本页面。</p>
+<p>在 <code>Config Section</code> 所使用的 Javascirpt 代码里，每一<strong>行</strong>配置都需要以半角分号 <code>;</code> 结尾。如果缺少或者填入了错误的分号，如全角分号 <code>；</code>，<code>Config Section</code> 将无法运作。</p>
+<p><code>Config Section</code> 的格式为：<code>var something = &quot;something_actual&quot;</code> （定义 某物 = 实际值）。同样地，请勿忽略等于号 <code>=</code> 前后的空格以及 <code>something_acutal</code> 前后的半角双引号 <code>&quot; &quot;</code>。</p>
+<h2 id="配置用途"><a href="#配置用途" class="headerlink" title="配置用途"></a>配置用途</h2><p>在 <code>Config Section</code> 内，你需要首先定义 merger 的用途。</p>
+<p>目前，我们提供两种用途：payment（付款）和 donate（捐款）。</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> usage = <span class="hljs-string">"payment"</span>;</span><br><span class="line"><span class="hljs-comment">// var usage = "donate";</span></span><br></pre></td></tr></table></figure>
+
+<p>提供这些变量是为了方便地标示页面的用途，例如：有人希望为博客的打赏通道创建一个 merger，此时就可以用 “donate” 变量；而有人希望为售卖的商品设立一个 merger 付款通道，此时就可以使用 “payment” 变量。</p>
+<p>当不同的变量被设置，页面的显示文字也会随之改变。若 “多语言” 功能被禁用，此功能也会变为不可用。</p>
+<h2 id="配置支付链接"><a href="#配置支付链接" class="headerlink" title="配置支付链接"></a>配置支付链接</h2><p>在 <code>Config Section</code> 中，你需要定义自己的收款链接 - 将以下内容修改为自己的：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> wechat = <span class="hljs-string">"wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN"</span>;</span><br><span class="line"><span class="hljs-keyword">var</span> alipay = <span class="hljs-string">"https://qr.alipay.com/fkx01299q4zug8xxsp2vc0a?t=1545238142543"</span>;</span><br><span class="line"><span class="hljs-keyword">var</span> tenpay = <span class="hljs-string">"https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&amp;f=wallet&amp;a=1&amp;ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&amp;u=1031092401&amp;n=惶心"</span>;</span><br><span class="line"><span class="hljs-keyword">var</span> paypal = <span class="hljs-string">"https://paypal.me/hxco"</span>;</span><br></pre></td></tr></table></figure>
+
+<p>下列表格解释了各个变量的含义。</p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th align="center">代表</th>
+<th>官方网站</th>
+<th>链接样式</th>
+<th>链接获取方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>wechat</td>
+<td align="center">微信 / 微信支付</td>
+<td><a href="https://weixin.qq.com" target="_blank" rel="noopener">https://weixin.qq.com</a></td>
+<td><code>wxp://{personalised-content}</code></td>
+<td>解码支付二维码</td>
+</tr>
+<tr>
+<td>alipay</td>
+<td align="center">支付宝 / 支付宝</td>
+<td><a href="https://www.alipay.com" target="_blank" rel="noopener">https://www.alipay.com</a></td>
+<td><code>https://qr.alipay.com/{personalised-content}</code></td>
+<td>解码支付二维码</td>
+</tr>
+<tr>
+<td>tenpay</td>
+<td align="center">腾讯 QQ / QQ 钱包</td>
+<td><a href="https://im.qq.com" target="_blank" rel="noopener">https://im.qq.com</a></td>
+<td><code>https://i.qianbao.qq.com/{personalised-content}</code></td>
+<td>解码支付二维码</td>
+</tr>
+<tr>
+<td>paypal</td>
+<td align="center">Paypal / 贝宝</td>
+<td><a href="https://www.paypal.com" target="_blank" rel="noopener">https://www.paypal.com</a></td>
+<td><code>https://paypal.me/{username}</code></td>
+<td>网页端获取</td>
+</tr>
+</tbody></table>
+<p>对于需要解码支付二维码获取支付链接的应用，请在应用内显示你的支付二维码，用内置保存功能 / 屏幕截图获取该二维码，随后使用二维码解码应用即可获取支付链接；你可以从搜索引擎获取一些二维码解码程序：</p>
+<ul>
+<li><a href="https://www.google.com/search?q=qr+code+decoder" target="_blank" rel="noopener">https://www.google.com/search?q=qr+code+decoder</a></li>
+<li><a href="https://www.baidu.com/s?wd=二维码解码" target="_blank" rel="noopener">https://www.baidu.com/s?wd=二维码解码</a></li>
+</ul>
+<p>对于 Paypal，你需要到 <a href="https://paypal.me" target="_blank" rel="noopener">https://paypal.me</a> 生成个人支付链接。</p>
+<p>!&gt; 如果你没有，或者不想展示以上四个收款方式的任意一个 / 数个，你可以删除或留空相应的变量。</p>
+<p>如：我没有支付宝，且不希望展示我的 Paypal 收款地址：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> wechat = <span class="hljs-string">"wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN"</span>;</span><br><span class="line"><span class="hljs-comment">// Alipay removed</span></span><br><span class="line"><span class="hljs-keyword">var</span> tenpay = <span class="hljs-string">"https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&amp;f=wallet&amp;a=1&amp;ac=26E3D12F23952F04A9553D36B31F18BC3AEA141B073F9DD9BC3747C823819645&amp;u=1031092401&amp;n=惶心"</span>;</span><br><span class="line"><span class="hljs-keyword">var</span> paypal = <span class="hljs-string">""</span>; <span class="hljs-comment">// Leave paypal to blank</span></span><br></pre></td></tr></table></figure>
+
+<p>!&gt; 在没有设置任何有效付款方式时，浏览器 console 会显示一个红色的错误信息，而此时用户会被提示 “目前没有可用的支付方式”。</p>
+<h2 id="配置昵称和头像地址"><a href="#配置昵称和头像地址" class="headerlink" title="配置昵称和头像地址"></a>配置昵称和头像地址</h2><p><code>Config Section</code> 下一部分需要填入昵称和头像地址。这部分如下所示：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// Replace with your id and profile photo link ↓.</span></span><br><span class="line"><span class="hljs-keyword">var</span> myname = <span class="hljs-string">"惶心"</span>;</span><br><span class="line"><span class="hljs-keyword">var</span> profile = <span class="hljs-string">"https://ae01.alicdn.com/kf/UTB8R57Nn0nJXKJkSaiyq6AhwXXak.jpg"</span>;</span><br></pre></td></tr></table></figure>
+
+<p><code>var myname = &quot;xxx&quot;</code> 部分需要填入你喜欢的任意昵称。<br><code>var profile = &quot;xxx&quot;</code> 部分需要填入你喜欢的头像的<strong>地址</strong>。如果你不知道怎么做，最简单的方式是将图片上传至<a href="https://sspai.com/post/40499" target="_blank" rel="noopener">图床</a>，如 <a href="https://sm.ms" target="_blank" rel="noopener">https://sm.ms</a>，然后填入图床返回的地址，如：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> profile = <span class="hljs-string">"https://i.loli.net/2019/04/10/5cad38f6e8694.png"</span>;</span><br></pre></td></tr></table></figure>
+
+<p>!&gt; 为了保证尽可能高的可用性，除非有绝对自信，否则不推荐自主托管头像图片文件。</p>
+<p>?&gt; 至此，你已经配置完成所有必要变量。</p>
+<h2 id="动态页面标题"><a href="#动态页面标题" class="headerlink" title="动态页面标题"></a>动态页面标题</h2><p>Merger 支持动态页面标题。此功能会将你于上方设置的昵称嵌入于页面标题中，让用户清晰地知道付款对象。</p>
+<p>同时，<code>branding</code> 变量会自动在标题后加入 <code>| Merger</code> 后缀，说明此页面由 merger 驱动。但是，你可以自由选择是否显示这个后缀。将 <code>branding</code> 变量设置为 <code>false</code> 以禁用添加后缀。</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> branding = <span class="hljs-literal">false</span>; <span class="hljs-comment">// Disable branding</span></span><br><span class="line"><span class="hljs-comment">// var branding = true;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="多语言"><a href="#多语言" class="headerlink" title="多语言"></a>多语言</h2><p>Merger 支持多语言用户界面。此功能会检测用户的浏览器语言，从而以不同的语言显示页面文字（目前支持 简体中文、繁体中文、英语）。</p>
+<p>多语言功能需要配置三个变量：<code>myname_hans</code>, <code>myname_hant</code> 和 <code>myname_eng</code>；分别为于简体中文、繁体中文和英语界面下显示的你的昵称。</p>
+<p>你可以分别配置三个变量的内容；若你不希望指定任意语言的内容，将变量内容修改为 <code>myname</code> 即可；例如：<code>var mayname_eng = myname</code></p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> multilingual = <span class="hljs-literal">true</span>; <span class="hljs-comment">// Set variable to false to disable multilingual feature</span></span><br><span class="line"><span class="hljs-keyword">var</span> myname_hans = myname <span class="hljs-comment">// Default setting for Chinese Simplified users; change it to a speicify value if needed</span></span><br><span class="line"><span class="hljs-keyword">var</span> myname_hant = <span class="hljs-string">"惶心"</span>; <span class="hljs-comment">// Choose how you want your name to be displayed for Traditional Chinese users</span></span><br><span class="line"><span class="hljs-keyword">var</span> myname_eng = <span class="hljs-string">"Focus Chen"</span>; <span class="hljs-comment">// Choose how you want your name to be displayed for English / Non-Chinese users -</span></span><br></pre></td></tr></table></figure>
+
+<p>?&gt; 你也可以通过设置 <code>var multilingual = false;</code> 以禁用多语言。但是我们并不推荐。</p>
+<h2 id="配置引导文字"><a href="#配置引导文字" class="headerlink" title="配置引导文字"></a>配置引导文字</h2><p>!&gt; 仅在多语言功能被禁用时，这个部分才会生效</p>
+<p>引导文字被用以引导访客进行下一步的操作；例如点击按钮，扫码等等。</p>
+<p>默认的引导文字如下，你可以随意自定义：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> title = <span class="hljs-string">"选择你的支付方式"</span>;</span><br><span class="line"><span class="hljs-keyword">var</span> subtitle = <span class="hljs-string">"跟随进一步的指示以向"</span> + myname + <span class="hljs-string">"付款"</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="二维码接口"><a href="#二维码接口" class="headerlink" title="二维码接口"></a>二维码接口</h2><p><code>Config Section</code> 最后的部分为二维码应用程序接口（API）的选择。</p>
+<p><a href="https://github.com/hifocus/merger" target="_blank" rel="noopener">merger</a> 默认从 <a href="https://github.com/lrsjng/jquery-qrcode" target="_blank" rel="noopener">lrsjng/jquery-qrcode</a> 本地生成所需的二维码，这样能够节省 HTTP 请求数和加快页面加载速度。然而，QQ 手机版无法解码 <a href="https://github.com/lrsjng/jquery-qrcode" target="_blank" rel="noopener">lrsjng/jquery-qrcode</a> 默认生成 <code>data:image</code> 类型的二维码图片，故此这里仍然需要使用二维码接口（API）生成二维码以供解码。</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> qrcodeapi = <span class="hljs-string">"https://www.zhihu.com/qrcode?url="</span>;</span><br></pre></td></tr></table></figure>
+
+<p>你也可以自由使用你喜爱的接口。</p>
+<p>!&gt; 通过非 HTTPS 调用（即 HTTP）的内容不会被加载。</p>
+<p>修改 <code>var qrcodeapi = &quot;https://www.zhihu.com/qrcode?url=&quot;;</code> 部分即可更换调用的二维码 API。你可以从搜索引擎找到更多的二维码 API：</p>
+<ul>
+<li><a href="https://www.google.com/search?q=qr+code+generate+api" target="_blank" rel="noopener">https://www.google.com/search?q=qr+code+generate+api</a></li>
+<li><a href="https://www.baidu.com/s?wd=二维码生成接口" target="_blank" rel="noopener">https://www.baidu.com/s?wd=二维码生成接口</a></li>
+</ul>
+<p>?&gt; 请注意，一般情况下无需替换二维码 API。此外，替换之前请确保 API 可用。</p>
+<h2 id="选择静态文件加载源"><a href="#选择静态文件加载源" class="headerlink" title="选择静态文件加载源"></a>选择静态文件加载源</h2><p><a href="https://github.com/hifocus/merger" target="_blank" rel="noopener">merger</a> 在 <a href="https://github.com/hifocus/merger/releases/tag/0.14" target="_blank" rel="noopener">0.14 版本</a> 为静态资源提供了在 <a href="https://www.jsdelivr.com" target="_blank" rel="noopener">jsDelivr CDN</a> 和本地之间切换的选项。虽然 <a href="https://www.jsdelivr.com" target="_blank" rel="noopener">jsDelivr</a> 毫无疑问在全球范围内都拥有优秀的加载速度，但是在某些特殊情况下使用者也许想要从本地加载静态资源。以下说明了如何切换静态文件加载源。</p>
+<h3 id="在-merger-html-的头部-docsify-ignore"><a href="#在-merger-html-的头部-docsify-ignore" class="headerlink" title="在 merger.html 的头部 {docsify-ignore}"></a>在 merger.html 的头部 {docsify-ignore}</h3><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- Load style files from local --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- &lt;link rel="stylesheet" href="assets/styles/spectre.css/spectre.min.css"&gt;</span></span><br><span class="line"><span class="hljs-comment">     &lt;link rel="stylesheet" href="assets/styles/style.min.css"&gt; --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">&lt;!-- Load style files from jsDelivr - Default --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/combine/gh/picturepan2/spectre@0.5.7/dist/spectre.min.css,gh/hifocus/merger@0.14/assets/styles/style.min.css"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>默认设定为使用 jsDelivr CDN 并且使用了文件合并功能。如果希望从本地加载对应的文件，请注释或者删除这行代码：</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.20/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.20/assets/styles/style.min.css"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>并反向注释（恢复）这两行代码：</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- &lt;link rel="stylesheet" href="assets/styles/spectre.css/spectre-modified.min.css"&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;link rel="stylesheet" href="assets/styles/style.css"&gt; --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>最终修改以后的头部如下：</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- Load style files from local --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"assets/styles/spectre.css/spectre-modified.min.css"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"assets/styles/style.css"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">&lt;!-- Load style files from jsDelivr - Default --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.20/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.20/assets/styles/style.min.css"&gt; --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="在-merger-html-的尾部-docsify-ignore"><a href="#在-merger-html-的尾部-docsify-ignore" class="headerlink" title="在 merger.html 的尾部 {docsify-ignore}"></a>在 merger.html 的尾部 {docsify-ignore}</h3><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- Footer Scripts --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- Please do not swap orders --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- Load Javascript files from jsDelivr - Default --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.20/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.20/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.20/assets/js/function.min.js,gh/hifocus/merger@0.20/assets/js/font_974919_xgtacm93vxp.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="hljs-comment">&lt;!-- Load Javascript files from local --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- &lt;script src="assets/js/jQuery/jquery.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;script src="assets/js/jquery-qrcode/jquery-qrcode.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;script src="assets/js/dev-files/function.original.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;script src="assets/js/font_974919_xgtacm93vxp.js"&gt;&lt;/script&gt; --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>默认设定为使用 jsDelivr CDN 并且使用了文件合并功能。如果希望从本地加载对应的文件，请注释或者删除这行代码：</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.20/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.20/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.20/assets/js/function.min.js,gh/hifocus/merger@0.20/assets/js/font_974919_xgtacm93vxp.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>并反向注释（恢复）这两行代码：</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- &lt;script src="assets/js/jQuery/jquery.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;script src="assets/js/jquery-qrcode/jquery-qrcode.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;script src="assets/js/dev-files/function.original.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;script src="assets/js/font_974919_xgtacm93vxp.js"&gt;&lt;/script&gt; --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>最终修改以后的尾部如下：</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">&lt;!-- Footer Scripts --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- Please do not swap orders --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- Load Javascript files from jsDelivr - Default --&gt;</span></span><br><span class="line"><span class="hljs-comment">&lt;!-- &lt;script src="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.20/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.20/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.20/assets/js/function.min.js,gh/hifocus/merger@0.20/assets/js/font_974919_xgtacm93vxp.min.js"&gt;&lt;/script&gt; --&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="hljs-comment">&lt;!-- Load Javascript files from local --&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"assets/js/jQuery/jquery.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"assets/js/jquery-qrcode/jquery-qrcode.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"assets/js/dev-files/function.original.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"assets/js/font_974919_xgtacm93vxp.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>至此，你已经将 <a href="https://github.com/hifocus/merger" target="_blank" rel="noopener">merger</a> 配置完毕。</p>
+</blockquote>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-danger donate" href="https://donate.justhx.com" target="_blank">
+    <span class="icon is-small">
+        <i class="fas fa-qrcode"></i>
+    </span>
+    <span>使用 Merger 捐赠</span>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/cn/docs/install.html">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">安装</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/cn/docs/deploy.html">
+                <span class="level-item">部署</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-1 column-left is-sticky">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="Merger 官方网站">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        Merger 官方网站
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        合并二维码 快人一步
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        </nav>
+        
+        
+        
+    </div>
+</div>
+    
+        
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#配置用途">
+        <span class="has-mr-6">1</span>
+        <span>配置用途</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置支付链接">
+        <span class="has-mr-6">2</span>
+        <span>配置支付链接</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置昵称和头像地址">
+        <span class="has-mr-6">3</span>
+        <span>配置昵称和头像地址</span>
+        </a></li><li>
+        <a class="is-flex" href="#动态页面标题">
+        <span class="has-mr-6">4</span>
+        <span>动态页面标题</span>
+        </a></li><li>
+        <a class="is-flex" href="#多语言">
+        <span class="has-mr-6">5</span>
+        <span>多语言</span>
+        </a></li><li>
+        <a class="is-flex" href="#配置引导文字">
+        <span class="has-mr-6">6</span>
+        <span>配置引导文字</span>
+        </a></li><li>
+        <a class="is-flex" href="#二维码接口">
+        <span class="has-mr-6">7</span>
+        <span>二维码接口</span>
+        </a></li><li>
+        <a class="is-flex" href="#选择静态文件加载源">
+        <span class="has-mr-6">8</span>
+        <span>选择静态文件加载源</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#在-merger-html-的头部-docsify-ignore">
+        <span class="has-mr-6">8.1</span>
+        <span>在 merger.html 的头部 {docsify-ignore}</span>
+        </a></li><li>
+        <a class="is-flex" href="#在-merger-html-的尾部-docsify-ignore">
+        <span class="has-mr-6">8.2</span>
+        <span>在 merger.html 的尾部 {docsify-ignore}</span>
+        </a></li></ul></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://merger.justhx.com" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">切换至英文 / English</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://feeds.feedburner.com/merger-cn-docs" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">通过 Rss 订阅</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://feedly.com/i/subscription/feed/https://feeds.feedburner.com/merger-cn-docs" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">通过 Feedly 订阅</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.justhx.com" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">作者博客</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+<footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <!-- <a class="footer-logo is-block has-mb-6" href="/cn/">
+                
+                    <img src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="配置" height="28">
+                
+                </a> -->
+                <p class="is-size-7">
+                Merger Official Site&nbsp&copy; 2019 /&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme&nbsp;<a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+            </div>
+        </div>
+    </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111752336-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111752336-10');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2926251753109401",
+          enable_page_level_ads: true
+     });
+</script>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+    
+    
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/cn/js/gallery.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="/cn/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/cn/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/cn/js/insight.js" defer></script>
+<link rel="stylesheet" href="/cn/css/search.css">
+<link rel="stylesheet" href="/cn/css/insight.css">
+    
+</body>
+</html>

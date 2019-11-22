@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.0.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>部署 - Merger</title>
+
+
+    <meta name="description" content="merger 属于简单的 HTML 应用，故此你可以将它部署至任何能够托管静态网页的服务并通过一个域名访问。在这之前，请确定你已根据 配置 页面完成个人化设定。">
+<meta name="keywords" content="merger,二维码合并,三码合一,合并支付二维码,支付二维码,微信支付宝合并,多码合一,开源">
+<meta property="og:type" content="article">
+<meta property="og:title" content="部署">
+<meta property="og:url" content="https:&#x2F;&#x2F;merger.justhx.com&#x2F;docs&#x2F;deploy.html">
+<meta property="og:site_name" content="Merger">
+<meta property="og:description" content="merger 属于简单的 HTML 应用，故此你可以将它部署至任何能够托管静态网页的服务并通过一个域名访问。在这之前，请确定你已根据 配置 页面完成个人化设定。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;162460221&#x2F;2b3baa00-b9f4-11e9-9789-471ad471ba68">
+<meta property="og:updated_time" content="2019-11-21T04:11:00.858Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;162460221&#x2F;2b3baa00-b9f4-11e9-9789-471ad471ba68">
+
+
+
+
+
+
+
+<link rel="icon" href="https://ae01.alicdn.com/kf/U9711a26e589447a29ca3c46885883522D.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.4.1/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/cn/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    
+    
+
+
+<link rel="stylesheet" href="/cn/css/style.css">
+<link rel="alternate" href="/cn/atom.xml" title="Merger" type="application/atom+xml">
+</head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/cn/">
+            
+                <img src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="部署" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/cn/">首页</a>
+                
+                <a class="navbar-item"
+                href="https://demo.qrcdn.com">演示</a>
+                
+                <a class="navbar-item"
+                href="/cn/categories/docs/">文档</a>
+                
+                <a class="navbar-item"
+                href="/cn/categories/posts/">博文</a>
+                
+                <a class="navbar-item"
+                href="https://github.com/hifocus/merger">GitHub</a>
+                
+                <a class="navbar-item"
+                href="/cn/../">English</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" title="在 GitHub 上获取" href="https://github.com/hifocus/merger">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2007-01-01T00:00:00.000Z">2007-01-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/cn/categories/docs/">docs</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 分钟 读完 (大约 533 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                部署
+            
+        </h1>
+        <div class="content">
+            <p><a href="https://github.com/hifocus/merger" target="_blank" rel="noopener">merger</a> 属于简单的 HTML 应用，故此你可以将它部署至任何能够托管静态网页的服务并通过一个域名访问。在这之前，请确定你已根据 <a href="../docs/configure.html">配置</a> 页面完成个人化设定。</p>
+<a id="more"></a>
+
+<p>以下为一些可能有用的链接：</p>
+<ul>
+<li><p>部署至 <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+<ul>
+<li><a href="https://help.github.com/en/articles/fork-a-repo" target="_blank" rel="noopener">https://help.github.com/en/articles/fork-a-repo</a></li>
+<li><a href="https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages" target="_blank" rel="noopener">https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages</a></li>
+<li><a href="https://help.github.com/en/articles/using-a-custom-domain-with-github-pages" target="_blank" rel="noopener">https://help.github.com/en/articles/using-a-custom-domain-with-github-pages</a></li>
+<li><a href="https://help.github.com/en/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site" target="_blank" rel="noopener">https://help.github.com/en/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site</a></li>
+</ul>
+</li>
+<li><p>部署至 <a href="https://www.ubuntu.com/server" target="_blank" rel="noopener">Ubuntu Server</a></p>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04-quickstart" target="_blank" rel="noopener">https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04-quickstart</a></li>
+<li><a href="https://medium.com/@jgefroh/a-guide-to-using-nginx-for-static-websites-d96a9d034940" target="_blank" rel="noopener">https://medium.com/@jgefroh/a-guide-to-using-nginx-for-static-websites-d96a9d034940</a></li>
+<li><a href="https://oneinstack.com" target="_blank" rel="noopener">https://oneinstack.com</a></li>
+<li><a href="http://nginx.org/en/docs/beginners_guide.html" target="_blank" rel="noopener">https://nginx.org/en/docs/beginners_guide.html</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/start/topics/examples/full" target="_blank" rel="noopener">https://www.nginx.com/resources/wiki/start/topics/examples/full/</a></li>
+<li><a href="https://nginxconfig.io" target="_blank" rel="noopener">https://nginxconfig.io</a></li>
+</ul>
+</li>
+<li><p>部署至 <a href="https://www.netlify.com" target="_blank" rel="noopener">Netlify</a></p>
+<ul>
+<li><a href="https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/" target="_blank" rel="noopener">https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/</a></li>
+<li><a href="https://www.netlify.com/docs/custom-domains/" target="_blank" rel="noopener">https://www.netlify.com/docs/custom-domains/</a></li>
+</ul>
+</li>
+<li><p>部署至 <a href="https://zeit.co" target="_blank" rel="noopener">now.sh</a></p>
+<ul>
+<li><a href="https://zeit.co/docs/v2/getting-started/introduction-to-now/" target="_blank" rel="noopener">https://zeit.co/docs/v2/getting-started/introduction-to-now/</a></li>
+<li><a href="https://zeit.co/docs/v2/getting-started/installation/" target="_blank" rel="noopener">https://zeit.co/docs/v2/getting-started/installation/</a></li>
+<li><a href="https://zeit.co/docs/v2/deployments/basics/" target="_blank" rel="noopener">https://zeit.co/docs/v2/deployments/basics/</a></li>
+<li><a href="https://zeit.co/docs/v2/domains-and-aliases/adding-a-domain/" target="_blank" rel="noopener">https://zeit.co/docs/v2/domains-and-aliases/adding-a-domain</a></li>
+</ul>
+</li>
+<li><p>部署至 <a href="https://www.heroku.com" target="_blank" rel="noopener">HeroKu</a></p>
+<ul>
+<li><a href="https://devcenter.heroku.com/articles/git" target="_blank" rel="noopener">https://devcenter.heroku.com/articles/git</a></li>
+<li><a href="https://devcenter.heroku.com/articles/github-integration" target="_blank" rel="noopener">https://devcenter.heroku.com/articles/github-integration</a></li>
+<li><a href="https://stackoverflow.com/questions/17558007/deploy-to-heroku-directly-from-my-github-repository" target="_blank" rel="noopener">https://stackoverflow.com/questions/17558007/deploy-to-heroku-directly-from-my-github-repository</a></li>
+<li><a href="https://devcenter.heroku.com/articles/custom-domains" target="_blank" rel="noopener">https://devcenter.heroku.com/articles/custom-domains</a></li>
+<li><a href="https://stackoverflow.com/questions/5480337/easy-way-to-prevent-heroku-idling" target="_blank" rel="noopener">https://stackoverflow.com/questions/5480337/easy-way-to-prevent-heroku-idling</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-danger donate" href="https://donate.justhx.com" target="_blank">
+    <span class="icon is-small">
+        <i class="fas fa-qrcode"></i>
+    </span>
+    <span>使用 Merger 捐赠</span>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/cn/docs/configure.html">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">配置</span>
+            </a>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-1 column-left is-sticky">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="Merger 官方网站">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        Merger 官方网站
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        合并二维码 快人一步
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        </nav>
+        
+        
+        
+    </div>
+</div>
+    
+        
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://merger.justhx.com" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">切换至英文 / English</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://feeds.feedburner.com/merger-cn-docs" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">通过 Rss 订阅</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://feedly.com/i/subscription/feed/https://feeds.feedburner.com/merger-cn-docs" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">通过 Feedly 订阅</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.justhx.com" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">作者博客</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+<footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <!-- <a class="footer-logo is-block has-mb-6" href="/cn/">
+                
+                    <img src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="部署" height="28">
+                
+                </a> -->
+                <p class="is-size-7">
+                Merger Official Site&nbsp&copy; 2019 /&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme&nbsp;<a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+            </div>
+        </div>
+    </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111752336-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111752336-10');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2926251753109401",
+          enable_page_level_ads: true
+     });
+</script>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+    
+    
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/cn/js/gallery.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="/cn/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/cn/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/cn/js/insight.js" defer></script>
+<link rel="stylesheet" href="/cn/css/search.css">
+<link rel="stylesheet" href="/cn/css/insight.css">
+    
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.0.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>概述 - Merger</title>
+
+
+    <meta name="description" content="Merger 是一个基于 HTML 的应用；简单却强大。它可以帮你把多个支付二维码合并为一条链接。这样付款人就可以专注于扫描一个二维码，或者打开一个简洁链接。">
+<meta name="keywords" content="merger,二维码合并,三码合一,合并支付二维码,支付二维码,微信支付宝合并,多码合一,开源">
+<meta property="og:type" content="article">
+<meta property="og:title" content="概述">
+<meta property="og:url" content="https:&#x2F;&#x2F;merger.justhx.com&#x2F;docs&#x2F;introduction.html">
+<meta property="og:site_name" content="Merger">
+<meta property="og:description" content="Merger 是一个基于 HTML 的应用；简单却强大。它可以帮你把多个支付二维码合并为一条链接。这样付款人就可以专注于扫描一个二维码，或者打开一个简洁链接。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;162460221&#x2F;2b3baa00-b9f4-11e9-9789-471ad471ba68">
+<meta property="og:updated_time" content="2019-11-21T04:09:32.176Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;162460221&#x2F;2b3baa00-b9f4-11e9-9789-471ad471ba68">
+
+
+
+
+
+
+
+<link rel="icon" href="https://ae01.alicdn.com/kf/U9711a26e589447a29ca3c46885883522D.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.4.1/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/cn/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    
+    
+
+
+<link rel="stylesheet" href="/cn/css/style.css">
+<link rel="alternate" href="/cn/atom.xml" title="Merger" type="application/atom+xml">
+</head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/cn/">
+            
+                <img src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="概述" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/cn/">首页</a>
+                
+                <a class="navbar-item"
+                href="https://demo.qrcdn.com">演示</a>
+                
+                <a class="navbar-item"
+                href="/cn/categories/docs/">文档</a>
+                
+                <a class="navbar-item"
+                href="/cn/categories/posts/">博文</a>
+                
+                <a class="navbar-item"
+                href="https://github.com/hifocus/merger">GitHub</a>
+                
+                <a class="navbar-item"
+                href="/cn/../">English</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" title="在 GitHub 上获取" href="https://github.com/hifocus/merger">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2010-01-01T00:00:00.000Z">2010-01-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/cn/categories/docs/">docs</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 读完 (大约 827 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                概述
+            
+        </h1>
+        <div class="content">
+            <p>Merger 是一个基于 HTML 的应用；简单却强大。它可以帮你把多个支付二维码合并为一条链接。这样付款人就可以专注于扫描一个二维码，或者打开一个简洁链接。</p>
+<a id="more"></a>
+
+<blockquote>
+<p>阅读更多： <a href="/posts/hello-get-to-know-merger.html"><em>你好，认识下 Merger</em></a></p>
+</blockquote>
+<p>你可以为你的 merger 生成一张二维码 <a href="https://ae01.alicdn.com/kf/U22a893338c7d4c33892fd982994e07b5W.png" target="_blank" rel="noopener">(查看示例)</a>，或者直接把你的 merger 链接发送给对方。merger 会通过 <code>User Agent</code> 识别对方的客户端，随即展示相应的内容。</p>
+<p>自从 <a href="https://github.com/hifocus/merger/releases/tag/0.20" target="_blank" rel="noopener">更新 0.20</a> 以来，merger 首次支持了多语言、用途定义和自动页面标题和图标；这意味着你可以更为简便地配置 merger，而你的用户也会获得更好的使用体验。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li>多语言支持。</li>
+<li>最少的请求数，最快的速度。</li>
+<li>详尽的代码注释，方便后续开发。</li>
+<li>结合实际使用场景为每一种支付方式单独设计的展示样式。</li>
+<li>高度可定制化，页面上一切内容均可通过预设的 Javascript 代码更改。无需任何编程技巧。</li>
+<li>所有静态文件均默认通过开源 CDN <a href="https://www.jsdelivr.com" target="_blank" rel="noopener">jsDelivr</a> 合并和分发。</li>
+</ul>
+<h2 id="演示站点"><a href="#演示站点" class="headerlink" title="演示站点"></a>演示站点</h2><p>请浏览：<a href="https://demo.qrcdn.com" target="_blank" rel="noopener">https://demo.qrcdn.com</a><br>托管环境：Ubuntu 18.04.2 LTS | nginx/1.16.0 | Accelerated By <a href="https://www.cloudflare.com" target="_blank" rel="noopener">CloudFlare</a> | Hosted By <a href="https://www.vultr.com/?ref=8002335-4F" target="_blank" rel="noopener">Vultr</a></p>
+<p>或者使用 手机相机 | QQ 手机版 | 微信 | 支付宝 <a href="https://ae01.alicdn.com/kf/H25acb23448f34427bba3021072797105S.png" target="_blank" rel="noopener">扫描这个二维码</a></p>
+<h3 id="其他演示站点"><a href="#其他演示站点" class="headerlink" title="其他演示站点"></a>其他演示站点</h3><ul>
+<li><a href="https://pay.ryanc.cc/" target="_blank" rel="noopener">https://pay.ryanc.cc</a></li>
+</ul>
+<p><a href="https://github.com/hifocus/merger/issues/4" target="_blank" rel="noopener">在这里提交你的 merger 站点以供展示</a></p>
+<h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><p>以下截图展示了在不同客户端下打开 merger 链接的样式。<a href="https://dlc.justhx.com/Screenshot_Original.jpg.direct" target="_blank" rel="noopener">下载大图</a><br><img src="https://ae01.alicdn.com/kf/UTB8hFq3KlahduJk43Jaq6zM8FXaR.jpg" alt></p>
+<h2 id="社区"><a href="#社区" class="headerlink" title="社区"></a>社区</h2><ul>
+<li>如果你在使用过程中发现了任何问题，请提交一个 <a href="https://github.com/hifocus/merger/issues/new" target="_blank" rel="noopener">Issue</a>。</li>
+<li>如果你希望让 merger 变得更好，欢迎提交 <a href="https://github.com/hifocus/Merger/pulls" target="_blank" rel="noopener">Pull Requests</a>。</li>
+</ul>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><ul>
+<li>本文档使用 <del><a href="https://docsify.js.org" target="_blank" rel="noopener">Docsify</a></del> <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>，在 <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> 上发布，托管于 <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>，通过 <a href="https://www.cloudflare.com/" target="_blank" rel="noopener">CloudFlare</a> 分发。使用 <a href="https://github.com/hifocus/merger/blob/master/LICENSE" target="_blank" rel="noopener">GNU General Public License v3.0</a>。</li>
+<li>本文档内的图片使用 <a href="https://github.com/metowolf/upimg-cli" target="_blank" rel="noopener">upimg-cli</a> 上传。</li>
+<li>本项目的<a href="https://github.com/hifocus/merger/blob/gh-pages/themes/merge.png" target="_blank" rel="noopener">图标</a>和<a href="https://github.com/hifocus/merger/blob/gh-pages/themes/banner.psd" target="_blank" rel="noopener">展示横幅</a>素材来自 <a href="https://www.iconfont.cn/user/detail?uid=724490" target="_blank" rel="noopener">zylbiubiubiu, Iconfont</a><hr></li>
+<li>本项目的部分 <code>JavaScript</code> 代码由 <a href="https://github.com/LF112" target="_blank" rel="noopener">@LF112</a> 贡献。</li>
+<li>本项目基于 <a href="https://github.com/hifocus/Grouper" target="_blank" rel="noopener">Grouper</a> 项目（请参见 <a href="https://github.com/hifocus/Grouper#credit" target="_blank" rel="noopener">Grouper 的感谢列表</a>）。</li>
+<li>本项目也使用了以下项目 / 服务：<ul>
+<li><a href="https://picturepan2.github.io/spectre/" target="_blank" rel="noopener">Spectre.css</a></li>
+<li><a href="https://jquery.com" target="_blank" rel="noopener">JQuery</a></li>
+<li><a href="https://github.com/lrsjng/jquery-qrcode" target="_blank" rel="noopener">lrsjng/jquery-qrcode</a></li>
+<li><a href="https://www.jsdelivr.com" target="_blank" rel="noopener">jsDelivr</a></li>
+<li><a href="https://codepen.io/P1N2O/pen/pyBNzX" target="_blank" rel="noopener">Pure CSS3 Gradient Background Animation</a></li>
+<li><a href="https://www.iconfont.cn" target="_blank" rel="noopener">Iconfont.cn</a></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>在 <a href="https://github.com/hifocus/merger/tree/gh-pages" target="_blank" rel="noopener">GitHub</a> 上编辑此页面。</p>
+</blockquote>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-danger donate" href="https://donate.justhx.com" target="_blank">
+    <span class="icon is-small">
+        <i class="fas fa-qrcode"></i>
+    </span>
+    <span>使用 Merger 捐赠</span>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/cn/posts/hello-get-to-know-merger.html">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">你好，认识下 Merger</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/cn/docs/install.html">
+                <span class="level-item">安装</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-1 column-left is-sticky">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="Merger 官方网站">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        Merger 官方网站
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        合并二维码 快人一步
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        </nav>
+        
+        
+        
+    </div>
+</div>
+    
+        
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#特性">
+        <span class="has-mr-6">1</span>
+        <span>特性</span>
+        </a></li><li>
+        <a class="is-flex" href="#演示站点">
+        <span class="has-mr-6">2</span>
+        <span>演示站点</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#其他演示站点">
+        <span class="has-mr-6">2.1</span>
+        <span>其他演示站点</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#截图">
+        <span class="has-mr-6">3</span>
+        <span>截图</span>
+        </a></li><li>
+        <a class="is-flex" href="#社区">
+        <span class="has-mr-6">4</span>
+        <span>社区</span>
+        </a></li><li>
+        <a class="is-flex" href="#感谢">
+        <span class="has-mr-6">5</span>
+        <span>感谢</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://merger.justhx.com" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">切换至英文 / English</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://feeds.feedburner.com/merger-cn-docs" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">通过 Rss 订阅</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://feedly.com/i/subscription/feed/https://feeds.feedburner.com/merger-cn-docs" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">通过 Feedly 订阅</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.justhx.com" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">作者博客</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+        </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+<footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <!-- <a class="footer-logo is-block has-mb-6" href="/cn/">
+                
+                    <img src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="概述" height="28">
+                
+                </a> -->
+                <p class="is-size-7">
+                Merger Official Site&nbsp&copy; 2019 /&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme&nbsp;<a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+            </div>
+        </div>
+    </div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111752336-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111752336-10');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2926251753109401",
+          enable_page_level_ads: true
+     });
+</script>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+    
+    
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/cn/js/gallery.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="/cn/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/cn/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/cn/js/insight.js" defer></script>
+<link rel="stylesheet" href="/cn/css/search.css">
+<link rel="stylesheet" href="/cn/css/insight.css">
+    
+</body>
+</html>
