@@ -26,9 +26,11 @@
 
 
 
+<link rel="alternative" href="/atom.xml" title="Merger" type="application/atom+xml">
 
 
-<link rel="icon" href="https://ae01.alicdn.com/kf/U9711a26e589447a29ca3c46885883522D.png">
+
+<link rel="icon" href="/cn/images/merge.png">
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
@@ -64,7 +66,6 @@
 
 
 <link rel="stylesheet" href="/cn/css/style.css">
-<link rel="alternate" href="/cn/atom.xml" title="Merger" type="application/atom+xml">
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -72,7 +73,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/cn/">
             
-                <img src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="Merger" height="28">
+                <img src="/cn/images/merge.svg" alt="Merger" height="28">
             
             </a>
         </div>
@@ -103,7 +104,7 @@
             <div class="navbar-end">
                 
                     
-                    <a class="navbar-item" target="_blank" title="在 GitHub 上获取" href="https://github.com/hifocus/merger">
+                    <a class="navbar-item" title="在 GitHub 上获取" href="https://github.com/hifocus/merger" target="_blank" rel="noopener">
                         
                         <i class="fab fa-github"></i>
                         
@@ -179,7 +180,7 @@
                 <div>
                     
                     <figure class="image is-128x128 has-mb-6">
-                        <img class="" src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="Merger 官方网站">
+                        <img class="" src="/cn/images/merge.svg" alt="Merger 官方网站">
                     </figure>
                     
                     <p class="is-size-4 is-block">
@@ -213,7 +214,7 @@
         <ul class="menu-list">
         
             <li>
-                <a class="level is-mobile" href="https://merger.justhx.com" target="_blank">
+                <a class="level is-mobile" href="https://merger.justhx.com">
                     <span class="level-left">
                         <span class="level-item">切换至英文 / English</span>
                     </span>
@@ -221,7 +222,7 @@
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://feeds.feedburner.com/merger-cn-docs" target="_blank">
+                <a class="level is-mobile" href="https://feeds.feedburner.com/merger-cn-docs" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">通过 Rss 订阅</span>
                     </span>
@@ -229,7 +230,7 @@
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://feedly.com/i/subscription/feed/https://feeds.feedburner.com/merger-cn-docs" target="_blank">
+                <a class="level is-mobile" href="https://feedly.com/i/subscription/feed/https://feeds.feedburner.com/merger-cn-docs" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">通过 Feedly 订阅</span>
                     </span>
@@ -237,7 +238,7 @@
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://www.justhx.com" target="_blank">
+                <a class="level is-mobile" href="https://www.justhx.com" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">作者博客</span>
                     </span>
@@ -268,7 +269,7 @@
             <div class="level-start has-text-centered-mobile">
                 <!-- <a class="footer-logo is-block has-mb-6" href="/cn/">
                 
-                    <img src="https://cdn.staticaly.com/img/svgshare.com/i/GHU.svg" alt="Merger" height="28">
+                    <img src="/cn/images/merge.svg" alt="Merger" height="28">
                 
                 </a> -->
                 <p class="is-size-7">
@@ -302,6 +303,9 @@
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>
+    jQuery(document).ready(function($){$('a').filter('[href^="http"], [href^="//"]').not('[href*="'+window.location.host+'"]').attr('rel','noopener noreferrer').attr('target','_blank');});
+</script>
 <script>moment.locale("zh-CN");</script>
 
 <script>

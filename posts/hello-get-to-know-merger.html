@@ -105,7 +105,7 @@
             <div class="navbar-end">
                 
                     
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/hifocus/merger">
+                    <a class="navbar-item" title="Download on GitHub" href="https://github.com/hifocus/merger" target="_blank" rel="noopener">
                         
                         <i class="fab fa-github"></i>
                         
@@ -328,7 +328,7 @@
         <ul class="menu-list">
         
             <li>
-                <a class="level is-mobile" href="https://merger.justhx.com/cn/" target="_blank">
+                <a class="level is-mobile" href="https://merger.justhx.com/cn/">
                     <span class="level-left">
                         <span class="level-item">Switch to Chinese / 中文</span>
                     </span>
@@ -336,7 +336,7 @@
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://feeds.feedburner.com/merger-docs" target="_blank">
+                <a class="level is-mobile" href="https://feeds.feedburner.com/merger-docs" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">Subscribe via Rss</span>
                     </span>
@@ -344,7 +344,7 @@
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://feedly.com/i/subscription/feed/https://feeds.feedburner.com/merger-docs" target="_blank">
+                <a class="level is-mobile" href="https://feedly.com/i/subscription/feed/https://feeds.feedburner.com/merger-docs" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">Subscribe via Feedly</span>
                     </span>
@@ -352,7 +352,7 @@
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://www.justhx.com" target="_blank">
+                <a class="level is-mobile" href="https://www.justhx.com" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">Author&#39;s Blog</span>
                     </span>
@@ -398,6 +398,9 @@
             </div>
         </div>
     </div>
+<script>
+jQuery(document).ready(function($){$('a').filter('[href^="http"], [href^="//"]').not('[href*="'+window.location.host+'"]').attr('rel','noopener noreferrer').attr('target','_blank');});
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111752336-10"></script>
 <script>
@@ -417,6 +420,9 @@
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>
+    jQuery(document).ready(function($){$('a').filter('[href^="http"], [href^="//"]').not('[href*="'+window.location.host+'"]').attr('rel','noopener noreferrer').attr('target','_blank');});
+</script>
 <script>moment.locale("en");</script>
 
 <script>
