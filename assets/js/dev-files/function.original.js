@@ -153,7 +153,7 @@ else {
     var trans_pm = "pay"
     var trans_dn = "donate"
     var finaltitle = "Choose Your " + method_t + " Method";
-    var finalsub = "Then follow the instruction<br>to proceed a " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " to" + finalname_eng;
+    var finalsub = "Then follow the instruction to proceed a " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " to" + finalname_eng;
     var scanhint = "Scan the QR Code to " + method + finalname_eng;
     var presshold = method.replace(method.charAt(5), "") + method.charAt(5).replace("e", "") + "ing to" + finalname_eng + ":<br><span style='font-weight:400'>Press and hold to recognise the Qrcode</span>";
     var scan = "Scan the QR Code on ";
