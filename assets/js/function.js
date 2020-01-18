@@ -7,11 +7,39 @@
 
 var client;
 var selected;
-
-// Set profile photo
-document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";
-
 var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas
+
+profile_error = 0;
+
+if (typeof profile === "undefined" || profile === null || profile === "") {
+  profile_error = 1;
+}
+else if (profile.includes('@')) { // Verify if value entered is a email
+  var email = profile.split("@")
+  var suffix = email[1];
+  if (suffix.includes('.')) { // Verify if the email entered is valid
+    var profile_url = gravatar_url + md5(profile) + "?s=96";
+    var profile_lg = profile_url.replace("96", "500"); // Set a large version
+    console.log(profile_url);
+  }
+  else {
+    console.log("%c Email address invaild, please entre a vaild email or image url! ", "color: red"); // Error message if email entered is invalid
+    console.log("%c Email 无效，请输入有效 Email 或者图片 url ", "color: red");
+    profile_error = 1;
+  }
+}
+else {
+  var profile_url = profile; // If email is not entered, use whatever value entered (presumably a url)
+}
+
+if (profile_error > 0) {
+  profile_url = profile_lg = 'https://ae01.alicdn.com/kf/Udaba9d58fade4a3e921c0ceba62db2b7n.png'; // Set a default avatar in case profile image is undefined
+}
+
+// Set page favicon using jQuery
+document.getElementById("i").style.background = "url('" + profile_lg + "') no-repeat center/cover"; // Set center picture
+$("#favicon").attr("href", profile_url); // Set page icon
+
 
 var userLang = navigator.language || navigator.userLanguage;
 if (multilingual !== false) {
@@ -72,7 +100,7 @@ if (multilingual === false) {
 else {
   if (/zh-CN|zh-cn|zh-Hans|zh-hans|cn/i.test(userLang)) {
     // detect browser langauge, simplified chinese only
-    document.write("<style>body { font-family: 'Segoe UI', -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', sans-serif; }</style>");
+    document.write("<style>body { font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', sans-serif; }</style>");
     if (usage === "payment") {
       var method = "付款";
     }
@@ -96,7 +124,7 @@ else {
   }
   else if (/zh-TW|zh-HK|zh-tw|zh-hk|zh-Hant|zh-hant|tw|hk/i.test(userLang)) {
     // detect browser langauge, traditional chinese only
-    document.write("<style>body { font-family: 'Segoe UI', -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif; }</style>");
+    document.write("<style>body { font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif; }</style>");
     if (usage === "payment") {
       var method = "付款";
     }
@@ -136,7 +164,7 @@ else {
     var trans_pm = "pay"
     var trans_dn = "donate"
     var finaltitle = "Choose Your " + method_t + " Method";
-    var finalsub = "Then follow the instruction<br>to proceed a " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " to" + finalname_eng;
+    var finalsub = "Then follow the instruction to proceed a " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " to" + finalname_eng;
     var scanhint = "Scan the QR Code to " + method + finalname_eng;
     var presshold = method.replace(method.charAt(5), "") + method.charAt(5).replace("e", "") + "ing to" + finalname_eng + ":<br><span style='font-weight:400'>Press and hold to recognise the Qrcode</span>";
     var scan = "Scan the QR Code on ";
@@ -172,7 +200,18 @@ if (typeof paypal === "undefined" || paypal === null || paypal === "") {
 else {
   function openbox() {
     selected = "yes";
-    window.open(paypal, "_blank", "width=360,height=560");
+    function openpaypal(url, w, h) { // code from https://stackoverflow.com/questions/4068373/center-a-popup-window-on-screen?answertab=votes#tab-top
+      var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+      var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+      var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+      var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+      var systemZoom = width / window.screen.availWidth;
+      var left = (width - w) / 2 / systemZoom + dualScreenLeft
+      var top = (height - h) / 2 / systemZoom + dualScreenTop
+      var newWindow = window.open(url, "_blank", 'width=' + w / systemZoom + ', height=' + h / systemZoom + ', top=' + top + ', left=' + left);
+      if (window.focus) newWindow.focus();
+    }
+    openpaypal(paypal, '420', '680');
   }
 }
 
