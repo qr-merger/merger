@@ -7,11 +7,28 @@
                      
                      var client;
                      var selected;
-
-                     // Set profile photo
-                     document.getElementById("i").style.background = "url('" + profile + "') no-repeat center/cover";         
-                     
                      var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas
+
+                     if (profile.includes('@')) { // Verify if value entered is a email
+                        var email = profile.split("@")
+                        var suffix = email[1];
+                        if (suffix.includes('.')) { // Verify if the email entered is valid
+                            var profile_url = gravatar_url + md5(profile) + "?s=96";
+                            var profile_lg = profile_url.replace("96", "500"); // Set a large version
+                            console.log(profile_url);
+                        }
+                        else {
+                            console.log("%c Email address invaild, please entre a vaild email or image url! ", "color: red"); // Error message if email entered is invalid
+                            console.log("%c Email 无效，请输入有效 Email 或者图片 url ", "color: red");
+                        }
+                    }
+                    else {
+                        var profile_url = profile; // If email is not entered, use whatever value entered (presumably a url)
+                    }
+                    // Set page favicon using jQuery
+                    document.getElementById("i").style.background = "url('" + profile_lg + "') no-repeat center/cover"; // Set center picture
+                    $("#favicon").attr("href", profile_url); // Set page icon
+                     
 
                      var userLang = navigator.language || navigator.userLanguage;
                      if (multilingual !== false) {
