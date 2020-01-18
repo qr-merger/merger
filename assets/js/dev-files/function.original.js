@@ -89,7 +89,7 @@ if (multilingual === false) {
 else {
     if (/zh-CN|zh-cn|zh-Hans|zh-hans|cn/i.test(userLang)) {
     // detect browser langauge, simplified chinese only
-    document.write("<style>body { font-family: 'Segoe UI', -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', sans-serif; }</style>");
+    document.write("<style>body { font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', sans-serif; }</style>");
     if (usage === "payment") {
         var method = "付款";
     }
@@ -113,7 +113,7 @@ else {
 }
 else if (/zh-TW|zh-HK|zh-tw|zh-hk|zh-Hant|zh-hant|tw|hk/i.test(userLang)) {
     // detect browser langauge, traditional chinese only
-    document.write("<style>body { font-family: 'Segoe UI', -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif; }</style>");
+    document.write("<style>body { font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif; }</style>");
     if (usage === "payment") {
         var method = "付款";
     }
