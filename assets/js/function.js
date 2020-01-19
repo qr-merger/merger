@@ -211,7 +211,7 @@ else {
       var newWindow = window.open(url, "_blank", 'width=' + w / systemZoom + ', height=' + h / systemZoom + ', top=' + top + ', left=' + left);
       if (window.focus) newWindow.focus();
     }
-    openpaypal(paypal, '420', '680');
+    openpaypal(paypal, window.innerWidth * 0.275, window.innerHeight * 0.9);
   }
 }
 
