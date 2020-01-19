@@ -26,10 +26,10 @@
 ## 相关链接
 
 - [说明文档](https://merger.justhx.com/cn/categories/docs/)
- - [概述](https://merger.justhx.com/docs/introduction)
- - [安装](https://merger.justhx.com/docs/install)
- - [配置](https://merger.justhx.com/docs/configure)
- - [部署](https://merger.justhx.com/docs/deploy)
+  - [概述](https://merger.justhx.com/docs/introduction)
+  - [安装](https://merger.justhx.com/docs/install)
+  - [配置](https://merger.justhx.com/docs/configure)
+  - [部署](https://merger.justhx.com/docs/deploy)
 - [演示站点](https://demo.qrcdn.com)
 - [其他演示站点](https://merger.justhx.com/cn/docs/introduction#%E5%85%B6%E4%BB%96%E6%BC%94%E7%A4%BA%E7%AB%99%E7%82%B9)
 - [提交问题](https://github.com/hifocus/merger/issues)

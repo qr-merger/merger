@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-Merge Your Qrcodes Together. Even Quicker.
+All together. Even Quicker.
 </p>
 <p align="center">
 Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
@@ -25,10 +25,10 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 ## Relevant Links
 
 - [Docs](https://merger.justhx.com/categories/docs/)
- - [Instroduction](https://merger.justhx.com/docs/introduction)
- - [Installation](https://merger.justhx.com/docs/install)
- - [Configuration](https://merger.justhx.com/docs/configure)
- - [Deployment](https://merger.justhx.com/docs/deploy)
+  - [Instroduction](https://merger.justhx.com/docs/introduction)
+  - [Installation](https://merger.justhx.com/docs/install)
+  - [Configuration](https://merger.justhx.com/docs/configure)
+  - [Deployment](https://merger.justhx.com/docs/deploy)
 - [Live Demo](https://demo.qrcdn.com)
 - [Demo From Users](https://merger.justhx.com/docs/introduction#Demo-From-Users)
 - [Issues](https://github.com/hifocus/merger/issues)
