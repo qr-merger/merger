@@ -24,7 +24,11 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 
 ## Relevant Links
 
-- [Docs](https://merger.justhx.com/)
+- [Docs](https://merger.justhx.com/categories/docs/)
+ - [Instroduction](https://merger.justhx.com/docs/introduction)
+ - [Installation](https://merger.justhx.com/docs/install)
+ - [Configuration](https://merger.justhx.com/docs/configure)
+ - [Deployment](https://merger.justhx.com/docs/deploy)
 - [Live Demo](https://demo.qrcdn.com)
 - [Demo From Users](https://merger.justhx.com/docs/introduction#Demo-From-Users)
 - [Issues](https://github.com/hifocus/merger/issues)
@@ -37,6 +41,7 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 - Detailed code comments , make ease for second-time development.
 - Integrate with actual usage scenes, to present a individually-designed style for each payment method.
 - Highly customisable, everthing on the page can be changed through the preset Javascript codes. No need for any programming technique.
+- In-depth user experience considerations; with multiple subtle adjustments, without anyone noticing it, you and your users' experiences has been improved to its best.
 - All static contents are merged (where possible) and served through the Open Source CDN [jsDelivr](https://www.jsdelivr.com) to deliver the most optimal loading speed.
 
 ## License

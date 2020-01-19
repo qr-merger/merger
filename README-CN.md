@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-合并你的二维码。就是现在。
+合并二维码，快人一步。
 </p>
 <p align="center">
 语言：<a href="/README.md">English 英语</a> / <strong>中文</strong>
@@ -25,7 +25,11 @@
 
 ## 相关链接
 
-- [说明文档](https://merger.justhx.com/cn/)
+- [说明文档](https://merger.justhx.com/cn/categories/docs/)
+ - [概述](https://merger.justhx.com/docs/introduction)
+ - [安装](https://merger.justhx.com/docs/install)
+ - [配置](https://merger.justhx.com/docs/configure)
+ - [部署](https://merger.justhx.com/docs/deploy)
 - [演示站点](https://demo.qrcdn.com)
 - [其他演示站点](https://merger.justhx.com/cn/docs/introduction#%E5%85%B6%E4%BB%96%E6%BC%94%E7%A4%BA%E7%AB%99%E7%82%B9)
 - [提交问题](https://github.com/hifocus/merger/issues)
@@ -38,6 +42,7 @@
 - 详尽的代码注释，方便二次开发。
 - 结合实际使用场景为每一种支付方式单独设计的展示样式。
 - 高度可定制化，页面上一切内容均可通过预设的 Javascript 代码更改。无需任何编程技巧。
+- 细致入深的用户体验考量；多处细微调整，毋须任何人留意，你和你用户的体验已被提升至最佳。
 - 所有静态文件均默认通过开源 CDN [jsDelivr](https://www.jsdelivr.com) 合并（有可能的情况下）和分发，以提供最快的加载速度。
 
 ## 开源许可证
