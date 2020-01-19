@@ -61,8 +61,11 @@ body {
 
 .main {
   position: absolute;
-  top: calc(50% - 178px);
+  left: 50%;
+  top: 50%;
   width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .main i {
   width: 200px;
@@ -88,6 +91,11 @@ h2 {
 
 p {
   font-size: 16px;
+}
+
+.texts {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .middlebtn {
