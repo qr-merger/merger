@@ -14,7 +14,7 @@ profile_error = 0;
 if (typeof profile === "undefined" || profile === null || profile === "") {
   profile_error = 1;
 }
-else if (profile.includes('@')) { // Verify if value entered is a email
+else if (profile.includes('@') && !profile.includes('http')) { // Verify if value entered is a email
   var email = profile.split("@")
   var suffix = email[1];
   if (suffix.includes('.')) { // Verify if the email entered is valid
@@ -28,14 +28,13 @@ else if (profile.includes('@')) { // Verify if value entered is a email
   }
 }
 else {
-  var profile_url = profile; // If email is not entered, use whatever value entered (presumably a url)
+  profile_url = profile_lg = profile; // If email is not entered, use whatever value entered (presumably a url)
 }
 
 if (profile_error > 0) {
   profile_url = profile_lg = 'https://ae01.alicdn.com/kf/Udaba9d58fade4a3e921c0ceba62db2b7n.png'; // Set a default avatar in case profile image is undefined
 }
 
-// Set page favicon using jQuery
 document.getElementById("i").style.background = "url('" + profile_lg + "') no-repeat center/cover"; // Set center picture
 $("#favicon").attr("href", profile_url); // Set page icon
 
@@ -210,13 +209,13 @@ else {
       var newWindow = window.open(url, "_blank", 'width=' + w / systemZoom + ', height=' + h / systemZoom + ', top=' + top + ', left=' + left);
       if (window.focus) newWindow.focus();
     }
-    if(window.innerHeight < window.innerWidth){
+    if (window.innerHeight < window.innerWidth) {
       openpaypal(paypal, window.innerWidth * 0.275, window.innerHeight * 0.9);
     }
-      else {
+    else {
       openpaypal(paypal, window.innerWidth * 0.5, window.innerHeight * 0.9);
-      }  
     }
+  }
 }
 
 // General UserAgent verify rules
@@ -314,7 +313,7 @@ document.getElementById("name").innerHTML = finaltitle;
 document.getElementById("description").innerHTML = finalsub;
 
 // Copyright console log copied from https://github.com/MoePlayer/APlayer/. Thank you.
-console.log(`${'\n'} %c Merger %c https://github.com/hifocus/merger ${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+console.log(`${'\n'} %c Merger 0.21.1 %c https://github.com/hifocus/merger ${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
 
 function showqrcode() {
   if (location.href.substr(location.href.lastIndexOf('#') + 1) == "showqrcode" && selected == "yes") document.getElementById('showqrcode').style.display = "flex";
@@ -328,4 +327,4 @@ function showqrcode() {
     size: 300 * scale,
     text: client
   });
-}                             
+}
