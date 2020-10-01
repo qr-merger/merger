@@ -165,3 +165,7 @@ img {
   height: auto;
   width: auto\9; /* ie8 */
 }
+
+.modal-container {
+  max-width: 750px;
+}
