@@ -63,7 +63,7 @@
 
         // QQ Mobile wouldn't decode qrcode from `data:image`, so for qq mobile only speical qrcode that generate from qrcode api is necessary
         var qrcodeapi = "https://www.zhihu.com/qrcode?url="; // Please note that the API has to support HTTPS connection otherwise will not be loaded
-        var gravatar_url = "https://sdn.geekzu.org/avatar/"; // You can choose your preferred gravatar mirror here; stay default if you don't know which one's the best
+        var gravatar_url = "https://www.gravatar.com/avatar/"; // You can set your preferred gravatar source (mirror) here; stay default if you cannot decide which source you'd prefer
     </script>
 
     <div class="main" id="h">
@@ -121,14 +121,14 @@
     <!-- Footer Scripts -->
     <!-- Please do not swap orders -->
     <!-- Load Javascript files from jsDelivr - Default -->
-    <script src="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.21.1/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.21.1/assets/js/JavaScript_MD5/md5.min.js,gh/hifocus/merger@0.21.1/assets/js/function.min.js,gh/hifocus/merger@0.21.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3,gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2/js/md5.min.js,gh/hifocus/merger@latest/assets/js/function.min.js,gh/hifocus/merger@latest/assets/js/font_974919_xgtacm93vxp.min.js"></script>
+    
     <!-- Load Javascript files from local -->
-    <!-- <script src="assets/js/jQuery/jquery.min.js"></script>
-    <script src="assets/js/jquery-qrcode/jquery-qrcode.min.js"></script>
-    <script src="assets/js/JavaScript_MD5/md5.min.js"></script>
-    <script src="assets/js/function.js"></script>
-    <script src="assets/js/font_974919_xgtacm93vxp.js"></script> -->
+    <!-- <script src="https://unpkg.zhimg.com/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://unpkg.zhimg.com/jquery-qrcode2@latest/dist/jquery-qrcode.min.js"></script>
+    <script src="https://unpkg.zhimg.com/blueimp-md5@2/js/md5.min.js"></script>
+    <script src="assets/js/function.min.js"></script>
+    <script src="assets/js/font_974919_xgtacm93vxp.min.js"></script> -->
 </body>
 
 </html>
