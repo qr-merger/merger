@@ -109,8 +109,8 @@ else {
     var trans_wx = "微信"
     var trans_ali = "支付宝"
     var trans_tp = "QQ手机版"
-    var finaltitle = "选择你的" + method + "方式";
-    var finalsub = "跟随下一步的指示以向" + finalname + method;
+    var finaltitle = "向" + finalname + method;
+    var finalsub = "从下方选择" + method + "方式";
     var trans_wx = "微信";
     var scan = "扫一扫";
     var presshold = "长按识别二维码";
@@ -133,8 +133,8 @@ else {
     var trans_wx = "WeChat "
     var trans_ali = "支付寶"
     var trans_tp = "QQ手機版"
-    var finaltitle = "選擇你的" + method + "方式";
-    var finalsub = "跟隨下一步的指示以向" + finalname + method;
+    var finaltitle = "向" + finalname + method;
+    var finalsub = "從下方選擇" + method + "方式";
     var scan = "掃一掃";
     var notavail = "🚫 目前沒有可用的" + method + "方式";
     var wechatscan = trans_wx + scan;
@@ -159,13 +159,11 @@ else {
     var trans_wx = "WeChat"
     var trans_ali = "AliPay"
     var trans_tp = "QQ Mobile"
-    var trans_pm = "pay"
-    var trans_dn = "donate"
-    var finaltitle = "Choose Your " + method_t + " Method";
-    var finalsub = "Then follow the instruction to proceed a " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " to" + finalname_eng;
+    var finaltitle = method + " to" + finalname_eng;
+    var finalsub = "Select a " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " method from below";
     var scanhint = "Scan the QR Code to " + method + finalname_eng;
-    var presshold = method.replace(method.charAt(5), "") + method.charAt(5).replace("e", "") + "ing to" + finalname_eng + ":<br><span style='font-weight:400'>Press and hold to recognise the Qrcode</span>";
-    var scan = "Scan the QR Code on ";
+    var presshold = method.replace(method.charAt(5), "") + method.charAt(5).replace("e", "") + "ing to" + finalname_eng + ":<br><span style='font-weight:400'>Press and hold to recognise the QR Code</span>";
+    var scan = "Scan the QR Code with ";
     var payto = "";
     var notavail = "🚫 Currently no " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " method available";
     var wechatscan = scan + trans_wx;
