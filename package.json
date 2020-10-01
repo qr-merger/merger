@@ -1,5 +1,5 @@
 {
-  "name": "qr-merger",
+  "name": "@hifocus/merger",
   "version": "0.2.6",
   "description": "📲 Merge Your Qrcodes Together. Even Quicker.",
   "main": "merger.html",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://https://github.com/hifocus/merger.git"
+    "url": "git://github.com/hifocus/merger.git"
   },
   "keywords": [
     "qr",
@@ -27,5 +27,6 @@
   "homepage": "https://qrcdn.com",
   "dependencies": {
     "html-minifier": "^4.0.0"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
