@@ -1,0 +1,29 @@
+{
+  "name": "qr-merger",
+  "version": "0.2.5",
+  "description": "📲 Merge Your Qrcodes Together. Even Quicker.",
+  "main": "merger.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hifocus/merger.git"
+  },
+  "keywords": [
+    "qr",
+    "code",
+    "qrcode",
+    "merger",
+    "二维码合并"
+  ],
+  "author": "hifocus",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/hifocus/merger/issues"
+  },
+  "homepage": "https://qrcdn.com",
+  "dependencies": {
+    "copyfiles": "^2.3.0"
+  }
+}
