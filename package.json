@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hifocus/merger.git"
+    "url": "git://https://github.com/hifocus/merger.git"
   },
   "keywords": [
     "qr",
