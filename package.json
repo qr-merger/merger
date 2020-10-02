@@ -5,7 +5,7 @@
   "main": "merger.html",
   "scripts": {
     "move": "rm -rf public && mkdir public && cp merger.html public/index.html && cp -r assets public/assets",
-    "minify": "html-minifier --input-dir ./public --output-dir ./public --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --file-ext html --minify-css true --minify-js true",
+    "minify": "html-minifier --input-dir ./public --output-dir ./public --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --file-ext html --minify-css true --minify-js true",
     "build": "npm run-script move && npm run-script minify"
   },
   "repository": {
