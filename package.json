@@ -27,4 +27,5 @@
   "homepage": "https://qrcdn.com",
   "dependencies": {
     "html-minifier": "^4.0.0"
-  }}
+  }
+}
