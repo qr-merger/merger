@@ -1,6 +1,6 @@
 {
-  "name": "@hifocus/merger",
-  "version": "0.2.6",
+  "name": "qr-merger",
+  "version": "0.26.1",
   "description": "📲 Merge Your Qrcodes Together. Even Quicker.",
   "main": "merger.html",
   "scripts": {
@@ -27,6 +27,4 @@
   "homepage": "https://qrcdn.com",
   "dependencies": {
     "html-minifier": "^4.0.0"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
-}
+  }}
