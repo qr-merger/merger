@@ -1,8 +1,8 @@
 <!-- 
-  Merger v0.26.1 - Merge Your Qrcode Together. Even Quicker.
+  Merger v0.26.2 - Merge Your Qrcodes Together. Even Quicker.
   User docs: https://docs.justhx.com/merger
   Released under GNU General Public License v3.0. Open source at https://github.com/hifocus/merger.
-  Author @hifocus (https://github.com/hifocus), @LF112 (https://github.com/LF112)
+  Author @hifocus (https://github.com/hifocus) and contributors(https://github.com/hifocus/merger/graphs/contributors).
   Please preserve the copywrite information above as required by the license.
  -->
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
     <!-- Load style files from jsDelivr - Default -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
 
-    <!-- Load style files from local -->
+    <!-- Load style files from local - in case jsDelivr goes down -->
     <!-- <link rel="stylesheet" href="https://unpkg.zhimg.com/qr-merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css">
     <link rel="stylesheet" href="https://unpkg.zhimg.com/qr-merger@0.26.1/assets/styles/style.min.css"> -->
 </head>
@@ -63,7 +63,7 @@
 
         // QQ Mobile wouldn't decode qrcode from `data:image`, so for qq mobile only speical qrcode that generate from qrcode api is necessary
         var qrcodeapi = "https://www.zhihu.com/qrcode?url="; // Please note that the API has to support HTTPS connection otherwise will not be loaded
-        var gravatar_url = "https://www.gravatar.com/avatar/"; // You can set your preferred gravatar source (mirror) here; stay default if you cannot decide which source you'd prefer
+        var gravatar_url = "https://gravatar.loli.top/avatar/"; // You can set your preferred gravatar source (mirror) here; stay default if you cannot decide which source you'd prefer
     </script>
 
     <div class="main" id="h">
