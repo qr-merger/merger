@@ -7,7 +7,7 @@
 
 var client;
 var selected;
-var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas
+var scale = window.devicePixelRatio; // Change scale to 1 on retina screens to see blurry canvas
 
 profile_error = 0;
 

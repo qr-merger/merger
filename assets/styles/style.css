@@ -10,8 +10,6 @@ html,
 body {
   height: 100%;
   margin: 0;
-  /* Custom Fonts Disabled Due to Need on Load Speed */
-  /* font-family: "Noto Sans SC Sliced", sans-serif; */
   background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: Gradient 10s ease infinite;
