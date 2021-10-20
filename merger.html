@@ -10,13 +10,13 @@
 <html>
 
 <head>
-    <title></title><!-- There is no need to set the page title manually -->
+    <title></title><!-- Page title will be set automatically -->
     <meta charset="utf-8">
     <meta name="author" content="Huangxin, LF112" />
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- Upgrade HTTP Connections to HTTPS - Default -->
-    <link rel="shortcut icon" type="image/x-icon" id="favicon"><!-- There is no need to set the page icon manually -->
+    <link rel="shortcut icon" type="image/x-icon" id="favicon"><!-- Page icon will be set automatically -->
 
     <!-- Load style files from jsDelivr - Default -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
@@ -30,13 +30,14 @@
 
     <script>
         // Config Section - Please follow the instruction
-        // Please read the document - https://docs.qrcdn.com/merger
+        // Please read the docs - https://docs.qrcdn.com/merger
+        // Due to compatibility reasons, all code comments are written in English; if unable to understand, refer to the docs
 
         // Replace with your preferred name and profile photo link below
-        // Please note the multilingual support function enabled by default below
+        // Please note the multilingual support function enabled by default from below
         var myname = "惶心";
         var profile = "https://vip1.loli.io/2021/04/28/miRTlxchDfkaYvq.png"; // Enter a image url or your gravatar email, or leave the variable blank to use the default avatar
-     // var profile = "im.hx@live.cn";
+    //  var profile = "im.hx@live.cn"; // Use gravatar email
 
         // If you do not own any of the payment methods below, or do not want them to be published, just leave the variable empty or delete it to prevent confusion
         var usage = "payment"; // Available variables: `payment`, `donate`, ineffective if multilingual is disabled
@@ -46,22 +47,22 @@
         var paypal = "https://paypal.me/hxco";
 
         // Multilingual Support
-        var multilingual = true; // Set variable to false to disable multilingual feature
-        var myname_hans = myname // Default setting for Chinese Simplified users; change it to a speicify value if needed
-        var myname_hant = "惶心"; // Choose how you want your name to be displayed for Traditional Chinese users
-        var myname_eng = "Focus Chen"; // Choose how you want your name to be displayed for English / Non-Chinese users
+        var multilingual = true; // Set variable to false to disable multilingual feature (not recommended)
+        var myname_hans = myname // Default setting for Chinese Simplified users; change it to a speicify value if desired
+        var myname_hant = "惶心"; // Choose how you want your name to be displayed to Traditional Chinese users
+        var myname_eng = "Focus Chen"; // Choose how you want your name to be displayed to English / Non-Chinese users
 
-        // Dynamic Page Title Supoort
-        // Merger now supports dynamic page tile, however it's your freedom to choose whether you want to brand merger
-        // If you set branding to true, there will be a `| Merger` added after the preset page title
+        // Dynamic Page Title Support
+        // Merger supports dynamic page tile, however it's up to you to choose whether you want to brand merger
+        // If you set branding to true, a `| Merger` suffix will be added to the set title
         var branding = true; // Set variable to `false` to disable branding
 
-        // Customise pay instruction
-        // Will only be effective if multilingual function is disabled
-        var title = "选择你的支付方式";
-        var subtitle = "跟随进一步的指示以向" + myname + "付款"; // Do not change the `myname` variable here
+        // Copywriting Customisations
+        // Only effective if multilingual function is disabled
+        var title = "选择你的支付方式"; // Choose your desired title
+        var subtitle = "跟随进一步的指示以向" + myname + "付款"; // Choose your desired subtitle; do not amend the `myname` variable here
 
-        // QQ Mobile wouldn't decode qrcode from `data:image`, so for qq mobile only speical qrcode that generate from qrcode api is necessary
+        // QQ Mobile wouldn't decode qrcode from `data:image`, so for qq mobile only speical qrcode that generate from qrcode api is necessary (this feature is awaiting review)
         var qrcodeapi = "https://www.zhihu.com/qrcode?url="; // Please note that the API has to support HTTPS connection otherwise will not be loaded
         var gravatar_url = "https://cdn.helingqi.com/avatar/"; // You can set your preferred gravatar source (mirror) here; stay default if you cannot decide which source you'd prefer
     </script>
@@ -92,7 +93,6 @@
             </p>
         </div>
     </div>
-
         <!-- Button Section Ends -->
 
         <!-- Modal Section Starts -->
@@ -115,12 +115,12 @@
 
 
     <!-- Footer Scripts -->
-    <!-- Please do not swap orders -->
+    <!-- Please do not swap scripts' order -->
     <!-- Load Javascript files from jsDelivr - Default -->
     <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3"></script>
     <script src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
     
-    <!-- Load Javascript files from local -->
+    <!-- Load Javascript files from UNPKG - Zhihu Mirror -->
     <!-- <script src="https://unpkg.zhimg.com/jquery@3/dist/jquery.min.js"></script>
     <script src="https://unpkg.zhimg.com/jquery-qrcode2@latest/dist/jquery-qrcode.min.js"></script>
     <script src="https://unpkg.zhimg.com/blueimp-md5@2/js/md5.min.js"></script>
