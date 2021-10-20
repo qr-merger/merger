@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://merger.justhx.com">
+  <a href="https://merger.qrcdn.com">
     <img alt="merger" src="https://ae01.alicdn.com/kf/HTB1M9ondUKF3KVjSZFE760ExFXae.png" height="75">
   </a>
 </p>
@@ -20,7 +20,7 @@ Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
 <a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
 </p>
 
-Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.justhx.com/#/en-gb/?id=other-demo-sites)
+Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.qrcdn.com/#/en-gb/?id=other-demo-sites)
 
 ## Features
 
@@ -33,16 +33,16 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 
 ## Relevant Links
 
-- [Docs](https://merger.justhx.com/categories/docs/)
-  - [Instroduction](https://merger.justhx.com/docs/introduction)
-  - [Installation](https://merger.justhx.com/docs/install)
-  - [Configuration](https://merger.justhx.com/docs/configure)
-  - [Deployment](https://merger.justhx.com/docs/deploy)
+- [Docs](https://merger.qrcdn.com/categories/docs/)
+  - [Instroduction](https://merger.qrcdn.com/docs/introduction)
+  - [Installation](https://merger.qrcdn.com/docs/install)
+  - [Configuration](https://merger.qrcdn.com/docs/configure)
+  - [Deployment](https://merger.qrcdn.com/docs/deploy)
 - [Live Demo](https://demo.qrcdn.com)
-- [Demo From Users](https://merger.justhx.com/docs/introduction#Demo-From-Users)
+- [Demo From Users](https://merger.qrcdn.com/docs/introduction#Demo-From-Users)
 - [Issues](https://github.com/hifocus/merger/issues)
 - [Pull Requests](https://github.com/hifocus/merger/pulls)
-- [Credit](https://merger.justhx.com/docs/introduction#Credit)
+- [Credit](https://merger.qrcdn.com/docs/introduction#Credit)
 
 ## License
 
