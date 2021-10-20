@@ -1,13 +1,13 @@
 
 // Merger - Merge Your Qrcode Together. Even Quicker.
-// User docs: https://merger.justhx.com/#/
+// User docs: https://merger.qrcdn.com
 // Released under GNU General Public License v3.0. Open source at https://github.com/hifocus/merger.
-// Author @hifocus (https://github.com/hifocus), @LF112 (https://github.com/LF112)
+// Author @hifocus (https://github.com/hifocus), and contributors(https://github.com/hifocus/merger/graphs/contributors).
 // Copyright reservation is required.
 
 var client;
 var selected;
-var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas
+var scale = window.devicePixelRatio; // Change scale to 1 on retina screens to see blurry canvas
 
 profile_error = 0;
 

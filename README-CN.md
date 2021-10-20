@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://merger.justhx.com">
+  <a href="https://merger.qrcdn.com">
     <img alt="merger" src="https://ae01.alicdn.com/kf/HTB1M9ondUKF3KVjSZFE760ExFXae.png" height="75">
   </a>
 </p>
@@ -20,7 +20,7 @@
 <a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
 </p>
 
-在[这里](https://github.com/hifocus/merger/issues/4)提交你的 merger 站点以供[展示](https://merger.justhx.com/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
+在[这里](https://github.com/hifocus/merger/issues/4)提交你的 merger 站点以供[展示](https://merger.qrcdn.com/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
 
 ## 特性
 
@@ -33,16 +33,16 @@
 
 ## 相关链接
 
-- [说明文档](https://merger.justhx.com/cn/categories/docs/)
-  - [概述](https://merger.justhx.com/docs/introduction)
-  - [安装](https://merger.justhx.com/docs/install)
-  - [配置](https://merger.justhx.com/docs/configure)
-  - [部署](https://merger.justhx.com/docs/deploy)
+- [说明文档](https://merger.qrcdn.com/cn/categories/docs/)
+  - [概述](https://merger.qrcdn.com/docs/introduction)
+  - [安装](https://merger.qrcdn.com/docs/install)
+  - [配置](https://merger.qrcdn.com/docs/configure)
+  - [部署](https://merger.qrcdn.com/docs/deploy)
 - [演示站点](https://demo.qrcdn.com)
-- [其他演示站点](https://merger.justhx.com/cn/docs/introduction#%E5%85%B6%E4%BB%96%E6%BC%94%E7%A4%BA%E7%AB%99%E7%82%B9)
+- [其他演示站点](https://merger.qrcdn.com/cn/docs/introduction#%E5%85%B6%E4%BB%96%E6%BC%94%E7%A4%BA%E7%AB%99%E7%82%B9)
 - [提交问题](https://github.com/hifocus/merger/issues)
 - [合并请求](https://github.com/hifocus/merger/pulls)
-- [感谢](https://merger.justhx.com/cn/docs/introduction#%E6%84%9F%E8%B0%A2)
+- [感谢](https://merger.qrcdn.com/cn/docs/introduction#%E6%84%9F%E8%B0%A2)
 
 ## 开源许可证
 
