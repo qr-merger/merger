@@ -18,6 +18,7 @@ Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
 <a href="https://github.com/hifocus/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://github.com/hifocus/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/hifocus/merger.svg?style=flat-square"/></a>
 <a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fqr-merger%2Fmerger?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fqr-merger%2Fmerger.svg?type=shield"/></a>
 </p>
 
 Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.qrcdn.com/#/en-gb/?id=other-demo-sites)
@@ -47,3 +48,6 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 ## License
 
 [GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fqr-merger%2Fmerger.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fqr-merger%2Fmerger?ref=badge_large)
