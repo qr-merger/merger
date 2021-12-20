@@ -208,7 +208,7 @@ else {
       if (window.focus) newWindow.focus();
     }
     if (window.innerHeight < window.innerWidth) {
-      openpaypal(paypal, window.innerWidth * 0.275, window.innerHeight * 0.9);
+      openpaypal(paypal, window.innerWidth * 0.25, window.innerHeight * 0.9);
     }
     else {
       openpaypal(paypal, window.innerWidth * 0.5, window.innerHeight * 0.9);
@@ -311,7 +311,7 @@ document.getElementById("name").innerHTML = finaltitle;
 document.getElementById("description").innerHTML = finalsub;
 
 // Copyright console log copied from https://github.com/MoePlayer/APlayer/. Thank you.
-console.log(`${'\n'} %c Merger 0.27 %c https://github.com/hifocus/merger ${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+console.log(`${'\n'} %c Merger 0.27.0 %c https://github.com/hifocus/merger ${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
 
 function showqrcode() {
   if (location.href.substr(location.href.lastIndexOf('#') + 1) == "showqrcode" && selected == "yes") document.getElementById('showqrcode').style.display = "flex";
