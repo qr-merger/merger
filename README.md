@@ -5,7 +5,9 @@
 </p>
 
 <p align="center">
-All together. Even Quicker.
+<a href="https://demo.qrcdn.com">demo.qrcdn.com</a>
+<br>
+Lightweight, Integrated QR Code Payment Interface<br>轻量，集成的二维码支付界面
 </p>
 <p align="center">
 Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>

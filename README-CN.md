@@ -5,7 +5,9 @@
 </p>
 
 <p align="center">
-合并二维码，快人一步。
+<a href="https://demo.qrcdn.com">demo.qrcdn.com</a>
+<br>
+轻量，集成的二维码支付界面
 </p>
 <p align="center">
 语言：<a href="/README.md">English 英语</a> / <strong>中文</strong>
