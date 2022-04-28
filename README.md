@@ -29,9 +29,9 @@ Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [
 - Fewest number of requests, fastest loading speed.
 - Detailed code comments , make ease for further developments.
 - Integrate with actual usage scenes, to present a individually-designed style for every single payment method.
-- Highly customisable, everthing on the page can be changed through pre-configured JavaScript variables. No need for any programming technique.
+- Highly customisable, everthing on the page can be changed through pre-configured JavaScript variables. No need for any programming technique, while being easy to use.
 - In-depth user experience considerations; by thinking thoughtfully and having the passion to always keep UX as the first priority, you and your users' experiences when configuring / using merger could only be described as 'shift'.
-- All static contents are merged (where possible) and served through the Open Source CDN [jsDelivr](https://www.jsdelivr.com) to deliver the most optimal loading speed.
+- The use of public CDN on static files (where applicable) will speed-up the loading speed.
 
 ## Relevant Links
 
