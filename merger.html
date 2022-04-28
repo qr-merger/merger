@@ -16,9 +16,7 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- Upgrade HTTP Connections to HTTPS - Default -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://lib.baomitu.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.helingqi.com" crossorigin>
     <link rel="preconnect" href="https://www.gravatar.com" crossorigin>
     <link rel="shortcut icon" type="image/x-icon" id="favicon"><!-- Page icon will be set automatically -->
 
@@ -68,9 +66,8 @@
 
         // QQ Mobile wouldn't decode qrcode from `data:image`, so for qq mobile only speical qrcode that generate from qrcode api is necessary (this feature is awaiting review)
         var qrcodeapi = "https://www.zhihu.com/qrcode?url="; // Please note that the API has to support HTTPS connection otherwise will not be loaded
-        var gravatar_url = "https://cdn.helingqi.com/avatar/"; // You can set your preferred gravatar source (mirror) here; stay default if you cannot decide which source you'd prefer
+        var gravatar_url = "https://www.gravatar.com/avatar/"; // You can set your preferred gravatar source (mirror) here; stay default if you cannot decide which source you'd prefer
         // var gravatar_url = "https://gravatar.loli.net/avatar/"; // A Gravatar source provided by css.loli.net; stabler, relatively slower (in China)
-        // var gravatar_url = "https://www.gravatar.com/avatar/"; // The official Gravatar source, faster, but may be inacessible in China
    </script>
 
     <div class="main" id="h">
@@ -122,22 +119,13 @@
 
     <!-- Footer Scripts -->
     <!-- Please do not swap scripts' order -->
-    <!-- Load Javascript files from jsDelivr - Default -->
-    <!-- <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3"></script>
-    <script src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.27.0/assets/js/function.min.js,gh/hifocus/merger@0.27.0/assets/js/font_974919_xgtacm93vxp.min.js"></script> -->
+    <!-- Load Javascript files from lib.baomitu.com and local - Default -->
    
     <script crossorigin="anonymous" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
     <script crossorigin="anonymous" integrity="sha512-P9oNnyfvOZrY1H0D5js+UcLZr+vLkX50glCUlpJAd/RL84+KBtGI4yvH5YVM5TejD+jbURwQq3C/7hgYWOo8bQ==" src="https://lib.baomitu.com/lrsjng.jquery-qrcode/0.18.0/jquery-qrcode.min.js"></script>
     <script crossorigin="anonymous" integrity="sha512-Hmp6qDy9imQmd15Ds1WQJ3uoyGCUz5myyr5ijainC1z+tP7wuXcze5ZZR3dF7+rkRALfNy7jcfgS5hH8wJ/2dQ==" src="https://lib.baomitu.com/blueimp-md5/2.18.0/js/md5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/combine/gh/qr-merger/merger@0.27.0/assets/js/function.min.js,gh/qr-merger/merger@0.27.0/assets/js/font_974919_xgtacm93vxp.min.js"></script>
-
-
-    <!-- Load Javascript files from UNPKG - Zhihu Mirror -->
-    <!-- <script src="https://unpkg.zhimg.com/jquery@3/dist/jquery.min.js"></script>
-    <script src="https://unpkg.zhimg.com/jquery-qrcode2@latest/dist/jquery-qrcode.min.js"></script>
-    <script src="https://unpkg.zhimg.com/blueimp-md5@2/js/md5.min.js"></script>
-    <script src="https://unpkg.zhimg.com/qr-merger@0.27.0/assets/js/function.min.js"></script>
-    <script src="https://unpkg.zhimg.com/qr-merger@0.27.0/assets/js/font_974919_xgtacm93vxp.min.js"></script> -->
+    <script src="/assets/js/function.min.js"></script>
+    <script src="/assets/js/font_974919_xgtacm93vxp.min.js"></script>
 </body>
 
 </html>
