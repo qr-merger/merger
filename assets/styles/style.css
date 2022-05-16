@@ -135,6 +135,14 @@ p {
   }
 }
 
+div .texts p {
+  line-height: 0.02;
+}
+
+.buttons {
+  margin-top: 1em;
+}
+
 /* iconfont general css here */
 .icon {
   width: 1em;
