@@ -9,35 +9,7 @@ var client;
 var selected;
 var scale = window.devicePixelRatio; // Change scale to 1 on retina screens to see blurry canvas
 
-profile_error = 0;
-
-if (typeof profile === "undefined" || profile === null || profile === "") {
-  profile_error = 1;
-}
-else if (profile.includes('@') && !profile.includes('http')) { // Verify if value entered is a email
-  var email = profile.split("@")
-  var suffix = email[1];
-  if (suffix.includes('.')) { // Verify if the email entered is valid
-    var profile_url = gravatar_url + md5(profile) + "?s=96";
-    var profile_lg = profile_url.replace("96", "500"); // Set a large version
-  }
-  else {
-    console.log("%c Email address invaild, please entre a vaild email or image url! ", "color: red"); // Error message if email entered is invalid
-    console.log("%c Email 无效，请输入有效 Email 或者图片 url ", "color: red");
-    profile_error = 1;
-  }
-}
-else {
-  profile_url = profile_lg = profile; // If email is not entered, use whatever value entered (presumably a url)
-}
-
-if (profile_error > 0) {
-  profile_url = profile_lg = 'https://ae01.alicdn.com/kf/Udaba9d58fade4a3e921c0ceba62db2b7n.png'; // Set a default avatar in case profile image is undefined
-}
-
-document.getElementById("i").style.background = "url('" + profile_lg + "') no-repeat center/cover"; // Set center picture
 $("#favicon").attr("href", profile_url); // Set page icon
-
 
 var userLang = navigator.language || navigator.userLanguage;
 if (multilingual !== false) {
