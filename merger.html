@@ -16,8 +16,8 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- Upgrade HTTP Connections to HTTPS - Default -->
-    <link rel="preconnect" href="https://lib.baomitu.com" crossorigin>
     <link rel="preconnect" href="https://www.gravatar.com" crossorigin>
+    <link rel="preconnect" href="https://lib.baomitu.com" crossorigin>
     <link rel="shortcut icon" type="image/x-icon" id="favicon"><!-- Page icon will be set automatically -->
 
     <!-- Load style files from local - Default -->
@@ -88,8 +88,9 @@
         else if (profile.includes('@') && !profile.includes('http')) { // Verify if value entered is a email
             var email = profile.split("@")
             var suffix = email[1];
+            let profile_size = 500*(1/window.devicePixelRatio)*1.25
             if (suffix.includes('.')) { // Verify if the email entered is valid
-                var profile_url = gravatar_url + md5(profile) + "?s=500";
+                var profile_url = gravatar_url + md5(profile) + "?s=" + profile_size;
             }
             else {
                 console.log("%c Email address invaild, please entre a vaild email or image url! ", "color: red"); // Error message if email entered is invalid
@@ -102,7 +103,7 @@
         }
 
         if (profile_error > 0) {
-            profile_url = profile_url = 'https://ae01.alicdn.com/kf/Udaba9d58fade4a3e921c0ceba62db2b7n.png'; // Set a default avatar in case profile image is undefined
+            profile_url = profile_url = '/assets/images/placeholder.png'; // Set a default avatar in case profile image is undefined
         }
 
         document.getElementById("i").style.background = "url('" + profile_url + "') no-repeat center/cover"; // Set center picture
@@ -153,16 +154,17 @@
 
     <!-- Footer Scripts -->
     <!-- Please do not swap scripts' order -->
-    <!-- Load Javascript files from lib.baomitu.com and local - Default -->
+    <!-- Load Javascript files from local - Default -->
 
-    <script crossorigin="anonymous"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
-    <script crossorigin="anonymous"
-        integrity="sha512-P9oNnyfvOZrY1H0D5js+UcLZr+vLkX50glCUlpJAd/RL84+KBtGI4yvH5YVM5TejD+jbURwQq3C/7hgYWOo8bQ=="
-        src="https://lib.baomitu.com/lrsjng.jquery-qrcode/0.18.0/jquery-qrcode.min.js"></script>
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js" type="application/javascript"></script>
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/lrsjng.jquery-qrcode/0.18.0/jquery-qrcode.min.js" type="application/javascript"></script>
     <script src="/assets/js/function.js"></script>
     <script src="/assets/js/font_974919_xgtacm93vxp.js"></script>
+    
+    <!-- Static files of this project is available on CDNJS and respective mirror sites
+    https://cdnjs.com/libraries/merger
+    https://cdn.baomitu.com/merger
+    https://css.loli.net (https://cdnjs.loli.net) -->
 </body>
 
 </html>
