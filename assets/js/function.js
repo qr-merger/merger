@@ -70,7 +70,7 @@ if (multilingual === false) {
 else {
   if (/zh-CN|zh-cn|zh-Hans|zh-hans|cn/i.test(userLang)) {
     // detect browser langauge, simplified chinese only
-    document.write("<style>body { font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', sans-serif; }</style>");
+    document.write("<style>body { font-family: -apple-system,BlinkMacSystemFont,Open Sans,Roboto,Oxygen,Cantarell,Fira Sans,Liberation Sans,Droid Sans,PingFang SC,HarmonyOS Sans SC,MiSans,Hiragino Sans GB,WenQuanYi Micro Hei,Noto Sans CJK SC,Noto Sans SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;}</style>");
     if (usage === "payment") {
       var method = "付款";
     }
@@ -94,7 +94,7 @@ else {
   }
   else if (/zh-TW|zh-HK|zh-tw|zh-hk|zh-Hant|zh-hant|tw|hk/i.test(userLang)) {
     // detect browser langauge, traditional chinese only
-    document.write("<style>body { font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif; }</style>");
+    document.write("<style>body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif; }</style>");
     if (usage === "payment") {
       var method = "付款";
     }
@@ -127,7 +127,7 @@ else {
     }
     var method_lc = method.charAt(0).toLowerCase();
     document.title = method + ' to' + finalname_eng + aftertitle;
-    document.write("<style>body { font-family: 'Segoe UI', -apple-system, system-ui, BlinkMacSystemFont,  Roboto, 'Helvetica Neue', sans-serif; }</style>"); // Oh I f**king love Segoe UI
+    document.write("<style>body { font-family: sans-serif; }</style>"); // Oh I f**king love Segoe UI
     var trans_wx = "WeChat"
     var trans_ali = "AliPay"
     var trans_tp = "QQ Mobile"
