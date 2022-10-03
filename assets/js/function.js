@@ -9,35 +9,7 @@ var client;
 var selected;
 var scale = window.devicePixelRatio; // Change scale to 1 on retina screens to see blurry canvas
 
-profile_error = 0;
-
-if (typeof profile === "undefined" || profile === null || profile === "") {
-  profile_error = 1;
-}
-else if (profile.includes('@') && !profile.includes('http')) { // Verify if value entered is a email
-  var email = profile.split("@")
-  var suffix = email[1];
-  if (suffix.includes('.')) { // Verify if the email entered is valid
-    var profile_url = gravatar_url + md5(profile) + "?s=96";
-    var profile_lg = profile_url.replace("96", "500"); // Set a large version
-  }
-  else {
-    console.log("%c Email address invaild, please entre a vaild email or image url! ", "color: red"); // Error message if email entered is invalid
-    console.log("%c Email 无效，请输入有效 Email 或者图片 url ", "color: red");
-    profile_error = 1;
-  }
-}
-else {
-  profile_url = profile_lg = profile; // If email is not entered, use whatever value entered (presumably a url)
-}
-
-if (profile_error > 0) {
-  profile_url = profile_lg = 'https://ae01.alicdn.com/kf/Udaba9d58fade4a3e921c0ceba62db2b7n.png'; // Set a default avatar in case profile image is undefined
-}
-
-document.getElementById("i").style.background = "url('" + profile_lg + "') no-repeat center/cover"; // Set center picture
 $("#favicon").attr("href", profile_url); // Set page icon
-
 
 var userLang = navigator.language || navigator.userLanguage;
 if (multilingual !== false) {
@@ -98,7 +70,7 @@ if (multilingual === false) {
 else {
   if (/zh-CN|zh-cn|zh-Hans|zh-hans|cn/i.test(userLang)) {
     // detect browser langauge, simplified chinese only
-    document.write("<style>body { font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', sans-serif; }</style>");
+    document.write("<style>body { font-family: -apple-system,BlinkMacSystemFont,Open Sans,Roboto,Oxygen,Cantarell,Fira Sans,Liberation Sans,Droid Sans,PingFang SC,HarmonyOS Sans SC,MiSans,Hiragino Sans GB,WenQuanYi Micro Hei,Noto Sans CJK SC,Noto Sans SC,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;}</style>");
     if (usage === "payment") {
       var method = "付款";
     }
@@ -122,7 +94,7 @@ else {
   }
   else if (/zh-TW|zh-HK|zh-tw|zh-hk|zh-Hant|zh-hant|tw|hk/i.test(userLang)) {
     // detect browser langauge, traditional chinese only
-    document.write("<style>body { font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif; }</style>");
+    document.write("<style>body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Hiragino Sans CNS', 'Microsoft JhengHei', 'Helvetica Neue', sans-serif; }</style>");
     if (usage === "payment") {
       var method = "付款";
     }
@@ -155,7 +127,7 @@ else {
     }
     var method_lc = method.charAt(0).toLowerCase();
     document.title = method + ' to' + finalname_eng + aftertitle;
-    document.write("<style>body { font-family: 'Segoe UI', -apple-system, system-ui, BlinkMacSystemFont,  Roboto, 'Helvetica Neue', sans-serif; }</style>"); // Oh I f**king love Segoe UI
+    document.write("<style>body { font-family: sans-serif; }</style>"); // Oh I f**king love Segoe UI
     var trans_wx = "WeChat"
     var trans_ali = "AliPay"
     var trans_tp = "QQ Mobile"
