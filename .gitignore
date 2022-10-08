@@ -3,3 +3,4 @@ node_modules
 .vercel
 public
 .DS_Store
+build
