@@ -7,6 +7,7 @@ const rename = require('gulp-rename');
 const htmlreplace = require('gulp-html-replace');
 
 
+
 gulp.task('pack-css', async function () {
   const compressedCSS = gulp.src(['./assets/styles/spectre.css/spectre-modified.css', './assets/styles/style.css'])
     .pipe(concat('style.main.css'))
@@ -14,7 +15,7 @@ gulp.task('pack-css', async function () {
       level: 2
     }))
   compressedCSS.pipe(gulp.dest('./assets/bundles/'))
-  if (additionalDest === true) {
+  if (process.env.NODE_ENV == 'production') {
     compressedCSS.pipe(gulp.dest('./build/assets/'))
   }
 });
@@ -24,7 +25,7 @@ gulp.task('pack-js', async function () {
     .pipe(concat('function.main.js'))
     .pipe(terser())
   compressedJS.pipe(gulp.dest('./assets/bundles/'))
-  if (additionalDest === true) {
+  if (process.env.NODE_ENV == 'production') {
     compressedJS.pipe(gulp.dest('./build/assets/'))
   }
 });
@@ -59,8 +60,7 @@ gulp.task('replace-js-css', function (done) {
     .pipe(rename('index.html'))
     .pipe(gulp.dest('build/'))
     .on('end', done);
-  additionalDest = true;
-});
+  });
 
 gulp.task('build-html', async function () {
   gulp.start('replace-js-css');
@@ -69,4 +69,3 @@ gulp.task('build-html', async function () {
 
 gulp.task('compile', gulp.parallel('pack-css', 'pack-js'));
 gulp.task('default', gulp.series('replace-js-css', gulp.parallel('minify-html', 'pack-js', 'pack-css' )));
-var additionalDest;
