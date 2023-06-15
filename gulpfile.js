@@ -6,8 +6,6 @@ const htmlmin = require('gulp-html-minifier-terser');
 const rename = require('gulp-rename');
 const htmlreplace = require('gulp-html-replace');
 
-
-
 gulp.task('pack-css', async function () {
   const compressedCSS = gulp.src(['./assets/styles/spectre.css/spectre-modified.css', './assets/styles/style.css'])
     .pipe(concat('style.main.css'))
@@ -51,14 +49,14 @@ gulp.task('minify-html', async function () {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('temp-copy', function() {
-  return gulp.src('assets/bundles/function.main.js')
-    .pipe(rename('function_main.js'))
-    .pipe(gulp.dest('assets/bundles'))
-    .pipe(gulp.src('assets/bundles/style.main.css'))
-    .pipe(rename('style_main.css'))
-    .pipe(gulp.dest('assets/bundles'));
-});
+// gulp.task('temp-copy', function() {
+//   return gulp.src('assets/bundles/function.main.js')
+//     .pipe(rename('function_main.js'))
+//     .pipe(gulp.dest('assets/bundles'))
+//     .pipe(gulp.src('assets/bundles/style.main.css'))
+//     .pipe(rename('style_main.css'))
+//     .pipe(gulp.dest('assets/bundles'));
+// });
 
 gulp.task('replace-js-css', function (done) {
   return gulp.src('./merger.html')
@@ -76,5 +74,5 @@ gulp.task('build-html', async function () {
   gulp.start('minify-html');
 })
 
-gulp.task('compile', gulp.series(gulp.parallel('pack-css', 'pack-js'), 'temp-copy'));
-gulp.task('default', gulp.series('replace-js-css', gulp.parallel('minify-html', 'pack-js', 'pack-css' )));
+gulp.task('compile', gulp.series(gulp.parallel('pack-css', 'pack-js')));
+gulp.task('default', gulp.series(gulp.parallel('replace-js-css', 'pack-js', 'pack-css' ), 'minify-html'));
