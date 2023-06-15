@@ -61,8 +61,8 @@ gulp.task('minify-html', async function () {
 gulp.task('replace-js-css', function (done) {
   return gulp.src('./merger.html')
     .pipe(htmlreplace({
-      'css': '/assets/style.main.css',
-      'js': '/assets/function.main.js'
+      'css': 'assets/style.main.css',
+      'js': 'assets/function.main.js'
     }))
     .pipe(rename('index.html'))
     .pipe(gulp.dest('build/'))
