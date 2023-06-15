@@ -58,7 +58,6 @@ if (multilingual === false) {
   var finaltitle = title;
   // var finalsub = subtitle;
   var wechatscan = "微信扫一扫 向" + finalname + "支付";
-  var tenpayscan = "手机QQ扫一扫 向" + finalname + "支付";
   var alipayscan = "支付宝扫一扫 向" + finalname + "支付";
   var payto = "";
   var presshold = "长按识别二维码 向" + finalname + "支付";
@@ -80,7 +79,6 @@ else {
     document.title = '向' + finalname + method + aftertitle;
     var trans_wx = "微信"
     var trans_ali = "支付宝"
-    var trans_tp = "QQ手机版"
     var finaltitle = "向" + finalname + method;
     var finalsub = "从下方选择" + method + "方式";
     var trans_wx = "微信";
@@ -89,7 +87,6 @@ else {
     var payto = " 向" + finalname + method;
     var notavail = "🚫 目前没有可用的" + method + "方式"
     var wechatscan = trans_wx + scan;
-    var tenpayscan = trans_tp + scan;
     var alipayscan = trans_ali + scan;
   }
   else if (/zh-TW|zh-HK|zh-tw|zh-hk|zh-Hant|zh-hant|tw|hk/i.test(userLang)) {
@@ -104,13 +101,11 @@ else {
     document.title = '向' + finalname + method + aftertitle;
     var trans_wx = "WeChat "
     var trans_ali = "支付寶"
-    var trans_tp = "QQ手機版"
     var finaltitle = "向" + finalname + method;
     var finalsub = "從下方選擇" + method + "方式";
     var scan = "掃一掃";
     var notavail = "🚫 目前沒有可用的" + method + "方式";
     var wechatscan = trans_wx + scan;
-    var tenpayscan = trans_tp + scan;
     var alipayscan = trans_ali + scan;
     var presshold = "長按識別二維碼";
     var payto = " 向" + finalname + method;
@@ -130,7 +125,6 @@ else {
     document.write("<style>body { font-family: sans-serif; }</style>"); // Oh I f**king love Segoe UI
     var trans_wx = "WeChat"
     var trans_ali = "AliPay"
-    var trans_tp = "QQ Mobile"
     var finaltitle = method + " to" + finalname_eng;
     var finalsub = "Select a " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " method from below";
     var scanhint = "Scan the QR Code to " + method + finalname_eng;
@@ -139,18 +133,12 @@ else {
     var payto = "";
     var notavail = "🚫 Currently no " + method_t.replace(method_t.charAt(0), method_t.charAt(0).toLowerCase()) + " method available";
     var wechatscan = scan + trans_wx;
-    var tenpayscan = scan + trans_tp;
     var alipayscan = scan + trans_ali;
   }
 }
 
 // Remove payment methods if not set up
 var error_num = 0;
-if (typeof tenpay === "undefined" || tenpay === null || tenpay === "") {
-  document.getElementById("depends").removeChild(document.getElementById("tenpaybtn"));
-  error_num += 1;
-  var notenpay = true;
-}
 if (typeof wechat === "undefined" || wechat === null || wechat === "") {
   document.getElementById("depends").removeChild(document.getElementById("toclick"));
   error_num += 1;
@@ -218,23 +206,6 @@ else if (navigator.userAgent.match(/MicroMessenger\//i)) {
     removal();
   }
 }
-
-else if (navigator.userAgent.match(/QQ\//i)) {
-  if (notenpay === true) {
-    alert("Tenpay is not set up by the admin \n 管理员没有设置 QQ 钱包")
-    if (location.href.substr(location.href.lastIndexOf('#') + 1) == "showqrcode" && !selected) document.getElementById('showqrcode').style.display = "none";
-  }
-  else {
-    window.location.href = window.location.href.match(/^[^\#\?]+/)[0] + "#showqrcode";
-    document.getElementById("titleinfo").innerHTML = presshold + payto;
-    document.getElementById("qrcontainer").removeChild(document.getElementById("currentqrcode")); // remove default qrcode (mobile qq only)
-    // Import from api
-    document.getElementById("tenpayonly").src = qrcodeapi + urlencode(tenpay);
-    var finaltitle = "";
-    var finalsub = "";
-    removal();
-  }
-}
 else {
   if (location.href.substr(location.href.lastIndexOf('#') + 1) == "showqrcode" && !selected) document.getElementById('showqrcode').style.display = "none";
   document.getElementById('qrcodeclose').onclick = function () {
@@ -244,7 +215,7 @@ else {
 }
 // UserAgent Verify Part Ends
 
-if (error_num === 4) { // Show not available message to user if all four methods are not set up
+if (error_num === 3) { // Show not available message to user if all four methods are not set up
   var finalsub = notavail;
   console.log("%c No Payment Method Available to Users ", "color: red");
 }
@@ -260,12 +231,6 @@ function openalipay() {
   selected = "yes";
   document.getElementById("titleinfo").innerHTML = alipayscan + payto;
   client = alipay;
-  showqrcode();
-}
-function opentenpay() {
-  selected = "yes";
-  document.getElementById("titleinfo").innerHTML = tenpayscan + payto;
-  client = tenpay;
   showqrcode();
 }
 function removal() {
