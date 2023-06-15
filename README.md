@@ -24,7 +24,7 @@ Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
 
 Submit your merger site [here](https://github.com/hifocus/merger/issues/4) for [presentation](https://merger.qrcdn.com/#/en-gb/?id=other-demo-sites)
 
-This project is sponsored by <img src="https://vip2.loli.io/2023/06/15/giTqx9tFQ2XPArl.jpg" height="16px">
+This project is sponsored by <a target="_blank" href="https://www.cloudflare.com"><img src="https://vip2.loli.io/2023/06/15/leUw2vnXKZRTcLE.png" height="30px"></a>
 
 ## Features
 
