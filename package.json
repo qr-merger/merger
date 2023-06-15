@@ -1,6 +1,6 @@
 {
   "name": "qr-merger",
-  "version": "0.28.2-beta",
+  "version": "0.28.2",
   "description": "📲 Merge Your Qrcodes Together. Even Quicker.",
   "main": "merger.html",
   "scripts": {
