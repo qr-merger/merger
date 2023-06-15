@@ -51,6 +51,15 @@ gulp.task('minify-html', async function () {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('temp-copy', function() {
+  return gulp.src('assets/bundles/function.main.js')
+    .pipe(rename('function_main.js'))
+    .pipe(gulp.dest('assets/bundles'))
+    .pipe(gulp.src('assets/bundles/style.main.css'))
+    .pipe(rename('style_main.css'))
+    .pipe(gulp.dest('assets/bundles'));
+});
+
 gulp.task('replace-js-css', function (done) {
   return gulp.src('./merger.html')
     .pipe(htmlreplace({
@@ -67,5 +76,5 @@ gulp.task('build-html', async function () {
   gulp.start('minify-html');
 })
 
-gulp.task('compile', gulp.parallel('pack-css', 'pack-js'));
+gulp.task('compile', gulp.series(gulp.parallel('pack-css', 'pack-js'), 'temp-copy'));
 gulp.task('default', gulp.series('replace-js-css', gulp.parallel('minify-html', 'pack-js', 'pack-css' )));
