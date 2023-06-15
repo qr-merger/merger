@@ -29,42 +29,40 @@
 <body>
 
     <script>
-        // Config Section - Please follow the instruction
+        // Config Section - Please follow the instructions
         // Please read the docs - https://docs.qrcdn.com/merger
-        // Due to compatibility reasons, all code comments are written in English; if unable to understand, refer to the docs
+        // For a unified development experience, all code comments are written in English; refer to the docs or use a translator if neccessary
+        // 为了统一的开发体验，所有代码注释均使用英文书写；如有必要，请参考文档或使用翻译工具
 
-        // Replace with your preferred name and profile photo link below
+        // Replace with your preferred name and profile photo link (or gravatar email) below
         // Please note the multilingual support function enabled by default from below
         var myname = "惶心";
         // var profile = "https://vip1.loli.io/2021/04/28/miRTlxchDfkaYvq.png"; // Enter a image url or your gravatar email, or leave the variable blank to use the default avatar
         var profile = "im.hx@live.cn"; // Use gravatar email
 
-        // If you do not own any of the payment methods below, or do not want them to be published, just leave the variable empty or delete it to prevent confusion
-        var usage = "payment"; // Available variables: `payment`, `donate`, ineffective if multilingual is disabled
+        // Leave relevant variables empty or undelcared if you do not wish to setup certain payment methods
+        var usage = "payment"; // Available variables: `payment`, `donate`, require `multilingual`
         var wechat = "wxp://f2f0xFuBE5tqPeKuwZxWkpE0CBf4-GkfwdpN";
         var alipay = "https://qr.alipay.com/tsx13404cfdrbv32vk9vm90";
         var paypal = "https://paypal.me/hxco";
 
         // Multilingual Support
-        var multilingual = true; // Set variable to false to disable multilingual feature (not recommended)
+        var multilingual = true; // Set variable to false to disable multilingual features (not recommended)
         var myname_hans = myname // Default setting for Chinese Simplified users; change it to a speicify value if desired
         var myname_hant = "惶心"; // Choose how you want your name to be displayed to Traditional Chinese users
         var myname_eng = "Focus Chen"; // Choose how you want your name to be displayed to English / Non-Chinese users
 
         // Dynamic Page Title Support
         // Merger supports dynamic page tile, however it's up to you to choose whether you want to brand merger
-        // If you set branding to true, a `| Merger` suffix will be added to the set title
+        // If you set branding to true, `| Merger` will be subfixed to the set title
         var branding = true; // Set variable to `false` to disable branding
 
-        // Copywriting Customisations
-        // Only effective if multilingual function is disabled
-        var title = "选择你的支付方式"; // Choose your desired title
-        var subtitle = "跟随进一步的指示以向" + myname + "付款"; // Choose your desired subtitle; do not amend the 'myname' variable here
+        // Custom title & subtitle
+        // Only works with `multilingual` disabled
+        var title = "选择你的支付方式"; // Set your title
+        var subtitle = "跟随进一步的指示以向" + myname + "付款"; // Set your subtitle; do not amend the `myname` variable
 
-        // QQ Mobile wouldn't decode qrcode from `data:image`, so for qq mobile only speical qrcode that generate from qrcode api is necessary (this feature is awaiting review)
-        var qrcodeapi = "https://api.moedog.org/qr/?p=15&url="; // Please note that the API has to support HTTPS connection otherwise will not be loaded
-        var gravatar_url = "https://www.gravatar.com/avatar/"; // You can set your preferred gravatar source (mirror) here; stay default if you cannot decide which source you'd prefer
-        // var gravatar_url = "https://gravatar.loli.net/avatar/"; // A Gravatar source provided by css.loli.net; stabler, relatively slower (in China)
+        var gravatar_url = "https://sdn.geekzu.org/avatar/"; // Set your Gravatar url; default to mirror provided by https://cdn.geekzu.org
     </script>
 
     <div class="main" id="h">
