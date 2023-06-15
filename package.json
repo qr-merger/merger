@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hifocus/merger.git"
+    "url": "git://github.com/qr-merger/merger.git"
   },
   "keywords": [
     "qr",
@@ -21,7 +21,7 @@
   "author": "hifocus",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/hifocus/merger/issues"
+    "url": "https://github.com/qr-merger/merger/issues"
   },
   "homepage": "https://qrcdn.com",
   "dependencies": {

@@ -1,8 +1,8 @@
 
 // Merger - Merge Your Qrcode Together. Even Quicker.
 // User docs: https://merger.qrcdn.com
-// Released under GNU General Public License v3.0. Open source at https://github.com/hifocus/merger.
-// Author @hifocus (https://github.com/hifocus), and contributors(https://github.com/hifocus/merger/graphs/contributors).
+// Released under GNU General Public License v3.0. Open source at https://github.com/qr-merger/merger.
+// Author @hifocus (https://github.com/hifocus), and contributors(https://github.com/qr-merger/merger/graphs/contributors).
 // Copyright reservation is required.
 
 var client;
@@ -283,7 +283,7 @@ document.getElementById("name").innerHTML = finaltitle;
 document.getElementById("description").innerHTML = finalsub;
 
 // Copyright console log copied from https://github.com/MoePlayer/APlayer/. Thank you.
-console.log(`${'\n'} %c Merger 0.27.0 %c https://github.com/hifocus/merger ${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+console.log(`${'\n'} %c Merger 0.27.0 %c https://github.com/qr-merger/merger ${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
 
 function showqrcode() {
   if (location.href.substr(location.href.lastIndexOf('#') + 1) == "showqrcode" && selected == "yes") document.getElementById('showqrcode').style.display = "flex";

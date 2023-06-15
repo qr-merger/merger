@@ -8,5 +8,5 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
         with:
-          source-repo: "git@github.com:hifocus/merger.git"
+          source-repo: "git@github.com:qr-merger/merger.git"
           destination-repo: "git@e.coding.net:justhx/demo-qrcdn-com.git"

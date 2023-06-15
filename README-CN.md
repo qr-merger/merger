@@ -15,14 +15,14 @@
 
 
 <p align="center">
-<a href="https://github.com/hifocus/merger/releases"><img alt="Version" src="https://img.shields.io/github/release/hifocus/merger/all.svg?style=flat-square"/></a>
-<a href="https://github.com/hifocus/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/hifocus/merger.svg?style=flat-square"/></a>
-<a href="https://github.com/hifocus/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/hifocus/merger.svg?style=flat-square"/></a>
-<a href="https://github.com/hifocus/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/hifocus/merger.svg?style=flat-square"/></a>
-<a href="https://www.jsdelivr.com/package/gh/hifocus/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/hifocus/merger/badge"/></a>
+<a href="https://github.com/qr-merger/merger/releases"><img alt="Version" src="https://img.shields.io/github/release/qr-merger/merger/all.svg?style=flat-square"/></a>
+<a href="https://github.com/qr-merger/merger/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/qr-merger/merger.svg?style=flat-square"/></a>
+<a href="https://github.com/qr-merger/merger/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/qr-merger/merger.svg?style=flat-square"/></a>
+<a href="https://github.com/qr-merger/merger/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/qr-merger/merger.svg?style=flat-square"/></a>
+<a href="https://www.jsdelivr.com/package/gh/qr-merger/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/qr-merger/merger/badge"/></a>
 </p>
 
-在[这里](https://github.com/hifocus/merger/issues/4)提交你的 merger 站点以供[展示](https://merger.qrcdn.com/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
+在[这里](https://github.com/qr-merger/merger/issues/4)提交你的 merger 站点以供[展示](https://merger.qrcdn.com/#/?id=%e5%85%b6%e4%bb%96%e6%bc%94%e7%a4%ba%e7%ab%99%e7%82%b9)
 
 ## 特性
 
@@ -42,10 +42,10 @@
   - [部署](https://merger.qrcdn.com/docs/deploy)
 - [演示站点](https://demo.qrcdn.com)
 - [其他演示站点](https://merger.qrcdn.com/cn/docs/introduction#%E5%85%B6%E4%BB%96%E6%BC%94%E7%A4%BA%E7%AB%99%E7%82%B9)
-- [提交问题](https://github.com/hifocus/merger/issues)
-- [合并请求](https://github.com/hifocus/merger/pulls)
+- [提交问题](https://github.com/qr-merger/merger/issues)
+- [合并请求](https://github.com/qr-merger/merger/pulls)
 - [感谢](https://merger.qrcdn.com/cn/docs/introduction#%E6%84%9F%E8%B0%A2)
 
 ## 开源许可证
 
-[GNU General Public License v3.0](https://github.com/hifocus/merger/blob/master/LICENSE)
+[GNU General Public License v3.0](https://github.com/qr-merger/merger/blob/master/LICENSE)
