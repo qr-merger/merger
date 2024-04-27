@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://merger.qrcdn.com">
-    <img alt="merger" src="https://ae01.alicdn.com/kf/HTB1M9ondUKF3KVjSZFE760ExFXae.png" height="75">
+  <a href="https://merger.huangxin.org">
+    <img alt="merger" src="https://edge.huangxin.org/images/2024/04/404313540.png" height="75">
   </a>
 </p>
 
 <p align="center">
-<a href="https://demo.qrcdn.com">demo.qrcdn.com</a>
+<a href="https://qr.huangxin.org">demo.qrcdn.com</a>
 <br>
 Lightweight, Integrated QR Code Payment Interface<br>轻量，集成的二维码支付界面
 </p>
@@ -22,7 +22,7 @@ Language: <strong>English</strong> / <a href="./README-CN.md">Chinese 中文</a>
 <a href="https://www.jsdelivr.com/package/gh/qr-merger/merger"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/gh/qr-merger/merger/badge"/></a>
 </p>
 
-Submit your merger site [here](https://github.com/qr-merger/merger/issues/4) for [presentation](https://merger.qrcdn.com/#/en-gb/?id=other-demo-sites)
+Submit your merger site [here](https://github.com/qr-merger/merger/issues/4) for [presentation](https://merger.huangxin.org/#/en-gb/?id=other-demo-sites)
 
 This project is sponsored by <a target="_blank" href="https://www.cloudflare.com"><img src="https://vip2.loli.io/2023/06/15/leUw2vnXKZRTcLE.png" height="30px"></a>
 
@@ -34,19 +34,6 @@ This project is sponsored by <a target="_blank" href="https://www.cloudflare.com
 - Highly customisable, everthing on the page can be changed through pre-configured JavaScript variables. No need for any programming technique, while being easy to use.
 - In-depth user experience considerations; by thinking thoughtfully and having the passion to always keep UX as the first priority, you and your users' experiences when configuring / using merger could only be described as 'shift'.
 - The use of public CDN on static files (where applicable) will speed-up the loading.
-
-## Relevant Links
-
-- [Docs](https://merger.qrcdn.com/categories/docs/)
-  - [Instroduction](https://merger.qrcdn.com/docs/introduction)
-  - [Installation](https://merger.qrcdn.com/docs/install)
-  - [Configuration](https://merger.qrcdn.com/docs/configure)
-  - [Deployment](https://merger.qrcdn.com/docs/deploy)
-- [Live Demo](https://demo.qrcdn.com)
-- [Demo From Users](https://merger.qrcdn.com/docs/introduction#Demo-From-Users)
-- [Issues](https://github.com/qr-merger/merger/issues)
-- [Pull Requests](https://github.com/qr-merger/merger/pulls)
-- [Credit](https://merger.qrcdn.com/docs/introduction#Credit)
 
 ## License
 

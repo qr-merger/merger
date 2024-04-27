@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/qr-merger/merger/issues"
   },
-  "homepage": "https://qrcdn.com",
+  "homepage": "https://merger.huangxin.org",
   "dependencies": {
     "jquery": "^3.7.0"
   },
