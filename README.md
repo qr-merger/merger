@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<a href="https://qr.huangxin.org">demo.qrcdn.com</a>
+<a href="https://qr.huangxin.org">qr.huangxin.org</a>
 <br>
 Lightweight, Integrated QR Code Payment Interface<br>轻量，集成的二维码支付界面
 </p>
