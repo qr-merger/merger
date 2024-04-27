@@ -37,6 +37,9 @@ This project is sponsored by <a target="_blank" href="https://www.cloudflare.com
 ## Usage
 
 ### With NPM and Gulp (Recommended)
+
+**Demo:** [https://qr.huangxin.org](https://qr.huangxin.org/)
+
 ```bash
 git clone https://github.com/qr-merger/merger
 cd merger
@@ -49,6 +52,8 @@ pnpm build
 An optimised version will appear at `/build` directory. Works well with JAMStack platforms such as [CloudFlare Pages](https://pages.cloudflare.com), [Vercel](https://vercel.com) and [Netlify](https://www.netlify.com).
 
 ### Standalone
+
+**Demo:** [https://qr.huangxin.org/standalone](https://qr.huangxin.org/standalone.html)
 
 1. Download [merger.html](https://github.com/qr-merger/merger/blob/master/merger.html).
 2. Edit its contents.
