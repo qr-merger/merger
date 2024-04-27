@@ -6,31 +6,41 @@ const htmlmin = require('gulp-html-minifier-terser');
 const rename = require('gulp-rename');
 const htmlreplace = require('gulp-html-replace');
 
-gulp.task('pack-css', async function () {
-  const compressedCSS = gulp.src(['./assets/styles/spectre.css/spectre-modified.css', './assets/styles/style.css'])
-    .pipe(concat('style.main.css'))
-    .pipe(cleanCSS({
+gulp.task('pack-css', function () {
+  // Start the stream from the source files
+  let stream = gulp.src([
+      './assets/styles/spectre.css/spectre-modified.css',
+      './assets/styles/style.css'
+  ])
+  .pipe(concat('style.main.css'))
+  .pipe(cleanCSS({
       level: 2
-    }))
-  compressedCSS.pipe(gulp.dest('./assets/bundles/'))
-  if (process.env.NODE_ENV == 'production') {
-    compressedCSS.pipe(gulp.dest('./build/assets/'))
+  }))
+  .pipe(gulp.dest('./assets/bundles/'));
+
+  if (process.env.NODE_ENV === 'production') {
+      stream = stream.pipe(gulp.dest('./build/assets/'));
   }
+
+  return stream;
 });
 
-gulp.task('pack-js', async function () {
-  const compressedJS = gulp.src([
+gulp.task('pack-js', function () {
+  let stream = gulp.src([
+      './assets/js/iconfont.js',
       './node_modules/jquery/dist/jquery.js',
       './assets/js/jquery-qrcode.js',
-      './assets/js/function.js', 
-      './assets/js/iconfont.js'
-    ])
-    .pipe(concat('function.main.js'))
-    .pipe(terser())
-  compressedJS.pipe(gulp.dest('./assets/bundles/'))
-  if (process.env.NODE_ENV == 'production') {
-    compressedJS.pipe(gulp.dest('./build/assets/'))
+      './assets/js/function.js'
+  ])
+  .pipe(concat('function.main.js'))
+  .pipe(terser())
+  .pipe(gulp.dest('./assets/bundles/'));
+
+  if (process.env.NODE_ENV === 'production') {
+      stream = stream.pipe(gulp.dest('./build/assets/'));
   }
+
+  return stream;
 });
 
 gulp.task('minify-html', async function () {
