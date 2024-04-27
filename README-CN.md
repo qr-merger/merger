@@ -27,9 +27,9 @@
 ## 特性
 
 - 支持微信、支付宝和PayPal。
-  - 当扫描微信（显示支付码）或支付宝（重定向）的URL二维码时，直接引导用户进行支付。
-- 支持多语言，有两种模式：`捐赠`和`支付`。
-- 提供Gulp支持，增强开发者体验并支持JAMstack部署。
+  - 当扫描URL二维码时，在微信（显示支付码）或支付宝（重定向）内引导用户进行支付。
+- 支持多语言，有两种模式：`donate`（捐赠）和`payment`（支付）。
+- 提供 Gulp 支持，增强开发者体验并支持 JAMStack 部署。
 - 静态文件托管于 [cdnjs.com](https://cdnjs.com/libraries/merger)，可作为独立的HTML文件运行。
 
 ## 使用方法
@@ -44,7 +44,7 @@ cd merger
 pnpm i
 pnpm build
 ```
-优化后的版本将出现在`/build`目录中。适用于 JAMstack 平台，如 [CloudFlare Pages](https://pages.cloudflare.com)、[Vercel](https://vercel.com) 和 [Netlify](https://www.netlify.com)。
+优化后的版本将出现在`/build`目录中。适用于 JAMStack 平台，如 [CloudFlare Pages](https://pages.cloudflare.com)、[Vercel](https://vercel.com) 和 [Netlify](https://www.netlify.com)。
 
 ### 独立使用
 

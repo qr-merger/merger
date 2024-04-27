@@ -31,7 +31,7 @@ This project is sponsored by <a target="_blank" href="https://www.cloudflare.com
 - Supports WeChat, AliPay and PayPal.
   - When scanning QR Code of URL in WeChat (shows payment code) or AliPay (redirects), direct users to pay.
 - Multilingual adaption with two modes: `donate` or `payment`.
-- Gulp support for developer experience and JAMstack deployment.
+- Gulp support for developer experience and JAMStack deployment.
 - Static files on [cdnjs.com](https://cdnjs.com/libraries/merger). Works as standalone html.
 
 ## Usage
@@ -46,7 +46,7 @@ cd merger
 pnpm i
 pnpm build
 ```
-An optimised version will appear at `/build` directory. Works well with JAMstack platforms such as [CloudFlare Pages](https://pages.cloudflare.com), [Vercel](https://vercel.com) and [Netlify](https://www.netlify.com).
+An optimised version will appear at `/build` directory. Works well with JAMStack platforms such as [CloudFlare Pages](https://pages.cloudflare.com), [Vercel](https://vercel.com) and [Netlify](https://www.netlify.com).
 
 ### Standalone
 
