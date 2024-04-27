@@ -28,12 +28,32 @@ This project is sponsored by <a target="_blank" href="https://www.cloudflare.com
 
 ## Features
 
-- Fewest number of requests, fastest loading speed.
-- Detailed code comments , make ease for further developments.
-- Integrate with actual usage scenes, to present a individually-designed style for every single payment method.
-- Highly customisable, everthing on the page can be changed through pre-configured JavaScript variables. No need for any programming technique, while being easy to use.
-- In-depth user experience considerations; by thinking thoughtfully and having the passion to always keep UX as the first priority, you and your users' experiences when configuring / using merger could only be described as 'shift'.
-- The use of public CDN on static files (where applicable) will speed-up the loading.
+- Supports WeChat, AliPay and PayPal.
+  - When scanning QR Code of URL in WeChat (shows payment code) or AliPay (redirects), direct users to pay.
+- Multilingual adaption with two modes: `donate` or `payment`.
+- Gulp support for developer experience and JAMstack deployment.
+- Static files on [cdnjs.com](https://cdnjs.com/libraries/merger). Works as standalone html.
+
+## Usage
+
+### With NPM and Gulp (Recommended)
+```bash
+git clone https://github.com/qr-merger/merger
+cd merger
+
+# Edit merger.html
+
+pnpm i
+pnpm build
+```
+An optimised version will appear at `/build` directory. Works well with JAMstack platforms such as [CloudFlare Pages](https://pages.cloudflare.com), [Vercel](https://vercel.com) and [Netlify](https://www.netlify.com).
+
+### Standalone
+
+1. Download [merger.html](https://github.com/qr-merger/merger/blob/master/merger.html).
+2. Edit its contents.
+3. Serve the html file per your liking.
+
 
 ## License
 

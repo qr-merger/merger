@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://merger.huangxin.org">
-    <img alt="merger" src="https://ae01.alicdn.com/kf/HTB1M9ondUKF3KVjSZFE760ExFXae.png" height="75">
+    <img alt="merger" src="https://edge.huangxin.org/images/2024/04/404313540.png" height="75">
   </a>
 </p>
 
@@ -26,25 +26,31 @@
 
 ## 特性
 
-- 最少的请求数，最快的加载速度。
-- 详尽的代码注释，方便后续开发。
-- 结合实际使用场景，为每一种支付方式单独设计的展示样式。
-- 高度可定制化，页面上一切内容均可通过预留的 JavasSript 变量更改。无需任何编程技巧，且配置方便。
-- 细致入深的用户体验考量；用细心考量，和保持用户体验第一的热情，你和你用户的在配置/使用时的体验，只能用“顺滑”来形容。
-- 静态文件在有可能的情况下均通过 CDN 公用库分发，以提供更快的加载速度。
+- 支持微信、支付宝和PayPal。
+  - 当扫描微信（显示支付码）或支付宝（重定向）的URL二维码时，直接引导用户进行支付。
+- 支持多语言，有两种模式：`捐赠`和`支付`。
+- 提供Gulp支持，增强开发者体验并支持JAMstack部署。
+- 静态文件托管于 [cdnjs.com](https://cdnjs.com/libraries/merger)，可作为独立的HTML文件运行。
 
-## 相关链接
+## 使用方法
 
-- [说明文档](https://merger.huangxin.org/cn/categories/docs/)
-  - [概述](https://merger.huangxin.org/docs/introduction)
-  - [安装](https://merger.huangxin.org/docs/install)
-  - [配置](https://merger.huangxin.org/docs/configure)
-  - [部署](https://merger.huangxin.org/docs/deploy)
-- [演示站点](https://qr.huangxin.org)
-- [其他演示站点](https://merger.huangxin.org/cn/docs/introduction#%E5%85%B6%E4%BB%96%E6%BC%94%E7%A4%BA%E7%AB%99%E7%82%B9)
-- [提交问题](https://github.com/qr-merger/merger/issues)
-- [合并请求](https://github.com/qr-merger/merger/pulls)
-- [感谢](https://merger.huangxin.org/cn/docs/introduction#%E6%84%9F%E8%B0%A2)
+### 使用 NPM 和 Gulp（推荐）
+```bash
+git clone https://github.com/qr-merger/merger
+cd merger
+
+# 编辑 merger.html
+
+pnpm i
+pnpm build
+```
+优化后的版本将出现在`/build`目录中。适用于 JAMstack 平台，如 [CloudFlare Pages](https://pages.cloudflare.com)、[Vercel](https://vercel.com) 和 [Netlify](https://www.netlify.com)。
+
+### 独立使用
+
+1. 下载 [merger.html](https://github.com/qr-merger/merger/blob/master/merger.html)。
+2. 编辑其内容。
+3. 根据喜好部署HTML文件。
 
 ## 开源许可证
 
