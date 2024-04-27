@@ -179,7 +179,7 @@ else {
 }
 
 // General UserAgent verify rules
-if (navigator.userAgent.match(/Alipay/i)) {
+if (navigator.userAgent.includes('Alipay')) {
   if (noalipay === true) {
     alert("AliPay is not set up by the admin \n 管理员没有设置支付宝");
     if (location.href.substr(location.href.lastIndexOf('#') + 1) == "showqrcode" && !selected) document.getElementById('showqrcode').style.display = "none";
@@ -192,7 +192,7 @@ if (navigator.userAgent.match(/Alipay/i)) {
     removal();
   }
 }
-else if (navigator.userAgent.match(/MicroMessenger\//i)) {
+else if (navigator.userAgent.includes('MicroMessenger')) {
   if (nowechat === true) {
     alert("WeChat Pay is not set up by the admin \n 管理员没有设置微信支付");
     if (location.href.substr(location.href.lastIndexOf('#') + 1) == "showqrcode" && !selected) document.getElementById('showqrcode').style.display = "none";
@@ -206,6 +206,7 @@ else if (navigator.userAgent.match(/MicroMessenger\//i)) {
     var finaltitle = "";
     var finalsub = "";
     removal();
+    console.log("%c WeChat Pay Detected ", "color: green");
   }
 }
 else {
