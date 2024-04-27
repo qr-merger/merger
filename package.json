@@ -24,9 +24,6 @@
     "url": "https://github.com/qr-merger/merger/issues"
   },
   "homepage": "https://merger.huangxin.org",
-  "dependencies": {
-    "jquery": "^3.7.1"
-  },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "gulp": "^4.0.2",
@@ -40,5 +37,8 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
   }
 }

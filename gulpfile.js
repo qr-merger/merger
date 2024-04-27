@@ -19,7 +19,12 @@ gulp.task('pack-css', async function () {
 });
 
 gulp.task('pack-js', async function () {
-  const compressedJS = gulp.src(['./assets/js/function.js', './assets/js/iconfont.js'])
+  const compressedJS = gulp.src([
+      './node_modules/jquery/dist/jquery.js',
+      './assets/js/jquery-qrcode.js',
+      './assets/js/function.js', 
+      './assets/js/iconfont.js'
+    ])
     .pipe(concat('function.main.js'))
     .pipe(terser())
   compressedJS.pipe(gulp.dest('./assets/bundles/'))
