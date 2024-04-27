@@ -29,7 +29,7 @@ This project is sponsored by <a target="_blank" href="https://www.cloudflare.com
 ## Features
 
 - Supports WeChat, AliPay and PayPal.
-  - When scanning QR Code of URL in WeChat (shows payment code) or AliPay (redirects), direct users to pay.
+  - When scanning QR Code of URL in WeChat (shows payment code) or AliPay (redirects), directs users to pay.
 - Multilingual adaption with two modes: `donate` or `payment`.
 - Gulp support for developer experience and JAMStack deployment.
 - Static files on [cdnjs.com](https://cdnjs.com/libraries/merger). Works as standalone html.
