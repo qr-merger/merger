@@ -1,8 +1,11 @@
 
-// Merger - Merge Your Qrcode Together. Even Quicker.
+/*! Merger v0.28.5 - Merge Your Qrcode Together. Even Quicker. - https://merger.huangxin.org */
+/*! jquery-qrcode v0.18.0 - https://larsjung.de/jquery-qrcode/ */
+
 // Homepage: https://merger.huangxin.org
 // Released under GNU General Public License v3.0. Open source at https://github.com/qr-merger/merger.
 // Author @hifocus (https://github.com/hifocus), and contributors(https://github.com/qr-merger/merger/graphs/contributors).
+
 
 var client;
 var selected;
