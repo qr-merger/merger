@@ -1,5 +1,5 @@
 
-/*! Merger v0.28.5 - Merge Your Qrcode Together. Even Quicker. - https://merger.huangxin.org */
+/*! Merger v0.28.6 - Merge Your Qrcode Together. Even Quicker. - https://merger.huangxin.org */
 /*! jquery-qrcode v0.18.0 - https://larsjung.de/jquery-qrcode/ */
 
 // Homepage: https://merger.huangxin.org
@@ -250,7 +250,7 @@ document.getElementById("name").innerHTML = finaltitle;
 document.getElementById("description").innerHTML = finalsub;
 
 // Copyright console log copied from https://github.com/MoePlayer/APlayer/. Thank you.
-console.log(`${'\n'} %c Merger 0.28.5 %c https://github.com/qr-merger/merger ${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+console.log(`${'\n'} %c Merger 0.28.6 %c https://github.com/qr-merger/merger ${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
 
 function showqrcode() {
   if (location.href.substr(location.href.lastIndexOf('#') + 1) == "showqrcode" && selected == "yes") document.getElementById('showqrcode').style.display = "flex";
